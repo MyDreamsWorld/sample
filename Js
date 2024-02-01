@@ -1,7 +1,1 @@
 sample
-The test coordinator receives a request from an external department to examine any new project or a new release of an old project. The test coordinator gathers information on the project or release, including links and files that may assist the testers, and sends a message to the Team Lead of one of the teams in the department.
-The team lead receives the request and information and, based on their experience, can identify which of the previously tested or existing programs will be affected by the changes requiring examination. They communicate with the QA engineers responsible for these projects and request an estimated time for inspecting the project. This information is then updated in the shared testing plan.
-The QA engineers estimate the expected time and make any necessary adjustments to the testing plan. They communicate with the team lead in case of any additional inquiries.
-The testers prepare the testing report and all required information, and all errors are added to the Jira tool for easy tracking by all parties involved in the project. Additionally, errors are accompanied by information such as their description, severity level, and repair priority.
-Errors are monitored and re-examined upon their resolution.
-The final report is sent once all errors, or those deemed critical, have been addressed, according to discussions with the team lead and other relevant parties.

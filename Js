@@ -1,2 +1,5 @@
 sample
+https://qacart.com/profile
+https://continue.yorku.ca/programs/certificate-in-devops/
 
+I was wondering if our department conducts software testing that includes WCAG 2.1 or UX in general. Is this within the scope of our department's responsibilities? I'm asking because I haven't noticed this as part of the usual testing requirements here. Could it be because the application I am testing does not have a visual interface? Additionally, I would like to know if our quality assurance testing takes into consideration potential users with disabilities for any application we approve, whether they are internal employees or external users.

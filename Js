@@ -1,15 +1,2 @@
 sample
 
-Subject: Request for Sample Test Plan for New Project Reference
-
-Dear ,
-
-I hope this message finds you well.
-
-I am currently in the process of developing a test plan for a new project, Project AA, and I am reaching out to see if you, or anyone in the team, might have a sample test plan from a previously introduced new project (not a new release of an existing project). I believe having a reference could greatly enhance the quality and efficiency of my planning process.
-
-If it is possible to share such documents, I would greatly appreciate it. Please rest assured that any shared materials will be used strictly as a reference to guide the structure and content of my own test plan, ensuring the best possible outcome for Project AA.
-
-Thank you very much for considering my request. I look forward to any assistance you can provide and am available for any further information or clarification you might need.
-
-Best regards,

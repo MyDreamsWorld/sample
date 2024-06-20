@@ -1,1 +1,16 @@
 
+My tenure at CADCS (Commercial Data Acquisition and Communication Services) stands as a testament to my capability to enhance digital platforms through user-centered design and strategic UX implementations.
+
+While serving as a software developer at CADCS, I faced significant challenges related to the usability of our internal wiki pages. These issues not only impeded our workflow but also presented a steep learning curve for new team members. Recognizing my passion and expertise in UX, my manager entrusted me with the task of redesigning these pages—a project I embraced with enthusiasm. My approach was comprehensive: starting with a thorough analysis of the existing content, I gathered requirements from all stakeholders to ensure that the redesigned wiki met everyone’s needs.
+
+During the analysis phase, I prioritized accessibility and information flow, ensuring that our pages met the highest standards of user access and engagement. I engaged in detailed discussions, facilitating communication across teams to align our goals and visions for the project. This collaborative approach helped in crafting a design philosophy that focused not only on aesthetic elements—like color schemes and typography—but also on the overall user journey within our digital environment.
+
+The design phase was particularly rewarding as I utilized Figma to create wireframes that laid out a clear, functional structure for our wiki pages. This process allowed for the visualization of end-user navigation paths and key interactions, which were crucial in defining the user flow and enhancing the overall usability of the pages. I developed a personalized theme and introduced additional UI components to resolve existing gaps in our ECM platform, Apollo, thereby elevating the user experience significantly.
+
+Implementation involved setting up the hosting environment on Apollo, where I meticulously added pages according to the wireframes and prepared a UI design package that included logos, colors, and imagery compliant with CBSA's stylistic guidelines. The culmination of this phase was marked by the creation of a developer's guide that was instrumental in onboarding new developers efficiently, ensuring they were productive from their first week.
+
+Feedback was continually sought from both peers and team leads throughout the process, allowing for iterative improvements that refined the functionality and user interaction with the wiki pages. The final product was not only a testament to effective UX design but also a reflection of dedicated teamwork and strategic planning.
+
+The successful redesign of the CADCS wiki pages underlines my commitment to delivering user-centric solutions that drive operational efficiency and enhance team dynamics. I am eager to bring this expertise to your team, contributing to innovative projects and further enhancing CBSA's digital experiences.
+
+Thank you for considering my resume. 

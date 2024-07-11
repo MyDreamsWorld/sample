@@ -1,1 +1,10 @@
 
+Thank you for your follow-up.
+
+To clarify, I did not run the jobs from an incorrect environment. This is clear from the screenshots provided. The steps I followed during the re-examination are the same procedures we use each time we test the application.
+
+From our department’s side, we did not implement any specific solution to the problem; we retested to determine if the issue was still there.
+
+I would be happy to request the closure of the ticket, but I do not have the authority to close it myself.
+
+Thank you again.

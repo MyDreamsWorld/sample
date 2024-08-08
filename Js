@@ -1,320 +1,100 @@
 
-Writing a user story for testing a login page involves clearly defining the requirements from the perspective of the end user to ensure that all functionalities are covered and tested appropriately. User stories are typically structured in a simple format that includes three main components: who, what, and why. Here’s a step-by-step guide to writing a professional user story for a login page:
-
-1. Title
-Start with a brief, descriptive title for the user story that encapsulates its essence.
-
-Example: "User Login Functionality"
-
-2. User Role
-Identify the user or role who will interact with the login feature. This helps to contextualize the story.
-
-Example: "As a registered user,"
-
-3. Goal or Action
-Specify what the user wants to achieve by interacting with the login page.
-
-Example: "I want to securely log into the application"
-
-4. Reason or Benefit
-Explain why the user needs this functionality, which helps to justify the feature’s existence and guides the testing priorities.
-
-Example: "so that I can access my personal account and manage my settings."
-
-5. Acceptance Criteria
-This is a critical part of the user story, especially for testing. List the specific, actionable, and testable conditions under which a story is considered complete. This often includes positive and negative scenarios.
-
-Example:
-
-Success Criteria:
-
-The user can log in using a valid username and password.
-After successful login, the user is redirected to their dashboard.
-Incorrect login attempts show an error message.
-The password is masked during entry.
-The login form is accessible, including keyboard navigation for accessibility compliance.
-Failure Handling:
-
-Entering an incorrect username or password results in a specific error message without specifying which part of the authentication failed.
-After three failed login attempts, the account is temporarily locked for a period of time to prevent brute force attacks.
-The login page includes a “Forgot Password” link.
-Security Criteria:
-
-All password data is encrypted during transmission.
-The login page is protected against SQL injection and cross-site scripting (XSS) attacks.
-6. Technical Notes (Optional)
-Include any necessary technical details or references to external documents that might be relevant for the developers or testers, such as APIs, dependency on other components, or environment configurations.
-
-7. Mockups or Diagrams (Optional)
-If available, link to or include visual designs of the login page to provide further context.
-
-Full User Story Example
-Title: User Login Functionality
-
-As a registered user,
-I want to securely log into the application
-so that I can access my personal account and manage my settings.
-
-Acceptance Criteria:
-- The user can log in using a valid username and password.
-- After successful login, the user is redirected to their dashboard.
-- Incorrect login attempts show an error message.
-- The password is masked during entry.
-- The login form is accessible, including keyboard navigation for accessibility compliance.
-
-Failure Handling:
-- Entering an incorrect username or password results in a specific error message.
-- After three failed login attempts, the account is temporarily locked.
-- The login page includes a “Forgot Password” link.
-
-Security Criteria:
-- All password data is encrypted during transmission.
-- The login page is protected against SQL injection and XSS attacks.
-
-By following these steps and the example format, you can create a comprehensive and professional user story that will guide effective and thorough testing of the login functionality.
-
-Writing a user story for testing an "Account Page" involves detailing the functionalities and interactions that a user expects when managing their personal account settings. This includes not only basic data interactions but also ensuring security, user interface quality, and responsiveness. Here’s a structured approach to writing a professional user story for an Account Page:
-
-1. Title
-Give your user story a concise, descriptive title.
-
-Example: "Account Management Functionality"
-
-2. User Role
-Identify the specific user or role that will be interacting with the account management features. This specifies whose needs are being addressed.
-
-Example: "As an existing customer,"
-
-3. Goal or Action
-Clarify what the user intends to achieve on the account page.
-
-Example: "I want to manage my account settings"
-
-4. Reason or Benefit
-Explain why this functionality is necessary for the user, focusing on the benefits or problems it solves.
-
-Example: "so that I can update my personal information, change my password, and view my activity history securely and efficiently."
-
-5. Acceptance Criteria
-List specific, actionable, and testable conditions that define when the story is completed. These criteria will guide your testing efforts, focusing on both functionality and user experience.
-
-Example:
-
-Functionality Criteria:
-
-The user can update personal information such as name, email address, and contact details.
-Changes are saved only after clicking the "Save" button.
-Users receive a confirmation notification upon successful update.
-The user can change their password by entering the old password, a new password, and confirming the new password.
-An error message is displayed if the "Save" action fails.
-The page displays the user’s recent activity log, including dates and descriptions of actions.
-Security Criteria:
-
-All changes must be transmitted over a secure connection.
-The user must re-enter their password or verify their identity to change sensitive information like passwords.
-The account page should have security measures against CSRF (Cross-Site Request Forgery) and other common web vulnerabilities.
-Usability Criteria:
-
-The account management page must be responsive and accessible on both desktop and mobile devices.
-Fields should have proper labels and be navigable using keyboard shortcuts for accessibility.
-Input fields should validate data format (e.g., email fields should recognize the format).
-6. Technical Notes (Optional)
-Provide any technical details or references to documentation or APIs that might be relevant for developers or testers.
-
-7. Mockups or Diagrams (Optional)
-Include or link to any visual designs or wireframes of the account page to provide further context.
-
-Full User Story Example
-Title: Account Management Functionality
-
-As an existing customer,
-I want to manage my account settings
-so that I can update my personal information, change my password, and view my activity history securely and efficiently.
-
-Acceptance Criteria:
-- Users can update personal information such as name, email address, and contact details.
-- Changes are saved only after clicking the "Save" button and a confirmation is displayed.
-- The user can change their password with proper validations.
-- The page displays a detailed activity log with timestamps and descriptions.
-- All sensitive actions require user verification or re-authentication.
-
-Security Criteria:
-- Secure transmission of data for all updates.
-- CSRF and other web security measures are in place.
-
-Usability Criteria:
-- Responsive design compatible with desktop and mobile.
-- Accessible fields with clear labels and keyboard navigability.
-- Proper data validation for input fields.
-
-This structured approach helps in creating a detailed and actionable user story that can guide comprehensive testing of the account management functionality, ensuring a seamless and secure user experience.
-
-____
-Creating a test plan for an E-Filing Solution software involves several critical steps to ensure comprehensive coverage and efficient testing. A test plan is a document that outlines the strategy that will be followed to verify and ensure that a software product or system meets its design specifications and other requirements. 
-Below, I'll guide you through the process of writing a test plan for an E Solution and provide an example.
-
-### Steps to Write a Test Plan for E Solution Software
-
-#### 1. **Test Plan Identifier**
-Provide a unique identifier for the test plan document, which can be referred back to in project documentation and change logs.
-
-#### 2. **Introduction**
-Summarize the purpose and scope of the E solution software, including what the software is intended to do and the features it includes.
-
-#### 3. **Test Items**
-List the features and functionalities that will be tested. This might include:
-- User authentication and authorization
-- Document upload and download
-- Data validation
-- Payment processing
-- Notification system
-- Integration with other systems (e.g., databases, court systems)
-
-#### 4. **Features to be Tested**
-Detail which aspects of the software will be covered by the testing effort. It's important to be specific about what is included in the scope.
-
-#### 5. **Features Not to be Tested**
-Clearly identify any features or components that are out of scope for the testing phase. This could be due to project constraints, dependencies, or risk assessments.
-
-#### 6. **Approach**
-Describe the overall testing strategy, including the types of testing to be conducted, such as:
-- Functional Testing
-- Integration Testing
-- Performance Testing
-- Security Testing
-- Usability Testing
-
-#### 7. **Item Pass/Fail Criteria**
-Define specific criteria that will determine whether a test item has passed or failed.
-
-#### 8. **Suspension Criteria and Resumption Requirements**
-Outline the criteria for suspending the testing process and the conditions under which testing can resume.
-
-#### 9. **Test Deliverables**
-List all documents and tools that will be delivered as part of the testing process, including:
-- Test cases and scripts
-- Test data
-- Test and defect reports
-- Final test report
-
-#### 10. **Testing Tasks**
-Identify specific tasks required to prepare for and perform the testing, along with responsibilities assigned to team members.
-
-#### 11. **Environmental Needs**
-Specify the necessary hardware, software, network configurations, and other resources required to set up the testing environment.
-
-#### 12. **Responsibilities**
-Assign responsibilities for each task or testing activity to team members.
-
-#### 13. **Schedule**
-Include a detailed schedule with time estimates for each activity, milestones, and deadlines.
-
-#### 14. **Risks and Contingencies**
-Identify potential risks that could impact the testing phase and outline contingency plans.
-
-#### 15. **Approval**
-Specify who will sign off on the test plan and its results, including project managers, QA leads, and other stakeholders.
-
-### Example Test Plan: E-Filing Solution Software
-
-**Test Plan Identifier**: EFilTestPlan001
-
-**Introduction**: This test plan outlines the approach for testing the E Solution, designed for law firms to submit documents electronically to courts. The system allows users to create accounts, upload documents, make payments, and receive notifications.
-
-**Test Items**:
-- User Registration and Login
-- Document Management System
-- Payment Gateway Integration
-- Notification Services
-- Dashboard and Reporting
-
-**Features to be Tested**:
-- Account creation, login, and user profile management
-- Upload, download, and delete documents
-- Validate document formats and sizes
-- Process payments and refunds
-- Generate and send notifications via email and SMS
-
-**Features Not to be Tested**:
-- Integration with external legal databases (out of scope due to access restrictions)
-
-**Approach**:
-- Functional testing for each module
-- Integration testing between payment gateway and document management
-- Load testing for handling multiple users
-- Security testing focusing on data encryption and user authentication
-
-**Item Pass/Fail Criteria**:
-- A test case will pass if all expected outcomes meet the requirements specified in the test case document.
-- A test case will fail if any expected outcome does not meet the requirements or causes the system to crash or produce an error.
-
-**Test Deliverables**:
-- Test plan document
-- Test cases
-- Test scripts
-- Test report
-
-**Environmental Needs**:
-- Windows Server 2019 for the application server
-- SQL Server 2019 for the database
-- High-speed internet connection for cloud services
-
-**Responsibilities**:
-- Project Manager: John Doe
-- QA Lead: Jane Smith
-- Test Engineers: Team A
-
-**Schedule**:
-- Test planning: Aug 1 - Aug 7
-- Test execution: Aug 10 - Sep 10
-- Final reporting: Sep 15
-
-**Risks and Contingencies**:
-- Risk: Delay in third-party payment gateway integration.
-- Contingency: Coordinate with the vendor for expedited support.
-
-**Approval**:
-- QA Lead: Jane Smith
-- Project Sponsor: John Doe
-
-This example provides a framework for what a detailed test plan could look like for an E solution. Tailor it further based on the specific requirements and circumstances of your project.
-***********************
-
-Subject: Request for Approval on Regression Testing Demonstration and Timeline Confirmation
-
-Dear [Team Lead's Name],
-
-I hope this email finds you well.
-
-During our meeting last Friday with Ahmed and Samah, Samah expressed interest in observing the regression testing for the Aaa application release 222. She inquired about the possibility of demonstrating our testing procedures to gain a better understanding of our process.
-
-I informed her that I would need to seek your approval before sharing my screen during the test. Could you please let me know if there are any concerns or restrictions regarding screen sharing for this purpose?
-
-Additionally, Ahmed mentioned his hope to complete this testing within the current week. Are there any obstacles that we should be aware of that might affect this timeline?
-
-I look forward to your approval so we can proceed accordingly.
-
-Thank you for your guidance and support.
-
-Best regards,
-
-[Your Name]
-************************
-
-Subject: Request for Rescheduling My Leave
-
-Dear [Supervisor’s Name],
-
-I hope this message finds you in good health and spirits.
-
-I would like to inform you that although last Friday was scheduled as my day off, I was unable to take the leave due to unexpected issues with the Aaa application, later identified to be related to the Bbb application. My presence was required to address these issues and to ensure that all errors were checked and Aaa was retested accordingly.
-
-In addition, I had two crucial meetings; one regarding the SSS project and another requested by Ahmed to discuss detailed aspects of our testing plan, with Samah present, who had questions and required adjustments to the plan.
-
-Unfortunately, these commitments prevented me from taking my planned leave. Consequently, I am writing to inquire if it would be possible to take my leave on the coming Wednesday instead, as I have several personal matters related to my son that need to be addressed.
-
-Thank you for your understanding and consideration.
-
-Best regards,
-
-[Your Name]
+### Test Suite sample for Bilingual Login Page
+
+#### TC01: Verify Default Language is English
+**Steps:**
+1. Navigate to the home page.
+2. Click on the login link to go to the login page.
+3. Observe the default language of the login page.
+
+**Expected Results:**
+- The login page should display in English by default.
+
+#### TC02: Verify Language Switch to French
+**Steps:**
+1. Navigate to the login page.
+2. Click on the language switch icon to change the language to French.
+3. Observe the language of the login page.
+
+**Expected Results:**
+- The login page should switch to French.
+
+#### TC03: Verify Navigation to Login Page from Home Page
+**Steps:**
+1. Navigate to the home page.
+2. Click on the login link.
+
+**Expected Results:**
+- The user should be navigated to the login page.
+
+#### TC04: Verify Sign-Out Redirects to Home Page
+**Steps:**
+1. Navigate to the login page.
+2. Click on the sign-out icon.
+
+**Expected Results:**
+- The user should be redirected to the home page.
+
+#### TC05: Verify Multi-Factor Authentication
+**Steps:**
+1. Navigate to the login page.
+2. Enter valid login credentials.
+3. Complete the multi-factor authentication process (e.g., enter the code sent to the user).
+
+**Expected Results:**
+- The user should successfully log in after completing the multi-factor authentication.
+
+#### TC06: Verify Email Icon Navigation to Portal Account Information
+**Steps:**
+1. Navigate to the login page.
+2. Click on the email icon.
+
+**Expected Results:**
+- The user should be navigated to the Portal Account Information page.
+
+#### TC07: Verify Login with Sign-In Partner
+**Steps:**
+1. Navigate to the login page.
+2. Select the "Login with a Sign-In Partner" option.
+3. Choose a trusted partner (e.g., a bank) from the list.
+4. Enter the login credentials for the selected partner.
+
+**Expected Results:**
+- The user should successfully log in using the credentials of the selected trusted partner.
+
+#### TC08: Verify Login with GCKey
+**Steps:**
+1. Navigate to the login page.
+2. Select the "Login with GCKey" option.
+3. Enter GCKey login credentials.
+
+**Expected Results:**
+- The user should successfully log in using GCKey credentials.
+
+#### TC09: Verify GCKey Registration Navigation
+**Steps:**
+1. Navigate to the login page.
+2. Select the "Login with GCKey" option.
+3. Click on the registration link for new users.
+
+**Expected Results:**
+- The user should be navigated to the GCKey registration page.
+
+#### TC10: Verify Accessibility of Bilingual Elements
+**Steps:**
+1. Navigate to the login page.
+2. Switch between English and French languages.
+3. Ensure that all elements (buttons, links, labels) are accessible and correctly translated.
+
+**Expected Results:**
+- All elements should be accessible and correctly translated in both English and French.
+
+___________________
+
+Notes for User Story
+The page is not ready for testing yet; it is still under modification.
+I am currently unable to access the login page by clicking on the green button.
+The multi-factor authentication feature is not working at the moment.
+I need a test account with GCKey and a test account with one or more Partners to fully test the feature.
+I am currently unable to test how the system handles a user with an existing account. It is not clear which page this user will be directed to, and I cannot test this scenario at the moment.
+____________________

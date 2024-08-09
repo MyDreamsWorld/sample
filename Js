@@ -1,100 +1,11 @@
+Good morning Kareem,
 
-### Test Suite sample for Bilingual Login Page
+Thank you for your guidance regarding the updates to my timesheet entries.
 
-#### TC01: Verify Default Language is English
-**Steps:**
-1. Navigate to the home page.
-2. Click on the login link to go to the login page.
-3. Observe the default language of the login page.
+I have consistently used the activity code "888" for all previous weeks as instructed. For the current week, I am awaiting approval for my compressed week request to accurately complete the timesheet based on the correct working hours.
 
-**Expected Results:**
-- The login page should display in English by default.
+I appreciate your efforts in resolving the issues with my CAS profile and look forward to any updates.
 
-#### TC02: Verify Language Switch to French
-**Steps:**
-1. Navigate to the login page.
-2. Click on the language switch icon to change the language to French.
-3. Observe the language of the login page.
+Please let me know if you need anything further from me.
 
-**Expected Results:**
-- The login page should switch to French.
-
-#### TC03: Verify Navigation to Login Page from Home Page
-**Steps:**
-1. Navigate to the home page.
-2. Click on the login link.
-
-**Expected Results:**
-- The user should be navigated to the login page.
-
-#### TC04: Verify Sign-Out Redirects to Home Page
-**Steps:**
-1. Navigate to the login page.
-2. Click on the sign-out icon.
-
-**Expected Results:**
-- The user should be redirected to the home page.
-
-#### TC05: Verify Multi-Factor Authentication
-**Steps:**
-1. Navigate to the login page.
-2. Enter valid login credentials.
-3. Complete the multi-factor authentication process (e.g., enter the code sent to the user).
-
-**Expected Results:**
-- The user should successfully log in after completing the multi-factor authentication.
-
-#### TC06: Verify Email Icon Navigation to Portal Account Information
-**Steps:**
-1. Navigate to the login page.
-2. Click on the email icon.
-
-**Expected Results:**
-- The user should be navigated to the Portal Account Information page.
-
-#### TC07: Verify Login with Sign-In Partner
-**Steps:**
-1. Navigate to the login page.
-2. Select the "Login with a Sign-In Partner" option.
-3. Choose a trusted partner (e.g., a bank) from the list.
-4. Enter the login credentials for the selected partner.
-
-**Expected Results:**
-- The user should successfully log in using the credentials of the selected trusted partner.
-
-#### TC08: Verify Login with GCKey
-**Steps:**
-1. Navigate to the login page.
-2. Select the "Login with GCKey" option.
-3. Enter GCKey login credentials.
-
-**Expected Results:**
-- The user should successfully log in using GCKey credentials.
-
-#### TC09: Verify GCKey Registration Navigation
-**Steps:**
-1. Navigate to the login page.
-2. Select the "Login with GCKey" option.
-3. Click on the registration link for new users.
-
-**Expected Results:**
-- The user should be navigated to the GCKey registration page.
-
-#### TC10: Verify Accessibility of Bilingual Elements
-**Steps:**
-1. Navigate to the login page.
-2. Switch between English and French languages.
-3. Ensure that all elements (buttons, links, labels) are accessible and correctly translated.
-
-**Expected Results:**
-- All elements should be accessible and correctly translated in both English and French.
-
-___________________
-
-Notes for User Story
-The page is not ready for testing yet; it is still under modification.
-I am currently unable to access the login page by clicking on the green button.
-The multi-factor authentication feature is not working at the moment.
-I need a test account with GCKey and a test account with one or more Partners to fully test the feature.
-I am currently unable to test how the system handles a user with an existing account. It is not clear which page this user will be directed to, and I cannot test this scenario at the moment.
-____________________
+Best regards,

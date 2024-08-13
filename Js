@@ -1,5 +1,7 @@
-Thank you for approving my Performance Testing (ISTQB) certification course request. I have completed and attached the GC211 form with all the necessary details for your review and Stephanie's subsequent signing.
+I am not familiar with the AXCH schema. However, I am ready to conduct the functional test for the xcxc application on the R1 test environment if required. I will prioritize this task over other assignments to ensure it receives the necessary attention.
 
-Please advise on how I might apply for the ISTQB Foundation Level certification for the next round.
+Please note that sending ED data is an integral part of the testing process. Thus, ED data will be transmitted as part of the test runs when executing the test scripts.
 
-Thank you again.
+In summary, I can perform the testing on the R1 environment, which will include sending the ED data.
+
+Please let me know if you would like me to proceed with this.

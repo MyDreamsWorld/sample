@@ -1,1 +1,103 @@
+### Test Suite for Bilingual Login Page
 
+#### TC01: Verify Default Language is English
+**Steps:**
+1. Navigate to the home page.
+2. Click on the login link to go to the login page.
+3. Observe the default language of the login page.
+
+**Expected Results:**
+- The login page should display in English by default.
+
+#### TC02: Verify Language Switch to French
+**Steps:**
+1. Navigate to the login page.
+2. Click on the language switch icon to change the language to French.
+3. Observe the language of the login page.
+
+**Expected Results:**
+- The login page should switch to French.
+
+#### TC03: Verify Navigation to Login Page from Home Page
+**Steps:**
+1. Navigate to the home page.
+2. Click on the login link.
+
+**Expected Results:**
+- The user should be navigated to the login page.
+
+#### TC04: Verify Sign-Out Redirects to Home Page
+**Steps:**
+1. Navigate to the login page.
+2. Click on the sign-out icon.
+
+**Expected Results:**
+- The user should be redirected to the home page.
+
+#### TC05: Verify Multi-Factor Authentication
+**Steps:**
+1. Navigate to the login page.
+2. Enter valid login credentials.
+3. Complete the multi-factor authentication process (e.g., enter the code sent to the user).
+
+**Expected Results:**
+- The user should successfully log in after completing the multi-factor authentication.
+
+#### TC06: Verify Email Icon Navigation to Portal Account Information
+**Steps:**
+1. Navigate to the login page.
+2. Click on the email icon.
+
+**Expected Results:**
+- The user should be navigated to the Portal Account Information page.
+
+#### TC07: Verify Login with Sign-In Partner
+**Steps:**
+1. Navigate to the login page.
+2. Select the "Login with a Sign-In Partner" option.
+3. Choose a trusted partner (e.g., a bank) from the list.
+4. Enter the login credentials for the selected partner.
+
+sample test case:
+
+**Expected Results:**
+- The user should successfully log in using the credentials of the selected trusted partner.
+
+#### TC08: Verify Login with userusername
+**Steps:**
+1. Navigate to the login page.
+2. Select the "Login with userusername" option.
+3. Enter GCuserusername login credentials.
+
+**Expected Results:**
+- The user should successfully log in using GCuserusername credentials.
+
+#### TC09: Verify GCuserusername Registration Navigation
+**Steps:**
+1. Navigate to the login page.
+2. Select the "Login with userusername" option.
+3. Click on the registration link for new users.
+
+**Expected Results:**
+- The user should be navigated to the GCuserusername registration page.
+
+#### TC10: Verify Accessibility of Bilingual Elements
+**Steps:**
+1. Navigate to the login page.
+2. Switch between English and French languages.
+3. Ensure that all elements (buttons, links, labels) are accessible and correctly translated.
+
+**Expected Results:**
+- All elements should be accessible and correctly translated in both English and French.
+
+I hope this message finds you well.
+
+I wanted to bring to your attention that the timesheets for May and June 2024 have not yet been approved. It appears there was an issue within the ESS system during those months, preventing the timesheets from reaching the manager’s universal worklist for approval.
+
+Based on my previous experiences with ESS, re-releasing the timesheets for these months should resolve the issue. I am confident that you will then find my timesheets for May and June 2024 in your universal worklist.
+
+Additionally, I have learned that this issue might be affecting other divisions as well. If we confirm this, I am more than willing to offer my assistance to any team members experiencing similar difficulties.
+
+Thank you for your attention to this matter.
+
+Best regards,

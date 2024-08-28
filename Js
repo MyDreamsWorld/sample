@@ -1,1 +1,44 @@
+Sick Leave Notification
 
+I hope this message finds you well.
+
+I am writing to inform you that I will need to take a sick leave today. Unfortunately, I am not feeling well, having experienced difficulty breathing and a lack of sleep last night. Given my condition, I believe it is best for me to rest and recover properly.
+
+While I am out, I will periodically check our team's chat program to see if Tom has any questions or if there are urgent matters that require my attention. Additionally, if there is a need for my involvement this Friday to complete the testing, please know that I am prepared to assist.
+
+Thank you for your understanding, and I apologize for any inconvenience this may cause. I will keep you updated on my status.
+
+--------------
+
+Subject: Update on User Stories and Meeting Availability for Friday
+
+Dear John,
+
+I hope this message finds you well.
+
+Regrettably, I need to inform you that I will not be available this Friday and will be unable to attend the scheduled meeting. I wanted to provide a brief update on the status of the three user stories we have been encountering challenges with:
+
+1. **User Story 1** is currently tested through a temporary method using a Google account, which you are aware of. Consequently, it has been moved to the blocked list due to its dependency issues.
+   
+2. **User Story 2** is not retaining new data entries and is displaying data from a different user. This issue is accompanied by several other minor bugs that need attention.
+   
+3. **User Story 3** similarly fails to retain new data inputs and shows data from another user, along with other technical concerns.
+
+For detailed information, you can refer to the links for each user story below:
+- Link 1
+- Link 2
+- Link 3
+
+I apologize for any inconvenience my absence may cause and thank you for your understanding. I wish you a pleasant weekend and look forward to catching up with you and the team on Tuesday.
+
+Best regards,
+
+________________________
+
+I hope this message finds you well.
+
+I want to take a moment to share my perspective. Your advice has been invaluable in several situations, and I truly appreciate the support you try to provide, please know that your advice has always been a source of learning for me, and I hope you will continue to offer your insights whenever I might need them.
+
+Thank you and I wish you a great day ahead.
+
+Best regards,

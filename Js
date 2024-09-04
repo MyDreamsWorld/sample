@@ -1,9 +1,1 @@
-Thank you for reaching out about the application issues. As you know, I tried contacting Tom yesterday, but he wasn't available, and he's out today as well.
 
-The good news is that yesterday's tests showed that everything is working fine and I didn't encounter any problems. After investigating, I believe the error may have resulted from not sending request number 464 at the required step to Application 2, after that, I personally intervened to resend the data when Hassan contacted me, but the error persisted even after restarting the app. However, I now suspect the delay in processing the request might have temporarily caused the error message to linger. This is just my theory, but it aligns with what I initially suspected.
-
-I will attempt to reach out to Tom when he is online tomorrow or the day after to discuss this further.
-
-As of now, Application 1 is functioning well.
-
-Thank you again for your attention to this matter and I will keep you updated on any progress we make.

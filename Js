@@ -1,9 +1,1 @@
-Following up on my previous email, I spoke with Tom this morning. He clarified the two issues in his email:
 
-The first issue involved an unexplained delay in Application 2 during the processing of the request (as we expected in the previous email).
-
-The second point noted that the request was rejected, which was the expected outcome for this particular test case.
-
-Additionally, Ahmed recently informed me that Application 2 might experience unexplained delays in processing and sending requests to Application 1 on Friday afternoons to evenings. This could potentially explain the behavior observed during last Friday's testing.
-
-I hope this clarifies the reason behind the issue we encountered.

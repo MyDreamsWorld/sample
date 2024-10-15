@@ -1,27 +1,22 @@
-Issue 1: Unauthorized Access to Clickable File Link
-Description:
-Even though the user is not logged in, the file link appears to be clickable. When the user attempts to click on the link, the application does not respond. However, a small box appears in the bottom-left corner of the screen, indicating a UI glitch or underlying issue.
+طيب، لكتابة رد محترف ولبق، يمكنك استعمال النموذج التالي:
 
-Expected Behavior:
-The file link should be disabled for users who are not logged in, preventing any interaction. The application should provide appropriate feedback, such as a tooltip or disabled cursor, to indicate that the link is not accessible without authentication.
 
-Steps to Reproduce:
+---
 
-Open the application without logging in.
-Locate the file link on the interface.
-Attempt to click on the file link.
-Observe the UI behavior (box appearing) without any response.
-Issue 2: Redirecting to Unintended XML File on Session Expiry
-Description:
-If a logged-in user’s session expires, clicking on the same clickable file link redirects the user to a different page containing an XML file. This behavior is unintended, as the user should not be able to access any files without an active session.
+Subject: Re: [نفس موضوع الرسالة الأصلية]
 
-Expected Behavior:
-When the user’s session expires, the file link should either be disabled or redirect the user to a login page instead of displaying an XML file. Proper session management and error handling should be implemented to prevent unauthorized access.
+Dear [اسم المُرسِل],
 
-Steps to Reproduce:
+Thank you for your email. I appreciate the information provided. However, I would like to seek clarification regarding one specific point: [نسخ النقطة هنا].
 
-Log in to the application.
-Let the session expire naturally or terminate it manually.
-Attempt to click on the file link again.
-Observe the redirection to an unintended XML file page.
-Let me know if you need any adjustments or additional points for these descriptions.
+Could you please provide further details or clarification on this matter?
+
+Thank you for your assistance.
+
+Best regards,
+
+[اسمك]
+
+
+---
+

@@ -1,30 +1,86 @@
-Thank you so much for this wonderful feedback! I’m really happy to hear this, and I can assure you that I always do my best to contribute effectively. One of the key reasons for this is the supportive and encouraging environment created by the team, especially under the leadership of Karim and Said. Their positive energy spreads across the entire team, making work feel less like work and more like spending time with friends.
+I hope this message finds you well. I am writing to inform you that I am leaving the company for an indeterminate position with correctional services.
 
-Thank you again, Karim, and let me say that I truly hope to keep working with you in the future!
+I want to thank you for everything sincerely. It has been an absolute honor to work with you, even though the time was short. I have learned so much from you, and working with you has been a truly rewarding experience. I was genuinely happy to be part of your team, and I hope our paths cross again in the future. 
+You have been a great inspiration to me, and I wish you all the success from my heart.
+--------------------
+Pre-Test Requirements
+
+Access:
+User Accounts: Ensure that appropriate user accounts are available for testing various application permissions (such as regular user and admin).
+System Permissions: Ensure you have the necessary permissions to access the database, servers, and any other related resources.
+Software:
+System Requirements: Ensure that the system on which the test will be conducted meets all the application's requirements in terms of operating system and configurations.
+Testing Tools: A list of testing tools to be used, such as performance analysis software or tracking tools.
+Test Settings:
+Testing Environment: Specify whether the test will be conducted in a development, testing, or live application environment.
+Network Settings: Any specific network settings, such as firewalls or internet access.
+Documentation:
+Test Plan: The test plan should be ready and clear, outlining all the steps and tests to be conducted.
+Report Templates: Ensure the availability of templates for documenting the results.
+________
+Application Testing Documentation Template
+
+Introduction
+
+Overview of the Application: A brief explanation of the application and its purpose.
+Testing Objective: What do you want to achieve with this test?
+Scope of Testing
+
+Components to be Tested: A detailed description of the parts or functions within the application that will be tested.
+Testing Exclusions: The parts that will not be included in the testing process and the reasons for these exclusions.
+Testing Environment
+
+Hardware: A list of the devices that will be used for testing.
+Software: A list of the installed system and software versions.
+Test Data: A description of the data or accounts used in the tests.
+Testing Steps
+
+Step 1: Description of what will be done in this step.
+Step 2: Same as above for this step.
+Step 3: Same process for subsequent steps...
+Test Results
+
+Expected Results: What should happen if the application is functioning correctly?
+Actual Results: What happened during the test?
+Discovered Issues: Documentation of errors or issues found.
+Recommendations and Corrective Actions
+
+Recommendations: Steps to improve the application.
+Corrective Actions: What should be done to fix the issues?
+Attachments
+
+Screenshots: Images that show the steps or errors.
+-------------
+
+Subject: Inquiry Regarding My First Week
+
+Dear [Manager's Name],
+
+I hope this email finds you well. As I’m set to join the team next week, I wanted to ask if there’s anything specific you would like me to prepare or know before I start. I also wanted to confirm a few details:
+
+What are the working hours?
+On which day of the week will I be working from the office?
+Is there parking available for employees?
+Could you please provide the exact location of the office?
+I’m looking forward to working with you and contributing to the team. Thank you for your guidance, and I’m excited to begin next week.
 
 Best regards,
+________________
 
-_______________
+Subject: Notice of Departure on December 7th
 
-Thank you so much for this wonderful feedback! I’m really happy to hear this, and I can assure you that I always do my best to contribute effectively. One of the key reasons for this is the supportive and encouraging environment created by the team, especially under the leadership of Karim and Said. Their positive energy spreads across the entire team, making work feel less like work and more like spending time with friends.
+Dear [Manager's Name],
 
-I’m also incredibly grateful and appreciative of the continuous support you all provide, giving me the opportunity to learn and train consistently.
+I hope this email finds you well. As discussed previously, I would like to formally confirm that I will be leaving the team on December 7th. This email also serves as my official two weeks’ notice, in line with the standard process.
 
-Thank you again, Karim, and let me say that I truly hope to keep working with you in the future!
-_
-Thank you so much for the great feedback! I always do my best, and the supportive environment created by Karim and Said makes it a pleasure to work here. I’m also grateful for the continuous support that allows me to keep learning and improving.
+I want to express my deepest gratitude for the opportunity to work with such an incredible team. It has been a pleasure and a rewarding experience to be part of this environment. I truly enjoyed working under the leadership of Said and Karim, whose support and guidance have had a significant impact on my personal and professional growth.
 
-Thanks again, Karim, and I look forward to working with you always!
-_______________
+Please let me know if there are any further steps or procedures I need to follow before my departure. I will do my best to ensure a smooth transition during this time.
 
-I want to take a moment to sincerely appreciate the incredible support and leadership provided by our management team. The continuous encouragement and guidance that I, as well as the entire team, receive are truly invaluable. Working under the leadership of Karim has been both a rewarding and inspiring experience. His positive approach and ability to lead by example foster a collaborative and uplifting work environment, where everyone feels valued and motivated.
+Thank you again for your support, and I look forward to staying in touch.
 
-Karim’s leadership not only encourages the team to strive for excellence but also creates a space where we are constantly learning and improving. The open communication and transparency that management upholds ensure that we feel confident in our work, knowing that we are supported every step of the way.
-
-I genuinely enjoy working with Karim and the rest of the team. Their dedication to both the team’s success and personal development has been a strong motivating factor for me. It pushes me to give my best and deliver the highest quality work possible. The enthusiasm and energy they bring to the workplace are infectious, making it feel more like a gathering of friends than just another day at work.
-
-I feel truly fortunate to be a part of such a positive and inspiring team, and I’m looking forward to continuing this journey, working together to achieve even greater successes.
-
+Best regards,
+---------------
 1 _______________________
 Step-by-Step Guide for Writing Test Cases for Acceptance Criteria and Issues:
 To create Test Cases based on the Acceptance Criteria and Issues provided, you need to:

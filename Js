@@ -4247,3 +4247,233 @@ key="tickler.allproviders"/></option>
 
 <html:options collection="providers" property="providerNo"
 
+labelProperty="formattedName" />
+
+
+</html:select></td>
+
+
+7*本本市**帝幸市帝***⁃ Old Code:
+
+
+<td class="blueText" colspan="2"><bean:message key="tickler.taskassigned"/>: <html:select
+
+
+property="filter.assignee"
+
+
+onchange="return checkTicklerDate();">
+
+
+<option value="All Providers"><bean:message,
+key="tickler.allproviders"/></option>
+
+
+<html:options collection="providers" property="providerNo
+
+
+labelProperty="formattedName"/>
+
+
+</html:select></td>
+New Updated Code:
+
+
+<td class="blue Text" colspan="2"><label for="assignee"><bean:message key="tickler.taskassigned"/>:
+</label><html:select
+
+
+property="filter.assignee
+
+
+onchange="return checkTicklerDate();" styleld="assignee">
+
+
+<option value="All Providers"><bean:message
+
+
+key="tickler.allproviders"/></option>
+
+
+<html:options collection="providers" property="providerNo
+
+
+labelProperty="formattedName"/>
+
+
+</html:select></td>
+
+
+8*本****事车***中** Old Code:
+
+
+<td class="blueText"" colspan="2"><bean:message, key="tickler.client"/>:
+
+
+~" New Updated Code:
+
+
+<td class="blueText" colspan="2" ><label for="theClientld"><bean:message
+
+
+key="tickler.client"/>:</label>
+
+
+9****:
+Old Code:
+
+
+<osamplePage:osamplePagePropertiesCheck property="clientdropbox" value="on">
+
+<html:select property="filter.xyzdg_no"
+
+
+onchange="return checkTicklerDate();">
+
+
+<option value="All Clients">All Clients</option>
+
+
+<html:options collection="xyzdgs" property="XyZdgNo
+
+
+labelProperty="formattedName"/>
+
+
+</html:select>
+
+
+</osamplePage:osamplePagePropertiescheck>
+
+
+NNA
+
+
+New Updated Code:
+
+
+<osamplePage:osamplePagePropertiesCheck property="clientdropbox" value="on">
+
+
+<html:select property="filter.xyzdg_no"
+
+
+onchange="return checkTicklerDate();" styleld="theClientld">
+
+<option value="All Clients">All Clients</option>
+
+<html:options collection="xyzdgs" property="xyzdgNo"
+
+
+labelProperty="formattedName"/>
+
+
+</html:select>
+
+
+</osamplePage:osamplePagePropertiesCheck>
+
+
+10*********枣*さ*$ Old Code:
+
+
+<osamplePage:osamplePagePropertiesCheck property="clientdropbox" value="off" defaultVal="true">
+
+
+<html:hidden property="filter.xyzdg_no"/>
+
+
+2)" size="15"/>
+
+
+<html:text property="filter.xyzdg_webName" onkeyup="filter(this.value, 'ticklersTbl',
+
+
+<span id="clear_button"><input type="button" value='<bean:message
+key="tickler.clear"/>' onclick="clearClientFilter();"/></span>
+<script language="JavaScript">showClearButton();</script>
+<! <input type="button" value="Search" onclick="search_xyzdg();"/> -->
+</osamplePage:osamplePagePropertiesCheck>
+New Updated Code
+ب٥عه
+
+<osamplePage:osamplePagePropertiesCheck property="clientdropbox"' value="off" defaultVal-"true">
+<html:hidden property="filter.xyzdg_no"/>
+
+<html:text property="filter.xyzdg_webName" onkeyup="filter(this.value, 'ticklersTbl",
+2)" size="15" styleld="theClientld" />
+
+
+<span id="clear_button"><input type="button" value='<bean:message
+key="tickler.clear"/>' onclick="clearClientFilter();" /></span>
+
+
+<script language="JavaScript">showClearButton();</script>
+
+
+<!- <input type="button" value="Search" onclick="search_xyzdg();"/>-->
+
+
+</osamelePage:osamplePagepropertiescheck>
+
+
+11***章本事来车事***** Old Code:
+
+
+<td colspan="2" class="blueText"><html:link action="CustomFilter.do"><bean:message
+
+
+key="tickler.customfilters"/>;</html:link>
+
+
+<html:select property="filter.name
+
+
+onchange="this.form.method.value='run_custom_filter"';this.form.submit();">
+<option value=""></option>
+<html:options collection="customFilters" property="name" />
+</html:select></td>
+
+~~N New Updated Code:
+
+
+<td colspan="2" class="blueText"><html:link action="CustomFilter.do"><label
+for="filterName"><bean:message key="tickler.customfilters"/>:</label></html:link>
+
+
+<html:select property="filter.name"
+
+
+onchange="this.form.method.value='run_custom_filter";this.form.submit();'
+
+
+Styleld="filterName">
+
+
+<option value=""></option>
+
+
+<html:options collection="customFilters" property="name" />
+
+
+</html-select></td>
+
+
+12******车家事****さ Old Code:
+
+
+<td><input type="button" value='<bean:message key="tickler.createreport"/>"
+
+
+onclick="return checkTicklerDate();"/></td>
+
+
+New Updated Code:
+
+
+<td><input type="submit" value='<bean:message key="tickler.createreport"/>
+onclick="return checkTicklerDate();"/></td>
+13**********旁*** Old Code:
+
+
+</table>

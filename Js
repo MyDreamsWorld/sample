@@ -1846,3 +1846,2404 @@ MNN New Updated Code:
 
 <td><input type="text"" name="startDate" id="expAllStartDate" /><br/>(<bean:message
 key="admin.dateformat"/>)</td>
+7*米来来半半*半半字*米米* Old Code:
+
+
+<td><input type="text" name="endDate" /><br />(<bean:message key="admin.dateformat"/>)</td>
+
+
+~ New Updated Code:
+
+
+<td><input type="text" name="endDate" id="expAllEndDate" /><br />(<bean:message,
+key="admin.dateformat"/>)</td>
+
+
+8************** Old Code:
+
+
+<tr>
+
+
+<td><bean:message key="activityreport.program"/></td>
+<td><bean:message key="activityreport.roles"/></td>
+<td><bean:message key="activityreport.startdate"/></td>
+<td><bean:message key="activityreport.enddate"/></td>
+
+
+</tr>
+
+
+~" New Updated Code:
+
+
+<tr>
+<td><label for="programlds"><bean:message
+key="activityreport.program"/></label></td>
+
+
+<td><label for="secRoleld"><bean:message key="activityreport.roles"/></label></td>
+
+
+<td><label for="expByRoleStartDate"><bean:message
+key="activityreport.startdate"/></label></td>
+
+
+<td><label for="expByRoleEndDate"><bean:message,
+
+
+key="activityreport.enddate"/></label></td>
+
+
+</tr>
+
+
+9*本丰半半李李来来*来来来* Old Code:
+
+
+<select name="programlds" multiple="multiple" style="width:16em;height:6em">
+
+
+~"" _ New Updated Code:
+
+
+<select name="programlds" id="programlds" multiple="multiple" style="width:16em;height:6em">
+10****事*率车车革**** Old Code:
+
+
+<select name="secRoleld">
+
+
+~" New Updated Code:
+
+
+<select name="secRoleld" id="secRoleld">
+11*来*米津车*来*来来来来* Old Code:
+
+
+<td><input type="text" name="startDate" /><br />(<bean:message, key="admin.dateformat"/>)</td>
+
+~" New Updated Code:
+
+
+<td><input type="text" name="startDate"id="expByRoleStartDate" /><br/><<bean:message
+key="admin.dateformat"/></td>
+
+
+12***事****枣***** Old Code:
+
+
+<input type="text"' name="endDate" />
+
+
+"~_ New Updated Code:
+
+
+<input type="text" name="endDate" id="expByRoleEndDate" />
+
+
+15_ Page15
+
+
+1**家*事*童**を家**事 Old Code:
+
+
+<tr>
+
+
+<th><bean:message key="pm.clientno"/></th>
+
+
+<td><html:text property="criteria.xyzdgNo" size="15" /></td>
+
+</tr>
+
+
+~~ New Updated Code:
+
+
+<tr>
+
+
+<th><label for="xyzdgNo"><bean:message key="pm.clientno"/></label></th>
+
+
+<td>
+
+
+<html:text property="criteria.xyzdgNo" styleld="xyzdgNo" size="15" />
+
+
+</td>
+
+
+</tr>
+2***东旁*事*事车**** Old Code:
+
+
+<tr>
+
+
+<th><bean:message key="pm.firstname"/></th>
+
+
+<td><html:text property="criteria.firstName" size="15" /></td>
+
+
+</tr>
+
+
+~ New Updated Code:
+
+
+<tr>
+
+
+<th><label for="firstName"><bean:message key="pm.firstname"/></label></th>
+
+
+<td>
+>
+
+
+</td>
+
+
+</tr>
+
+
+Old Code:
+
+
+<tr>
+
+
+<th><bean:message key="pm.lastname"/></th>
+
+
+<td><html:text property="criteria.lastName" size="15" /></td>
+
+
+</tr>
+
+
+New Updated Code:
+
+
+<tn>
+
+
+<th><label for="lastName"><bean:message key="pm.lastname"/></label></th>
+
+
+<td>
+
+
+<html:text property= "criteria.last Name" size="15" styleld="lastName"
+
+
+/>
+
+</td>
+
+
+</tr>
+
+
+4***本米本来来米来来来来来 Old Code:
+
+
+<tr>
+
+
+<th><bean:message key="pm.dateofbirth"/></th>
+
+
+<td><html:text property="criteria.dob" size="15" /><br/><font
+size="1"><bean:message key="pm.dateformat"/></font></td>
+
+
+</tr>
+
+
+~~~ New Updated Code:
+
+
+<tr>
+
+
+<th><label for="dob"><bean:message key="pm.dateofbirth"/></label></th>
+
+
+<td>
+
+
+<html:text property="criteria.dob" size="15" styleld="dob" />
+
+
+<br/>
+
+
+<font size="1"><bean:message key="pm.dateformat"/></font></td>
+
+
+</tr>
+
+
+5**本**率车帝帝**率** Old Code:
+
+
+<td><html:text property="criteria.hCardN" size="15" />
+
+<html:text property="criteria.hCardV" size="2" /></td>
+
+
+~" New Updated Code:
+
+
+<td><html:text property="criteria.hCardN" size="15" title="Health Card Number" />
+
+
+<html:text property="criteria.hCardV" size="2" title="Health
+
+
+Card Version" /></td>
+
+
+6**事*去**车事を***さ Old Code:
+
+
+<tr>
+
+
+<th>x<bean:message key="pm.chartno"/></th>
+
+
+<td><html:text property="criteria.chartNo" size="15" /></td>
+
+
+</tr>
+
+
+~"" New Updated Code:
+
+
+<tr>
+
+
+<th><label for="chartNo"><bean:message key="pm.chartno"/></label></th>
+
+
+<td>
+<html:text property="criteria.chartNo" size="15" styleld="chartNo" />
+
+
+</td>
+
+
+</tr>
+
+
+7*帝车**本亲率卒*车ま枣* Old Code:
+
+
+<th><bean:message key="pm.searchallclients"/><a href="javascript:void(0)"
+
+
+onclick="popupHelp('domain")">?</a></th>
+
+
+New Updated Code:
+
+
+<th><label for="searchUsingSoundex"><bean:message, key="pm.soundexonnames"/></label><a
+href-"iavascript:void(0)"
+
+
+onclick="popupHelp('soundex")">?</a></th>
+
+
+8*车*车车车车车车车车车** Old Code:
+
+
+<td><html:checkbox property="criteria.searchOutsideDomain" /></td>
+
+
+^" New Updated Code:
+
+
+<td>
+
+styleld="searchUsingSoundex" />
+
+
+<html:checkbox property="criteria.searchUsingSoundex"/>
+</td>
+
+
+9*半*车米半来来来车来来来来 Old Code:
+
+
+<tr>
+
+
+<th><bean:message key="pm.admissiondatefrom"/></th>
+
+
+<td><html:text property="criteria.dateFrom" size="12" /><br/><font
+size=""><bean:message key="pm.dateformat"/></font></td>
+
+
+</tr>
+
+
+~^ New Updated Code:
+
+
+<th><label for="dateFrom"><bean:message.
+
+
+key="pm.admissiondatefrom"/></label></th>
+
+
+<td>
+
+
+styleld="dateFrom" />
+
+
+<html:text property="criteria.dateFrom" size="12"
+
+<br/><font size="1"><bean:message
+
+
+key="pm.dateformat"/></font></td>
+
+
+</tr>
+10*米本幸米学米*李桌来*** Old Code:
+
+
+<tr>
+
+
+<th><bean:message key="pm.admissiondateto"/></th>
+
+
+<td><html:text property="criteria.dateTo" size="12" /><br/><font
+size="1"><bean:message key="pm.dateformat"/></font></td>
+
+
+</tr>
+
+
+~"_ New Updated Code:
+
+
+<tr>
+
+
+<th><label for="dateTo"><bean:message
+key="pm.admissiondateto"/></label></th>
+
+
+<td>
+
+
+styleld="dateTo" />
+
+
+<html:text property="criteria.dateTo" size="12"
+
+
+<br/><font size="1"><bean:message
+
+
+key="pm.dateformat"/></font>
+
+
+</td>
+
+</tr>
+
+
+11*#************ old Code:
+
+
+<td><html:select property="criteria.active">
+
+
+<html:option value="1"><bean:message
+
+
+key="pm.admitted"/></html:option>
+
+
+<html:option value="0"><bean:message
+
+
+key="pm.discharged"/></html:option>
+
+
+<html:option value=""><bean:message key="pm.all"/></html:option>
+
+
+</html:select></td>
+
+
+"~ New Updated Code:
+
+
+<td><html:select property="criteria.active" title="Status">
+
+
+<html:option value=""><bean:message
+key="pm.admitted"/></html:option>
+
+
+<html:option value="0"><bean:message
+key="pm.discharged"/></html:option>
+
+<html:option value=""><bean:message key="pm.all"/></html:option>
+
+
+</html:select></td>
+
+
+12**章*$事******* Old Code:
+
+
+<td><html:select property="criteria.gender">
+
+
+<html:option value=""><bean:message key="pm.none"/></html:option>
+
+
+<html:option value="F"><bean:message
+key="pm.female"/></html:option>
+
+
+<html:option value="M"><bean:message
+key="pm.male"/></html:option>
+
+
+<html:option value="T"><bean:message
+key="pm.transgender"/></html:option>>
+
+
+</html:select>x/td>
+
+
+~"" New Updated Code:
+
+
+<td><html:select property="criteria.gender" title="Gender">
+
+
+<html:option value=""><bean:message key="pm.none"/></html:option>
+<html:option value="F"><bean:message
+
+
+key="pm.female"/></html:option>
+key="pm.male"/></html:option> <html:option value="M"><bean:message
+
+<html:option value="T"><bean:message
+key="pm.transgender"/></html:option>>
+
+
+</html:select></td>
+
+
+13*来米米**中来米来来来来来 Old Code:
+
+
+~" New Updated Code:
+
+
+14本**米米来*米*米来*辛* Old Code:
+
+
+~^ New Updated Code:
+
+
+16_Page16
+
+
+1***米**米米***米来*
+
+
+Old Code:
+<a href-"javascript:void(0)" onclick="popupHelp('program_domain'")">?</a>
+
+
+~" New Updated Code:
+
+
+<a role="button" title="More details" onclick="popupHelp('program_ domain')">?</a>
+
+
+2幸本米来米米*米荣来来*来来 Old Code:
+
+
+<%1%
+
+
+<display:column property="role.name" sortable="true" title="$(pm.role" />
+
+
+~~~ New Updated Code:
+
+
+<%) %
+
+
+<!-Accessibility Notes: sortable had to be set as false in order to avoid empty link tag
+(Anchor element found with a valid href attribute, but no link content has been supplied. Refer
+to https://www.w3.org/TR/WCAG20-TECHS/H91)_-->
+
+
+<display:column property="role.name" sortable="false" title="$(pm.role" />
+
+
+3************** Old Code:
+
+
+</display:column>
+
+
+<display:column property="description" sortable="true"
+title="$(facilitydescription]" />
+
+N^ New Updated Code:
+
+
+<l-- Accessibility Notes: sortable had to be set as false in order to avoid empty link tag
+
+
+(Anchor element found with a valid href attribute, but no link content has been supplied. Refer
+to https://www.w3.org/TR/WCAG20-TECHS/H91)_ -->
+
+
+<display:column property="description" sortable="false"
+
+
+title="$(facilitydescription_" />
+
+
+17 Page17
+
+
+1********车***** Old Code:
+
+
+<td>
+
+
+<a href="<%=ur|%>" title="Go to latest form" target="_ blank"><img
+src-"<%=request.getContextPath()%>/images/notepad.gif" border="0"></a>
+
+</td>
+
+
+~~ New Updated Code:
+
+
+<td>
+
+
+<a href="<%=ur!%>" title="Go to latest form" target="_ blank"><img alt=""The image of a notepad"
+src-"<%=-request.getContextPath(%>/images/notepad.gif" border=""" ></a>
+
+
+</td>
+
+
+18_Page18
+
+
+卫******事*事旁车*** Old Code:
+
+
+<form method="post"' name="findprovider"
+onSubmit-"findProvider(<%=year%>,<%=month%>, <%=day%>);return false;" target="apptReception'
+action="rFP.jsp">
+
+
+<td align="right" valign="bottom">
+
+
+<caisi:isModuleLoad moduleName="TORONTO_ RFQ" reverse="true">
+
+
+<INPUT TYPE="text"' NAME="providername" VALUE="" WIDTH="2" HEIGHT="10" border="0" size="10"
+
+
+maxlength-"10">
+
+
+<INPUT TYPE="SUBMIT" NAME="Go" VALUE='<bean:message key="receptionist.rFPbtnGo"/>"
+onClick="findProvider(<%=year%>,<%=month%>,<%=day%>);return false;">
+&nbsp;&nbsp,
+
+
+</caisi:isModuleLoad>
+
+
+~~~ New Updated Code:
+
+
+<td align="right" valign="bottom">
+
+
+<form method="post" name="findprovider'
+onSubmit="findProvider(<%=year%>,<%=month%>, <%=day%>);return false;" target="apptReception"
+action="rFP.jsp">
+
+
+<caisi:isModuleLoad moduleName="TORONTO RFQ" reverse="true">
+
+
+<INPUT TYPE="text"' NAME="providername" VALUE="" WIDTH="2" HEIGHT="10" border="0" size="10"
+maxlength="10" title="Enter keywords" />
+
+
+<INPUT TYPE="SUBMIT" NAME="Go" VALUE='<bean:message key="receptionist.rFPbtnGo"/>"
+onClick="findProvider(<%=year%>, <%=month%>,<%=day%>);return false;" />
+
+
+&nbsp;&nbsp;
+
+
+</caisi:isModuleLoad>
+
+
+2**本****率车**** Old Code:
+</td>
+
+
+</form>
+
+
+~^ _New Updated Code:
+
+
+</form>
+
+
+</td>
+
+
+3*本本来*李米本幸来来来来来 Old Code:
+
+
+<form name="appointmentForm">
+
+
+<table BORDER="0" CELLPADDING="1" CELLSPACING="0" WIDTH="100%" BGCOLOR="#COCOC0">
+
+
+~~ New Updated Code:
+
+
+<form name="appointmentForm">
+
+
+<!- Accessibility Notes: the hidden button below is just a hack - ideally, this form should contain a
+submit button- refer to: https://www.w3.org/TR/WCAG20-TECHS/H32 -->
+
+
+<button name="ignore" value="ignore" style="visibility: hidden">lgnore</button>
+
+
+<table BORDER="O" CELLPADDING="1" CELLSPACING="0" WIDTH="100%" BGCOLOR="#COCOCO">
+
+
+Old Code:
+
+
+<caisi:isModuleLoad moduleName="ticklerplus" reverse="true">
+
+<a href-"#" onClick="popupPage(700,1024,
+./'tickler/ticklerDemoMain.jsp?demoview=<%=xyzdg_no%>");return false;" title="<bean:message
+key="provider.ticklerMsg"/>: <%=UtilMisc.htmlEscape(tickler_note)%>"><font color="red">!</font></a>
+
+
+</caisi:isModuleLoad>
+
+
+<caisi:isModuleLoad moduleName="ticklerplus">
+
+
+<l- <a
+href="../Tickler.do?method=filter&filter.client=<%=xyzdg_no %>" title="<bean:message,
+key="provider.ticklerMsg"/>: <%=UtilMisc.htmlEscape(tickler_note)%>"><font color="red">!</font></a>
+
+
+->
+
+
+<a href="#" onClick="popupPage(700,1024,
+./Tickler.do?method=filter&filter.client=<%=xyzdg_no %>');return false;" title="<bean:message
+key="provider.ticklerMsg"/>: <%=UtilMisc.htmlEscape(tickler_note)%>"><font color="red">!</font></a>
+
+
+</caisi:isModuleLoad>
+
+
+~~~ _ New Updated Code:
+
+
+<caisi:isModuleLoad moduleName="ticklerplus" reverse="true">
+
+
+<a href="#" onClick="popupPage(700,1024,
+./tickler/ticklerDemoMain.jsp?demoview=<%=xyzdg_no%>");return false;" title="<bean:message
+key="provider.ticklerMsg"/>: <%=UtilMisc.htmlEscape(tickler_note)%>"><font
+color="#b90000">!</font:></a>
+
+</caisi:isModuleLoad>
+
+
+<caisi:isModuleLoad moduleName="ticklerplus">
+
+
+<!- <a
+href-"../Tickler.do?method=filter&filter.client=<%=xyzdg_no %>" title="<bean:message
+
+
+key="provider.ticklerMsg"/>: <%=UtilMisc.htmlEscape(tickler_note)%>"><font
+color="#b90000">!</font></a>-->
+
+
+<a href="#" onClick="popupPage(700,1024,
+:/Tickler.do?method=filter&filter.client=<%=xyzdg_no %>');return false;" title="<bean: message
+key="provider.ticklerMsg"/>: <%=UtilMisc.htmlEscape(tickler_note)%>"><font
+color="#b90000">!</font></a>
+
+
+</caisi:isModuleLoad>
+
+
+19_Page19
+
+
+1*******本****** Old Code:
+
+
+<table border="1" cellpadding="""
+
+
+bgcolor="<%=userAvail?"#486ebd":"silver"%>" cellspacing="0"
+
+
+width="100%"">
+
+
+~N New Updated Code:
+
+
+<table border="1" cellpadding="0"
+
+bgcolor-"<%=userAvail?"#4d73c2":"silver"%>" cellspacing="0"
+
+
+width="100%">
+
+
+2*帝*米半冻米来来来米求求来 Old Code:
+
+
+<img src-"./images/todo.gif" border=""" height="10"
+
+
+title="appointment"> <% if(xyzdg_no==0) (
+if (tickler_no.compareTo("") != 0) ( %> <caisi:isModuleLoad
+moduleName="ticklerplus" reverse="true">
+
+
+~" _ New Updated Code:
+
+
+<img src="../images/todo.gif" border="0" height="10"
+
+
+if(xyzdg_no==0)(
+
+
+title="appointment"' alt="An image of a folder"> <%
+
+
+if (tickler_no.compareTo("") != 0) ( %> <caisi:isModuleLoad
+
+
+moduleName="ticklerplus"' reverse="true">
+
+3,4,5,6************** Old Code: 4 times||
+
+
+<font color="red">!</font></a>
+
+
+~^ New Updated Code:
+
+
+<font color="#b90000">!</font></a>
+
+
+20_Page 20
+
+
+1**车车来事本本本本**** Old Code:
+
+
+<b><bean:message key="osamplePageEnc.program.title"/>:</b>
+
+
+"_ New Updated Code:
+
+
+<label for="bedprogram_no"><bean:message key="osamplePageEnc.program.title"/>:</label>
+
+
+2*本本本京亲来车本本本革** Old Code:
+
+
+<b><bean:message key="osamplePageEnc.program.title"/>x</b>
+
+
+~"" New Updated Code:
+
+
+<label for="bedprogram_no"><bean:message key="osamplePageEnc.program.title"/>:</label>
+
+
+3**来**卒***事**** Old Code:
+
+
+<select id="program _clientstatus" name="program_clientstatus"
+onchange="submitStatus(this)">
+
+
+~ New Updated Code:
+
+
+<select id="program_clientstatus" name="program_ clientstatus'
+
+
+onchange="submitStatus(this)" title="Client Status">
+
+
+21 Page21
+
+
+1**米米*李来来来来来来来来 Old Code:
+
+
+<bean:message key="provider.preference.formStartHour" />
+
+
+~~"_ New Updated Code:
+
+
+<label for="startHour"><bean:message key="provider.preference.formStartHour" /></label>
+2****ss**ss*** Old Code:
+
+
+<INPUT TYPE="TEXT" NAME="start_hour" VALUE='<%=request.getParameter("start_hour")%>' size="2"
+
+
+maxlength="2">
+
+~N_ New Updated Code:
+
+
+<INPUT TYPE="TEXT" NAME="start _hour" id="startHour
+VALUE-'<%=request.getParameter("start_hour")%>' size="2" maxlength="2">
+
+
+3********事事**** Old Code:
+
+
+<bean:message key="provider.preference.formEndHour"/>
+
+
+~~~ New Updated Code:
+
+
+<label for="endHour"><bean:message key="provider.preference.formEndHour" /></label>
+
+
+Old Code:
+
+
+<INPUT TYPE="TEXT" NAME="end_hour" VALUE=*<%-request.getParameter("end_hour")%>"size="2"
+
+
+maxlength-""">
+
+
+~~" New Updated Code:
+
+
+<INPUT TYPE="TEXT" NAME="end_hour" id="endHour"
+VALUE=*<%=request.getParameter("end_hour")%>' size="2" maxlength="2">
+
+
+5*平*本***事事を*率** Old Code:
+
+
+<bean:message key="provider.preference.formPeriod" />
+
+
+~N New Updated Code:
+
+
+<label for="everyMin"><bean:message key="provider.preference.formPeriod" /></label>
+
+
+6************** Old Code:
+
+<INPUT TYPE-"TEXT" NAME-"every_min" VALUE-'<%=reguest.getParameter("every_min")%>`' size="2"
+
+
+maxlength="">
+
+
+MN New Updated Code:
+
+
+<INPUT TYPE="TEXT" NAME="every_ min" id="everyMin"
+VALUE='<%=-request.getParameter("every_min")%>" size="2" maxlength="2">
+
+
+7*米************ Old Code:
+
+
+<bean:message key="provider.preference.formGroupNo" />
+
+
+~~ New Updated Code:
+
+
+<label for="mygroupNo"><bean:message key="provider.preference.formGroupNo" /></label>
+
+
+8**本车车*求求**本*** Old Code:
+
+
+<INPUT TYPE-"TEXT" NAME="mygroup _no" VALUE='<%=request.getParameter("mygroup_no")%>"
+
+
+size="12" maxlength="10">
+
+
+~~ New Updated Code:
+
+
+<INPUT TYPE="TEXT" NAME="mygroup_no" id="mygroupNo"
+VALUE= <%=request.getParameter("mygroup_no")|%>" size="12" maxlength="10">
+
+
+g**********来*** Old Code:
+
+<bean:message key="provider.preference.formProgram" />
+
+
+M New Updated Code:
+
+
+<label for="program_id"><bean:message key="provider.preference.formProgram" /></label>
+10*幸*米***辛来来来来** Old Code:
+
+
+<bean:message key="pref.newticklerwarningwindow"/>
+
+
+~~_ New Updated Code:
+
+
+<label id="IblNewTicklerWarningWindow."><bean:message
+key="pref.newticklerwarningwindow"/></label>
+
+
+11幸米米米*本车来来来来米*来 Old Code:
+
+
+<input type="radio" name="new _ tickler _ warning_window" value="enabled" <%= myCheck1 %>>
+<bean:message key="pref.enabled"/>
+
+
+~~" New Updated Code:
+
+
+<input type="radio" name="new_tickler _ warning_ window" value="enabled" <%= myCheck1 %> aria-
+labelledby="IbINewTicklerWarningWindow"> <bean:message key="pref.enabled"/>
+
+
+12**来本来亦来率来**来常* Old Code.:
+
+
+<input type="radio" name="new_tickler _ warning_window" value="disabled" <%= myCheck2 %>>
+
+
+<bean:message key="pref.disabled"/>
+
+
+~~" New Updated Code:
+<input type="radio" name="new_tickler _warning_ window" value="disabled" <%= myCheck2 %> aria-
+labelledby="IblNewTicklerWarningWindow"> <bean:message key="pref.disabled"/>
+
+
+13************** Old Code:
+
+
+<bean:message key="pref.defaultpmm"/>
+
+
+~~ New Updated Code:
+
+
+<label id="|blDefaultPMM"><bean:message key="pref.defaultpmm"/></label>
+
+
+14****章*事*事***** Old Code:
+
+
+<input type="radio" name="default_pmm" value="enabled" <%= myCheck3 %>> <bean:message
+
+
+key="pref.enabled"/>
+
+
+~~ _ New Updated Code:
+
+
+<input type="radio" name="default _pmm" value="enabled" <%= myCheck3 %> aria-
+labelledby="IbIDefaultPMM"> <bean:message key="pref.enabled"/>
+
+
+15****牢事*率率事**** Old Code:
+
+
+<input type="radio" name="default_pmm" value="disabled" <%= myCheck4 %>> <bean:message
+
+
+key="pref.disabled"/>
+
+
+~N New Updated Code:
+<input type="radio" name="default _pmm" value="disabled" <%= myCheck4 %> aria-
+labelledby="IblDefaultPMM"> <bean:message key="pref.disabled"/>
+16**来**率*来车来米*来来 Old Code:
+<bean:message key="provider.btnCaisiBillPreferenceNotDelete"/>
+~ New Updated Code:
+
+
+<label id="|blCaisiBillPreferenceNotDelete"><bean:message
+key="provider.btnCaisiBillPreferenceNotDelete"/></label>
+
+
+17*****事*を****** Old Code:
+
+
+<input type="radio" name="caisiBillingPreference NotDelete" value="1" <%= myCheck5 %> >
+<bean:message key="pref.enabled"/>
+
+
+^" New Updated Code:
+
+
+<input type-"radio" name="caisiBillingPreferenceNotDelete" value="1" <%= myCheck5 %> aria-
+labelledby="IblCaisiBillPreferenceNotDelete"> <bean:message key="pref.enabled"/>
+18*********事**** Old Code:
+
+
+<input type="radio" name="caisiBillingPreferenceNotDelete" value="0" <%= myCheck6 %> >
+<bean:message key="pref.disabled" />
+
+
+~"" New Updated Code:
+
+
+<input type="radio" name="caisiBillingPreferenceNotDelete" value="0" <%= myCheck6 %> aria-
+
+
+labelledby="lblCaisiBillPreferenceNotDelete"> <bean:message key="pref.disabled"/>
+
+19米*来米*来* *本车车车** Old Code:
+
+
+<bean:message key="provider. providerpreference.qrCodeOnPrescriptions" />
+
+
+~~ New Updated Code:
+
+
+<label for="prescriptionQr Codes"><bean:message
+key="provider.providerpreference.qrCodeOnPrescriptions" /></label>
+20*本来*李李亲来李来来来车来 Old Code:
+
+
+<input type="checkbox" name="prescriptionQrCodes" <%=checked?"checked=I"checked\"":""%> />
+
+
+~~~_ New Updated Code:
+
+
+<label for="prescriptionQrCodes"><bean:message
+
+
+key="provider.providerpreference.grCodeOnPrescriptions""/></label>
+
+
+21*幸*车旁齐事*卒**を** Old Code:
+
+
+<input type="checkbox" name="prescriptionOrCodes" <%-checked?"checked=I"checked\"":""%> />
+
+
+~~ New Updated Code:
+
+
+<input type="checkbox" name="prescriptionOrCodes" id="prescriptionOr Codes"'
+<%6=checked?"checked=I"checked\"""%> />
+
+22*普米半亦率本来来来米车来来 Old Code:
+
+
+<bean:message key="provider.providerpreference.appointmentScreenLinkNameDisplayLength" />
+
+
+~"_ New Updated Code:
+
+
+<label for="appointmentScreenFormsNameDisplayLength"><bean:message
+
+
+key="provider.providerpreference.appointmentScreenLinkNameDisplayLength" /></label>
+
+
+23*米米米*亦来来来来来来来* Old Code:
+
+
+<input type="text" name="appointmentScreenForms Name DisplayLength'
+value='<%=providerPreference.getAppointmentScreenLinkNameDisplayLength()%>' size="2">
+
+
+~^ New Updated Code:
+
+
+<input type="text" name="appointmentScreen FormsNameDisplayLength
+id-"appointmentScreenFormsNameDisplayLength'
+value=*<%=providerPreference.getAppointmentScreenLinkNameDisplayLength(%>" size="2">
+
+
+24****率事*事车率**** Old Code:
+
+
+<bean:message key="provider.providerpreference.formsToDisplayOnAppointmentScreen"/>
+
+
+~~_ New Updated Code:
+
+
+<label id="|blFormsToDisplayOnAppointmentScreen"><bean:message
+
+
+key="provider.providerpreference.formsToDisplayOnAppointmentScreen" /></label>
+
+
+25*幸**车***幸***** Old Code:
+
+
+<input type="checkbox" name="EncFormName" value="<%=nameEscaped%>" <%=checkedString%>/>
+<%-namefscaped%>
+
+
+~~ New Updated Code:
+
+
+<input type="checkbox" name="EncFormName" aria-
+labelledby="IblFormsToDisplayOnAppointmentScreen" value="<%=nameEscaped%>"
+<%=checkedString%>/> <%=nameEscaped%>
+
+
+26*本*本车章车*卒车本**⁃ Old Code:
+
+
+<bean:message key="provider.providerpreference.eFormsToDisplayOnAppointmentScreen" />
+
+
+~~ New Updated Code:
+
+
+<label id="IbleFormsToDisplayOnAppointmentScreen"><bean:message
+key="provider.providerpreference.eFormsToDisplayOnAppointmentScreen" /></label>
+
+
+Old Code:
+
+
+<input type="checkbox" name="eformld" value="<%=eform.getld()%>" <%=checkedString%> />
+<%=StringEscapeUtils.escapeHtml(eform.getFormName()%>
+^^ New Updated Code:
+<input type="checkbox" name="eformld" aria-labelledby="|bleFormsToDisplayOnAppointmentScreen"
+value="<%=eform.getld()%>" <%=checkedString%>/>
+<%=StringEscapeUtils.escapeHtml(eform.getFormName()%>
+
+
+28*本*本*本*本***车** Old Code:
+
+
+<tr>
+
+
+<td style="border:none;text-align:right"><bean:message key="NAME"/></td>
+
+
+<td style=""border:none"><input type="text" name="quickLinkName" /></td>
+
+
+</tr>
+
+
+~~ New Updated Code:
+
+
+<tr>
+
+
+<td style="border:none;text-align:right"><label for="quickLinkName"><bean:message
+key="NAME"/></label></td>
+
+
+<td style="border: none"><input type="text" name-"quickLinkName" id="guickLinkName" /></td>
+
+
+</tr>
+
+
+29*车*章市事率*车**產** Old Code:
+
+
+<td style="border:none;text-align:right;vertical-align:top"><bean:message key="URL"/></td>
+N^ New Updated Code:
+
+
+<td style="border: none;text-align:right;vertical-align:top"><label for="guickLinkUrl"><bean:message
+key="URL"/></label></td>
+30*来米**来米米来*来米米来 Old Code:
+
+
+<input type="text" name="quickLinkUrl"/>
+
+
+NNN
+
+
+New Updated Code:
+
+
+..
+
+
+<input type="text" name="quickLinkUrl" id="quickLinkUr!" />
+1******来来*来*来来来 Old Code:
+
+
+<bean:message key="provider.providerpreference.rxInteractionWarningLevel" />
+
+
+~~_ New Updated Code:
+
+
+<label for="rxInteraction WarningLevel"><bean:message
+key="provider.providerpreference.rxlnteractionWarningLevel"/></label>
+
+
+22_Page22
+
+
+1***事事*事*中***** Old Code:
+<img src-*k<osamplePage:flledScratch providerNo-"<'%-curUser_no%>"></osamplePage:flledscratch>
+border='0' align="absbottom" title="<bean:message key="scratch.scratch"/>">
+
+
+~~~ New Updated Code:
+
+
+<img alt-"An image of a notepad" src- <osamplePage: flledScratch
+providerNo="<%-curUser_no%>"></osamplePage:filledScratch>' border= '0" align="absbottom"
+title="<bean:message key="scratch.scratch"/>">
+
+
+23_Page Receptionist (Appointment Receptionist Admin Day Page):src\main\webapp\receptionist\rFPjsp
+
+
+Old Code:
+
+
+<form method="post" name="findprovider'
+
+
+onSubmit="findProvider(<%=year%>,<%=month%>,<%=day%>);return false;"
+
+
+target-"apptReception" action="rFP.jsp">
+
+
+<td align="right" valign="bottom"><INPUT TYPE="text"
+
+
+NAME="providername" VALUE="" WIDTH="2" HEIGHT-"10" border="0"
+
+
+size="10" maxlength="10"> <INPUT TYPE="SUBMIT" NAME="Go"
+
+
+VALUE='<bean:message, key="receptionist.rFPbtnGo"/>"
+
+
+onClick="findProvider(<%=year%>,<%=month%>,<%=day%>);return false;"">
+</td>
+
+
+</form>
+
+
+^ New Updated Code:
+
+
+<td align="right" yalign="bottom">
+
+
+<form method="post" name="findprovider"
+onSubmit-"findProvider( <%=year%>, <%=month%>,<%=day%>);return false;"' target="apptReception"
+
+
+action="rFPjsp">
+
+
+<INPUT TYPE="text" NAME="providername" VALUE=""" WIDTH="2" HEIGHT="10"
+border="0" size="10" maxlength="10" title="Enter keywords">
+
+
+<INPUT TYPE="SUBMIT" NAME="Go" VALUE-'<bean:message
+key="receptionist.rFPbtnGo"/>' onClick="findProvider(<%=year%>,<%=month%>, <%=day%>);return
+
+
+false;">
+
+
+</form>
+
+
+</td>
+24_Page24
+
+
+1**米米米率*李冻来来米求* Old Code:
+
+
+<body class=-"BodyStyle">
+
+
+<table class="MainTable" id="scrollNumber1">
+
+
+~ New Updated Code:
+
+
+<body class="BodyStyle"">
+
+
+<!- Accessibility Notes: there were a number of form inputs that were outside the form itself. Therefore,
+moved the form to the beginning of the page to include all the inputs. >
+
+
+<form id="scratch" action="">
+
+
+<table class="MainTable" id="scrollNumber1">
+
+
+2*车车车李亲部车率车车*** Old Code:
+
+
+<td class="MainTableLeftColumn" valign="top" id="tablelle"
+
+
+style="height: 100%"><input type="button"
+
+
+onclick="checkScratch()" id="savebutton"" value="<bean:message key="scratch.save" />" /></td>
+
+
+~ New Updated Code:
+
+
+<td class="MainTableLeftColumn" yalign="top" id="tablelle"
+
+
+style="height: 100%"><input type="submit"
+
+
+onclick="checkScratch()" id="savebutton" value="<bean:message key="scratch.save" />"/></td>
+*
+
+
+* Old Code:
+
+
+<td valign-"top" class="MainTableRightColumn">
+
+
+<form id="scratch" action=""><input type="hidden"
+
+
+name="providerNo" value-"<%=user_no%>"/> <input type="hidden"
+
+
+name="id" id="curr _id" value="<%=id%>"/> <input type="hidden"
+
+
+name="windowld" id="windowld" value="<%=uuid%>" /> <input
+
+
+type="hidden" name="dirty" value="0" id="dirty" /> <textarea
+
+
+name="scratchpad" id="thetext" style-"width: 100%" rows="50"
+
+
+cols="50" onkeypress="javascript: setDirty()"
+
+
+onkeydown-"javascript: catchDel(event)"><%=text%></textarea> <textarea
+
+
+style="display: none;"" id="log" rows="100" cols="100"></textarea></form>
+
+
+</td>
+
+
+~" New Updated Code:
+<td valign-"top" class="MainTableRightColumn">
+
+
+<input type="hidden"
+
+
+name="providerNo" value="<%=user_no%>"/> <input type="hidden"
+
+
+name="id" id="curr _ id" value="<%=id%>" /> <input type="hidden"
+
+
+name="windowld" id="windowld" value="<%=uuid%>" /> <input
+
+
+type="hidden" name="dirty" value="0" id="dirty" /> <textarea title="Scratchpad
+
+
+text"
+
+
+name="scratchpad" id="thetext" style="width: 100%" rows="50"
+
+
+cols="50" onkeypress="javascript: setDirty[)""
+
+
+title="log text"
+
+
+onkeydown="javascript: catchDe|(event)"><%=text%></textarea> <textarea
+
+
+style="display: none;" id="log" rows="100" cols="100"></textarea>
+
+
+</td>
+
+
+Old Code:
+
+
+</table>
+
+
+<script type="text/ javascript">
+
+
+^ New Updated Code:
+</table>
+
+
+</form>
+
+
+<script type="text/javascript">
+
+
+25_Page25
+
+
+Old Code:
+
+
+<html>
+
+
+~~ New Updated Code:
+
+
+<html lang="en">
+
+
+2****旁率事事****** Old Code:
+
+
+SIZE="2" <%=(i+1)==month?"color='red"":"color="blue""%>><%=arrayMonth[i]%></a>
+~NN New Updated Code:
+SIZE="2" <%=(i+1)==month?"color='#e00"":"color='blue"%>><%=arrayMonth[i]%></a>
+
+
+3*来米*本本本车来事来来米来 Old Code:
+
+
+<tr bgcolor="#CCCCFF" align="center">
+
+
+<th width="14%"><font color="red"><bean:message
+
+
+key="share.CalendarPopUp.msgSun"/></font>
+
+
+</td>
+
+
+<th width="14%"><bean:message key="share.CalendarPopUp.msgMon"/></font>
+
+
+</td>
+
+
+<th width="14%"><bean:message, key="share.CalendarPopUp.msgTue"/></font>
+
+
+</td>
+
+
+<th width="14%"><bean:message key="share.CalendarPopUp.msgWed"/></font>
+
+
+</td>
+
+
+<th width="14%"><bean:message key="share.CalendarPopUp.msgThu"/></font>
+
+
+</td>
+
+
+<th width="14%"><bean:message key="share.CalendarPopUp.msgFri" />
+
+
+</td>
+
+
+<th width="14%"><font color="green"><bean:message
+key="share.CalendarPopUp.msgSat"/></font>
+
+
+</td>
+
+
+</tr>
+
+
+New Updated Code:
+
+
+<tr bgcolor="#CCCCFF" align="center">
+
+
+<th width="14%"><font color="#b70000"><bean:message,
+
+
+key="share.CalendarPopUp.msgSun"/></font>
+
+
+</th>
+
+
+<th width="14%"><bean:message key="share.CalendarPopUp.msgMon"/></font>
+
+
+</th>
+
+
+<th width="14%"><bean:message key="share.CalendarPopUp.msgTue"/></font>
+
+
+</th>
+
+
+<th width="14%"><bean:message key="share.CalendarPopUp.msgWed"/></font>
+
+
+</th>
+
+<th width="14%"><bean:message key="share.CalendarPopUp.msgThu"/></font>
+
+
+</th>
+
+
+<th width="14%"><bean:message key="share.CalendarPopUp.msgFri" />
+
+
+</th>
+
+
+<th width="14%"><font color="#006900"><bean:message
+
+
+key="share.CalendarPopUp.msgSat"/></font>
+
+
+</th>
+
+
+</tr>
+
+
+26 Page26
+1*米*:
+
+
+Old Code:
+
+
+</script>
+
+
+<tr>
+
+
+^N" New Updated Code:
+
+
+</script>
+
+
+<table border=""" ellspacing=""" cellpadding="1" width="100%"
+bgcolor-"#CCCCFF">
+
+
+<tr class="subject">
+
+
+<th width="30%"></th>
+
+
+<th width="30%" align="center"><bean:message key="tickler.ticklerplus"/></th>
+
+
+<th width="30%"></th>
+
+
+<th width="10%"></th>
+
+
+</tr>
+
+
+<tr>
+
+
+27 Page27
+Old Code:
+<%@ include file="/taglibs.jsp"%>
+<tr>
+~"" New Updated Code:
+<%@ include file="/taglibs.jsp"%>
+
+
+<table border="0" cellspacing="" cellpadding="1" width="100%"
+
+
+bgcolor="#CCCCFF">
+
+
+<tr class="subject">
+
+
+<th width="30%"></th>
+
+
+<th width="30%" align="center"><bean:message key="tickler.ticklerplus"/></th>
+
+
+<th width="30%"></th>
+
+
+<th width="10%"></th>
+
+
+</tr>
+
+
+28_Page28
+
+
+1*本米米米车米米米米米来来来 Old Code:
+
+
+<html>
+
+
+NN New Updated Code:
+
+
+<html lang="en">
+2**事*在事*事事***** Old Code:
+</script>
+
+
+<table border="" cellspacing=""" cellpadding="1" width="100%"
+
+
+bgcolor-"#CCCCFF">
+
+
+<tr class="subject">
+
+
+<th width="30%"></th>
+
+
+<th width="30%" align="center"><bean:message key="tickler.ticklerplus"/></th>
+
+
+<th width="30%"></th>
+
+
+<th width="10%"></th>
+
+
+</tr>
+
+
+~~ New Updated Code:
+
+
+</script>
+
+
+<%--<table border="0" cellspacing="0" cellpadding="1" width="100%"--%>
+
+
+%o-
+
+
+bgcolor="#CCCCFF">--%>
+
+<%-
+
+
+<tr class-"subject">--%>
+
+
+<%-
+
+
+<th width="30%"></th>--%>
+
+
+%--
+
+
+<th width="30%" align="center"><bean:message key="tickler.ticklerplus"/></th>--%>
+
+
+<%--
+
+
+<th width="30%"></th>--%>
+
+
+%o--
+
+
+<th width="10%"></th>--%>
+
+
+<%-
+
+
+</tr>--%>
+
+
+29_Page29
+
+
+1************** Old Code:
+
+
+</script>
+
+
+<tr>
+
+
+<td class="searchTitle" colspan="4">Prepared Tickler - Notify
+
+
+Cons Appointment/td>
+
+
+</tr>
+
+~" New Updated Code:
+
+
+</script>
+
+
+<table border="0" cellspacing="0" cellpadding="1" width="100%"
+
+
+bgcolor="#CCCCFF">
+
+
+<tr class="subject">
+
+
+<th width="30%"></th>
+
+
+<th width="30%" align-"center"><bean:message key="tickler.ticklerplus"/></th>
+
+
+<th width="30%"></th>
+
+
+<th width="10%"></th>
+
+
+</tr>
+
+
+<tr>
+
+
+<td class="searchTitle" colspan-"4">Prepared Tickler -Notify
+
+
+Cons Appointment</td>
+
+
+</tr>
+
+30 Page30
+
+
+1
+
+
+*
+*:
+
+
+Old Code:
+
+
+%@ include file="/ticklerPlus/header.isp"%>
+
+
+<tr>
+
+
+<td class="searchTitle" colspan="4">Prepared Ticklers</td>
+
+
+</tr>
+
+
+</table>
+
+
+~~~ New Updated Code:
+
+
+<%@ include file="/ticklerPlus/header.jsp"%>
+
+
+<table border="O" cellspacing=""0" cellpadding="1" width="100%"
+
+
+bgcolor="#CCCCFF">
+
+
+<tr class="subject">
+
+
+<th width="30%"></th>
+
+
+<th width="30%" align="center"><bean:message key="tickler.ticklerplus"/></th>
+
+
+<th width="30%"></th>
+
+
+<th width="10%"></th>
+
+
+</tr>
+
+<tr>
+
+
+<td class=-"searchTitle" colspan="4">Prepared Ticklers</td>
+
+
+</tr>
+
+
+</table>
+
+
+31_Page31
+
+
+1*本米**本水未*米米来来* Old Code:
+
+
+</script>
+
+
+<tr>
+
+
+<td class="searchTitle" colspan="4">Prepared Tickler - Process
+
+
+Conss/td>
+
+
+</tr>
+
+</table>
+
+
+~~ New Updated Code:
+
+
+</script>
+
+
+<table border="O" cellspacing="0" cellpadding="1" width="100%"
+
+
+bgcolor-"#CCCCFF">
+
+
+<tr class="subject">
+
+
+<th width="30%"></th>
+
+
+<th width="30%" align="center"><bean:message key="tickler.ticklerplus"/></th>
+
+
+<th width="30%"></th>
+
+
+<th width="10%"></th>
+
+
+</tr>
+
+
+<tr>
+
+
+<td class="searchTitle" colspan="4">Prepared Tickler - Process
+
+
+Cons</td>
+
+
+</tr>
+
+
+</table>
+
+32 Page32
+
+
+1*米*米米米米来来来来来来* Old Code:
+
+
+</script>
+
+
+<tr>
+
+
+<td class="searchTitle" colspan="4"><bean:message
+key="tickler.createnewtickler"/></td>
+
+
+</tr>
+
+
+</table>
+
+
+~~_ New Updated Code:
+
+
+</script>
+
+
+<table border="0" cellspacing=""0" cellpadding="1" width="100%"
+
+bgcolor="#CCCCFF">
+
+
+<tr class="subject"">
+
+
+<th width="30%"></th>
+
+
+<th width="30%" align="center"><bean:message key="tickler.ticklerplus"/></th>
+
+
+<th width="30%"></th>
+
+
+<th width="10%"></th>
+
+
+</tr>
+
+
+<tr>
+
+
+<td class="searchTitle" colspan="4"><bean:message
+
+
+key="tickler.createnewtickler"/></td>
+
+
+</tr>
+
+
+</table>
+
+
+33 Page33
+
+
+1******事*事***** Old Code:
+
+
+<html:form action="/Tickler">
+<input type="hidden" name="method" value=""/>
+
+
+<input type="hidden" name="order_tcr" value="asc"/>
+
+
+<tr>
+
+
+<td class="searchTitle" colspan="4"><bean:message key="tickler.filterticklerlist"/></td>
+
+
+</tr>
+
+
+~"" New Updated Code:
+
+
+<html:form action="/Tickler">
+
+
+<input type="hidden" name="method" value="" />
+
+
+<input type="hidden" name="order_tcr" value="asc"/>
+
+
+<table border="0" cellspacing="0" cellpadding="1" width="100%"
+
+
+bgcolor="#CCCCFF">
+
+
+<tr class="subject">
+
+<th width="30%"></th>
+
+
+<th width="30%" align="center"><bean:message key= "tickler.ticklerplus"/></th>
+
+
+<th width="30%"></th>
+
+
+<th width="10%"></th>
+
+
+</tr>
+
+
+<tr>
+
+
+<td class="searchTitle" colspan="4"><bean:message key="tickler.filterticklerlist"/></td>
+
+
+</tr>
+
+
+2***事车事事事事事**事* Old Code:
+
+
+<td class="blueText" width="30%"><bean:message key="tickler.status"/>: <html:select
+
+
+property="filter.status"
+
+
+onchange="return checkTicklerDate();">
+
+
+<html:option value="Z"><bean:message key="tickler.all"/></html:option>
+
+
+<html:option value="A"><bean:message key="tickler.active"/></html:option>
+
+
+<html:option value="C"><bean:message
+key="tickler.completed"/></html:option>
+
+<html:option value="D"><bean:message key="tickler.deleted"/></html:option>
+
+
+</html:select></td>
+
+
+~~ New Updated Code:
+
+
+<td class="blueText"" width="30%"><label for="ticklerStatus"><bean:message key="tickler.status"/>:
+</label><html:select property="filter.status"
+
+
+onchange-"return checkTicklerDate();" styleld="ticklerStatus">
+
+
+<html:option value="Z"><bean:message key="tickler.all"/></html:option>
+
+
+<html:option value="A"><bean:message key="tickler.active"/></html:option>
+
+
+<html:option value="C"><bean:message
+key="tickler.completed"/></html:option>
+
+
+<html:option value="D"><bean:message key="tickler.deleted"/></html:option>
+
+
+</html:select></td>
+3*来米来来米米米学来来来**
+Old Code:
+
+
+<td class="blueText"" width="30%"><span style="text-decoration: underline"
+onClick="openBrWindow( <c:out
+value="$(ctx)"/>/ticklerPlus/calendar/osamplePageCalendarPopup.jsp?type=caisi&openerForm=ticklerF
+orm&amp;openerElement-filterstartDate&ampyear=<%=curYear%>&amp;month=<%=curMonth%>",",
+width=300,height=300')"><bean:message key="tickler.begindate"/>:</span>
+
+
+<html:text property="filter.startDate" maxlength="10" /></td>
+
+
+~~ New Updated Code:
+
+
+<td class="blueText" width="30%"><span style="text-decoration: underline
+
+
+onClick="openBrWindow('<c:out
+value-"s[ct)/>/icklerPlus/calendar/osamplePageCalendarPopup.jsp?type-caisi8openerForm=ticklerf
+ormn8 amp openerE lement-flter.startDate 8ampiyear <%=-curYearks&amp;month=c%=curMonth%ss",
+
+
+width=300,height=300")"><label for="start Date""><bean:message,
+key="tickler.begindate"/>:</label></span>
+
+
+<html:text property="filter.startDate" maxlength="10" styleld="startDate"
+
+
+/></td>
+
+
+Old Code:
+
+
+<td class="blueText" width="30%"><span style="text-decoration:underline"
+
+onClick="openBrWindow('<c:out
+value="$(ctx)"/>/ticklerPlus/calendar/osamplePageCalendarPopup.jsp?type=caisi&openerForm=ticklerF
+orm&amp;openerElement=fiter.endDate&amp;year=<%=curYear%>&amp;month=%=curMonth
+%>'
+width=300,height=300")"><bean:message key="tickler.enddate"/>:</span>
+-
+
+
+<html:text property="filter.endDate" maxlength="10"/>
+
+
+</td>
+
+
+~~ New Updated Code:
+
+
+<td class="blueText" width="30%"><span style="text-decoration:underline'
+
+
+onClick="openBrWindow(<c:out
+wa
+
+
+e="s(cty"/:/icklerlus/calendar/osamplePageCaendartopup.Jsp?type-caisi&openerFormn=lichklerF
+am8ampropanerE esment- fiterend Date&ampyer c&%-curcarke>8 ampimonth-
+-uMonth
+%%
+-
+"
+
+
+width=300,height=300')"><label for="endDate"><bean:message
+key="tickler.enddate"/>:</label></span>
+
+
+<html:text property="filter.endDate" maxlength="10" styleld="endDate"/>
+
+
+</td>
+
+
+5****窜**率布*旁*** Old Code:
+
+
+<td class="blueText"><bean:message key="tickler.program"/>: <html:select
+
+
+12
+
+
+13
+
+
+15
+
+
+17
+
+
+property="filter.programld'
+
+
+onchange="return checkTicklerDate();">
+
+
+<option value="All Programs"><bean:message
+key="tickler.allprograms"/></option>
+
+
+<html:options collection="programs" property="id" labelProperty="name"/>
+
+
+</html:select></td>
+
+
+~"" New Updated Code:
+
+
+<td class-"blueText"><label for="programld"><bean:message key="tickler.program"/>:
+
+
+</label><html:select
+
+
+property="filter.programld"
+
+
+onchange="return checkTicklerDate();" styleld="programld">
+
+<option value="All Programs"><bean:message
+key="tickler.allprograms"/></option>
+
+<html:options collection="programs" property="id" labelProperty="name" />
+
+
+</html:select></td>
+
+
+6***车**市****** Old Code:
+
+
+<td class=-"blueText"><bean:message key="tickler.provider"/>: <html:select property="filter.provider"
+
+
+onchange="return checkTicklerDate();">
+
+
+<option value="All Providers"><bean:message
+key="tickler.allproviders"/></option>
+
+
+<html:options collection="providers" property="providerNo"
+
+
+labelProperty="formattedName"/>
+
+
+</htmliselect></td>
+
+
+^^ New Updated Code:
+
+
+<td class="blueText"><label for="provider"><bean:message key="tickler.provider"/>:
+</label><html:select property="filter.provider"
+
+
+onchange="return checkTicklerDate();" styleld="provider">
+
+
+key="tickler.allproviders"/></option>
+
+
+<option value="All Providers"><bean:message
+
+
+<html:options collection="providers" property="providerNo"
+

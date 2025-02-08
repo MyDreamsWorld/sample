@@ -785,3 +785,73 @@ key="osamplePageMessenger.DisplayMessages.formUnarchive"/>">
 
 
 ~" New Updated Code:
+<input type="checkbox" name="checkAll2" onclick="checkAll'msgList")" id="checkA" title="Check all" />
+
+
+6 Page6
+
+
+1**** Old Code:
+
+
+<select name="<%=curparam.getParamld()%>">
+
+
+New Updated Code:
+
+
+<select title=" <%=curparam.getParamDescription()%>" name="<%=curparam.getParamld()%>">
+
+
+2**%%**事旁事***** Old Code:
+
+
+<input type="text" size="20" name="<%-curparam.getParamld()%>">
+
+
+New Updated Code:
+<input type="text" title="<%=curparam.getParamDescription()%>" size="20"
+name="<%=curparam.getParamld()%>">
+
+
+3*本年其有车事事车***** Old Code:
+<input type="text" class="datefield" id="datefield<%=i%>"
+
+
+~~ New Updated Code:
+<input type="text" title="<%=curparam.getParamDescription()%>" class="datefield"
+id="datefield<%=i%>"
+
+7 Page7
+
+
+1*米****来来来*Old Code:
+
+
+<%-reportAction.equals("RO")?"checked":""%>> <bean:message
+
+
+key="osamplePageReport.formRostered"/> <input
+
+
+~ New Updated Code:
+
+
+<%=reportAction.equals("RO")?"checked":""%> id="reportAction1"> <label
+for="reportAction1"><bean:message
+
+
+key="osamplePageReport.formRostered" /></label> <input
+
+
+2米*米半**米米
+
+
+*** Old Code:
+
+
+<%=reportAction.eguals("NR")?"checked":""%>> <bean:message
+key="osamplePageReport.formNotRostered" /> <input
+
+
+~~ _ New Updated Code:

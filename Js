@@ -855,3 +855,994 @@ key="osamplePageReport.formNotRostered" /> <input
 
 
 ~~ _ New Updated Code:
+<%=reportAction.equals("NR")?"checked":""%> id="reportAction2"> <label
+for="reportAction2"><bean:message
+
+
+key="osamplePageReport.formNotRostered" /></label> <input
+
+
+3*来*米车*求来来来来来来来 Old Code:
+
+
+<%-reportAction.equals("TO")?"checked":""%>> <bean:message
+
+
+key="osamplePageReport.formTotal" /></font> <font
+
+
+~~ New Updated Code:
+
+
+%-reportAction.eguals("TO")?"checked":""%> id="reportAction3"> <label
+for="reportAction3"><bean:message
+
+
+key="osamplePageReport.formTotal" /></label></font> <font
+
+
+4****李**车****** Old Code:
+
+
+<div align="center"><font
+
+
+face="Verdana, Arial, Helvetica, sans-serif" size="1"
+color="#333333"><b><bean:message
+
+
+key="osamplePageReport.formSelectProvider" /> </b></font> <select
+
+
+name="providerview">
+
+
+AN New Updated Code:
+
+
+<div align="center"><font
+face="Verdana, Arial, Helvetica, sans-serif" size="1" color="#333333"><label
+for="providerview"><bean:message
+
+
+key="osamplePageReport.formSelectProvider" /> </label></font> <select
+
+
+name="providerview" id="providerview">
+
+
+5* * *Old Code:
+
+
+<font color="#333333"><bean:message
+
+
+key-"osamplePageReport.msgServiceDate" /></font></b></font></font> &nbsp; &nbsp; <font
+
+
+size="1" face="Arial, Helvetica, sans-serif"><a href-"#"
+
+
+onClick="openBrWindow("./CalendarPopup.jsp?type=admission&amp;year=<%=curYear%>&amp;month
+=<%=curMonth%>`",",'width=300,height=300')"><bean:message
+
+
+key="osamplePageReport.btnBegin" />:</a></font> <input type="text"
+
+
+name="xml_ vdate" value="<%=xml vdate%>"></div>
+
+
+~ New Updated Code:
+
+
+<font color="#333333"><bean:message
+
+
+key-"osamplePageReport.msgServiceDate" /></font></b></font></font> &nbsp; &nbsp; <font
+size="1" face="Arial, Helvetica, sans-serif"><label for="xmlVDate"><a href="#"
+
+
+onClick="openBrWindow("../CalendarPopup.jsp?type=admission&amp;year=<%=curYear%>&amp;month
+=<%=curMonth%>`","," width=300,height=300)"><bean:message
+
+
+key="osamplePageReport.btnBegin"/>:/a></label></font> <input type="text"
+
+
+name="xml vdate" id="xmIVDate" value="<%=xml vdate%>"></div>
+
+
+6**米***本冻来来来来东* Old Code:
+
+
+<div align="left"><font size="1"
+
+
+face="Arial, Helvetica, sans-serif"><a href="#"
+
+
+onClick="openBrWindow("../CalendarPopup.jsp?type=end&amp;year=<%=curYear%>&amp;month=<%=
+curMonth%>",",'width=300,height=300')"><bean:message
+
+
+key="osamplePageReport.btnEnd" />:</a></font> <input type="text"
+
+
+name="xml_appointment_ date" value="<%=xml_appointment_ date%>">
+
+
+</div>
+
+
+~ New Updated Code:
+
+
+<div align="left"><font size="1"
+
+
+face="Arial, Helvetica, sans-serif"> <label for="xmlAppointmentDate"><a href="#"
+
+
+onClick="openBrWindow("../CalendarPopup.jsp?type=end&amp;year=<%=curYear%>&amp;month=<%=
+curMonth%", ',width=300,height=300")"><bean:message
+key="osamplePageReport.btnEnd" />:</a></label></font> <input type="text"
+
+
+name="xml_appointment_ date" id="xmlAppointmentDate" value="<%-xml_appointment _ date%>">
+
+
+</div>
+
+
+7***要齐字**事***事* Old Code:
+
+
+<table width="100%" border="0" bgcolor="#EEEEFF">
+
+
+<form name="serviceform" method="get" action="osamplePageReportAgeSex.jsp">
+
+
+<tr>
+
+
+</tr>
+
+
+</form>
+
+
+</table>
+
+
+~" New Updated Code:
+
+
+<form name="serviceform" method="get" action="osamplePageReportAgeSex.jsp">
+
+
+<table width="100%" border="0" bgcolor="#EEEEFF">
+
+<tr>
+
+
+</tr>
+
+
+</table>
+
+
+</form>
+
+
+8_Page8
+
+
+1***事**率来车事*车** Old Code:
+
+
+<html>
+
+
+~~~ New Updated Code:
+
+
+<html lang="en">
+
+
+2****车*章亲辛率*** Old Code:
+
+
+<td><bean:message key="patientlist.selectadoctor"/></td>
+
+
+<td><select name-"provider_no">
+MN" New Updated Code:
+
+
+<td><label for="providerNo"><bean:message key="patientlist.selectadoctor"/></label></td>
+
+
+<td><select name="provider_no" id="providerNo">
+
+
+Old Code:
+
+
+<td width="20%"><bean:message key="patientlist.appointmentdatefrom"/>:</td>
+
+
+^NN New Updated Code:
+
+
+<td width="20%"><label for="date_from"><bean:message
+key="patientlist.appointmentdatefrom"/>:</label></td>
+4***车*枣***率车*** Old Code:
+
+
+<td width="20%"><input type="text"' name="date_from"
+id-"date_from" value="" size="10" readonly/> <img
+src="../images/cal.gif" id="date_from"/></td>
+
+
+<td width="20%"> <beanimessage key="appointment.searchnext.to/:</td>
+
+ New Updated Code:
+
+
+<td width="20%"><input type="text" name="date from"
+
+
+id-"date_from" value-"" size="10" readonly /> <img
+
+
+src-"./images/cal.gif" id="img_date_from" alt="A calendar icon" /></td>
+
+
+<td width="20%"><label for="date_to"><bean:message
+key="appointment.searchnext.to"/>:s/label>s/td>
+5***丰***冻车*米来来来 Old Code:
+
+
+<td width="20%"><input type="text"' name="date _ to" id="date _to"
+
+
+value="" size="10" readonly/> <img src="./images/cal.gif
+
+
+id="date_to" /></td>
+
+
+~ New Updated Code:
+
+
+<td width="20%"><input type="text" name="date_to" id="date_to"
+
+
+value-"" size="10" readonly /> <img src-"../images/cal. gif"
+id="img_date_to" alt="A calendar icon" /></td>
+
+
+9_Page9
+1*来米来车来米米*米中*** Old Code:
+
+
+<tr>
+
+
+<td><bean:message key="admin.startdate"/></td>
+
+
+<td><bean:message key="admin.enddateinclusive"/></td>
+
+
+</tr>
+
+
+~~ New Updated Code:
+
+
+<tr>
+
+
+<td><label for="startDate"><bean:message key="admin.startdate"/></label></td>
+
+
+<td><label for="endDate"><bean:message
+key="admin.enddateinclusive"/></label></td>
+
+
+</tr>
+
+
+2**车*车**车章车事车** Old Code:
+
+
+<td><input type="text" name="startDate" /></td>
+
+
+~ New Updated Code:
+<td><input type="text"' name="startDate" id="startDate" /></td>
+
+
+3*米**半*率*来来米来キ* Old Code:
+
+
+<td><input type="text" name="endDate" /></td>
+
+
+~~ New Updated Code:
+
+
+<td><input type="text" name="endDate" id="endDate" /></td>
+
+
+10 Page10
+
+
+1*t*4444444*+++ 0ld code:
+
+
+<table class="MainTable" id="scrollNumber1" name="EncTable">
+
+
+<html:form action="/osamplePageReport/RptByExample.do">
+
+
+~"" New Updated Code:
+
+
+<html:form action="/osamplePageReport/RptByExample.do">
+
+
+<table class="MainTable" id="scrollNumber1" name="EncTable">
+
+
+2***事*率******** Old Code:
+
+
+<tr>
+
+
+<td><bean:message
+key="osamplePageReport.MsgEnterAQuery" /></td>
+
+
+s/tr>
+
+
+~^_New Updated Code:
+
+
+<tr>
+
+
+<td><label for="sql"><bean:message
+
+
+key="osamplePageReport.MsgEnterAQuery" /></label></td>
+
+
+</tr>
+
+
+3**车*幸半车车幸幸本*** Old Code:
+
+
+<tr>
+
+
+<td><html:textarea property="sq" cols="80" rows="4" /></td>
+
+
+</tr>
+
+
+~"" New Updated Code:
+
+
+<tr>
+
+
+<td><html:textarea property="sg!" styleld="sql" cols="80" rows="4" /></td>
+</tr>
+
+
+Old Code:
+
+
+<tr>
+
+
+<td><bean:message
+
+
+key="osamplePageReport. MsgSelectFromMyFavorites" /></td>
+
+
+</tr>
+
+
+~~~ New Updated Code:
+
+
+<tr>
+
+
+<td><label for="selectedRecentSearch"><bean:message
+
+
+key="osamplePageReport.MsgSelectFromMyFavorites" /></label></td>
+
+
+</tr>
+
+
+5***平本本本*单帝**** Old Code:
+
+
+<tr>
+
+
+<td><html:select property="selectedRecentSearch"
+
+
+Style="width:660">
+
+
+<html:option value="My favorites" disabled="true" />
+
+
+<html:options collection="favorites" labelProperty="queryName"
+property="query" />
+
+
+</html:select> <input type="button" value=*<bean:message key="admin.loadquery" />'
+
+
+onClick=""write2TextArea(); return false;'"></td>
+
+
+</tr>
+
+
+~^ New Updated Code:
+
+
+<tr>
+
+
+<td><html:select property="selectedRecentSearch" styleld="selectedRecentSearch"
+
+
+style="width:660">
+
+
+<html:option value="My favorites" disabled="true" />
+
+
+<html:options collection="favorites" labelProperty="queryName
+
+
+property="query" />
+
+
+</html:select> <input type="submit" value='<bean:message key="admin.loadquery" />"
+
+
+onClick="write2TextArea(); return false;"></td>
+
+
+</tr>
+6***Old Code:
+
+
+<td><input type="button" value='<bean:message key="admin.query"/>' onclick="submit();"/>
+
+
+~ New Updated Code:
+
+
+<td><input type="submit" value='<bean:message key="admin.query"/>' onclick="submit():;"/>
+
+
+11 Page11
+
+
+1***
+
+
+Old Code:
+
+
+<html:hidden property="tab" />
+
+
+<html:hidden property="subtab" />
+
+
+~~" New Updated Code:
+
+
+<!- Accessibility Notes: the related form did not contain any submit button which creates issues for
+those who cannot submit the form using the keyboard.
+
+
+An invisible submit button below is added and is just a hack. Ideally, it should be a visible submit;
+
+
+however, making it visible causes a server error once it is clicked.
+
+
+<input type="submit" value="Submit" style="visibility: hidden" />
+
+
+<html:hidden property="tab" />
+<html:hidden property="subtab" />
+
+
+2**米来来半半*半字*来来* Old Code:
+
+
+<td style="background-color: #555;"><a href="javascript:void(0)"
+
+
+onclick="javascript:clickTab[*<%=ProgramManagerViewFormBean.tabs[i]%>");return
+false;"><%=org.osamplePageehr.PMmodule.web.utils.LocaleUtils.translate(request,
+ProgramManagerViewFormBean.tabs[i])%></a>
+
+
+</td>
+
+
+~~~ New Updated Code:
+
+
+<td style="background-color: #555;"><a style="background-color: #555; color: #fff;"
+href-"javascript:void(0)"
+
+
+onclick="javascript:clickTab('<%=ProgramManagerViewFormBean.tabs[i]%>');return
+false;"><%=org.osamplePageehr.PMmodule.web.utils.LocaleUtils.translate(request,
+ProgramManager ViewFormBean.tabs[i])%></a>
+
+</td>
+
+12 Page12
+
+1*******率****** Old Code:
+
+
+<tr>
+
+
+<td width="35%" style="font-weight: bold"><bean:message key="pm.facilities"/></td>
+
+
+<td width="55%" style="font-weight: bold"><bean:message key="pm.programs"/></td>
+
+
+<td width="10%"><html-el: hidden property="method" value=""/></td>
+
+
+</tr>
+
+
+~~ New Updated Code:
+
+
+<tr>
+
+
+<td width="35%" style="font-weight: bold"><labe| for="facilityld"><bean:message
+key="pm.facilities"/></label></td>
+
+
+<td width="55%" style="font-weight: bold"> <label for="programld"><bean:message
+key="pm.programs"/></label></td>
+
+
+<td width="10%"><html-el:hidden property="method" value="" /></td>
+
+
+</tr>
+
+
+2************** Old Code:
+<td><html-el:select property="facilityld"
+
+
+onchange="select_facility(this);">
+
+
+<html-el:option value="0"><bean:message key="pm.any"/></html-
+
+
+el:option>
+
+
+<c:forEach var="facility" items="$ffacilities]">
+
+
+<html-el:option value="$(facility.id]">
+
+
+<c:out value="$(facility.name]" />
+
+
+</html-el:option>
+
+
+</c:forEach>
+
+
+</html-el:select></td>
+
+
+~New Updated Code:
+
+
+<td><html-el:select property="facilityld"
+
+
+onchange="select_facility(this);" styleld="facilityld">
+<html-el:option value="0"><bean:message key="pm.any"/></html-
+
+
+el:option>
+
+
+<c:forEach var="facility" items="$(facilities)">
+
+
+<html-el:option value="$(facility.id]">
+
+
+<c:out value="$(facility.name)" />
+
+
+</html-el:option>
+
+
+</c:forEach>
+
+
+</html-eliselect></td>
+
+
+3*李*李*事**幸车车车** Old Code:
+
+<td><html-el:select property="programld"
+
+onchange="select_program(this);">
+
+el:option>
+
+<html-el:option value="0"> '><bean:message key=' pm.any". /></html-
+
+<c:forEach var="program" items="$(programs)">
+<html-el:option value="$(program.id)">
+<c:out value="$(program.name)" />
+</html-el:option>
+</c:forEach>
+</html-eliselect></td>
+
+
+٨NN
+
+
+New Updated Code:
+
+
+<td><html-el:select property="programld'
+
+
+onchange="select_ program(this);" styleld="programld">
+
+
+<html-el:option value="0"><bean:message key="pm.any"/></html
+
+
+el:option>
+
+
+<c:forEach var="program" items="$(programs]">
+
+
+<html-el:option value="$(program.id)">
+
+
+<c:out value="$fprogram.name]" />
+
+
+</html-el:option>
+
+
+</c:forEach>
+
+
+</html-el:select></td>
+
+
+4***Old Code:
+
+
+<td></td>
+~ New Updated Code:
+
+
+<l- Accessibility Notes: the related form did not contain any submit button which creates issues for
+those who cannot submit the form using the keyboard.
+
+
+An invisible submit button below is added and is just a hack. Ideally, it should be
+
+
+a visible submit;
+
+
+however, making it visible causes a server error once it is clicked.
+
+
+<td><input type="submit" value="Submit"' style="visibility: hidden" /></td>
+
+
+5***事*本事事事旁***¥ Old Code:
+
+
+sortable {
+background-color: #555;
+color: #555;
+}
+~New Updated Code:
+
+
+sortable {
+
+background-color: transparent;
+}
+
+13_ Page13
+
+
+1*****幸*中中求**** Old Code:
+
+
+<tr>
+
+
+<th><bean:message key="demo.firstname"/></th>
+
+
+<td><html:text property="firstName" size="30" maxlength="30" /></td>
+
+
+</tr>
+
+
+~ New Updated Code:
+
+
+<tr>
+
+
+<th><label for="firstName"><bean:message key="demo.firstname"/></label></th>
+
+
+<td><html:text property="firstName" size="30" maxlength="30" styleld="firstName" /></td>
+
+
+</tr>
+
+
+2***本**事*事***** Old Code:
+
+
+<tr>
+
+<th><bean:message key="demo.lastname"/></th>
+
+
+<td><html:text property="lastName" size="30" maxlength="30" /></td>
+
+
+</tr>
+
+
+^ New Updated Code:
+
+
+<tr>
+
+
+<th><label for="lastName"><bean:message key="demo.lastname"/></label></th>
+
+
+<td><html:text property="lastName" size="30" maxlength="30" styleld="lastName" /></td>
+
+
+</tr>
+
+
+3*本**幸车**李李**** Old Code:
+
+
+<html:select property="monthOfBirth">
+
+
+~ New Updated Code:
+
+
+<html:select property="monthOfBirth" title="Month">
+4******事****** Old Code:
+
+
+<html:select property="dayOfBirth">
+
+
+~~~ New Updated Code:
+<html:select property="dayOfBirth" title="Day">
+5***车********** Old Code:
+<html:text property="yearOfBirth" size="4" maxlength="4" />&nbsp;(<bean:message
+key="pm.yearformat"/>)
+
+
+~~" New Updated Code:
+
+
+<html:text property="yearOfBirth" size="4" maxlength-"4" title="Year" />&nbsp;(<bean: message
+key="pm.yearformat"/>)
+
+
+6***Old Code:
+
+
+<th><bean:message key="pm.sex"/></th>
+
+
+~~ New Updated Code:
+
+
+<th><label for="gender"><bean:message key="pm.sex"/></label></th>
+
+
+7车车*车车车李革****** Old Code:
+
+
+<html-el:select property="gender">
+
+
+New Updated Code:
+
+
+<html-el:select property="gender" styleld="gender">
+
+
+8***Old Code:
+
+
+<td>
+<html:text property="hCardN" size="10" maxlength="10"/>&nbsp;
+
+
+<htmlitext property="hCardI" size="2" maxlength="2"/>&nbsp;(version)
+
+
+</td>
+
+
+~~ _New Updated Code:
+
+
+<td>
+
+
+<html:text property="hCardN" size="10" maxlength="10" title="Health Card Number" />&nbsp;
+
+
+<html:text property="hCardV" size="2" maxlength="2" title="Health Card Version"/>&nbsp;(version)
+
+
+</td>
+
+
+14 Page14
+
+
+1***Old Code:
+
+
+<tr>
+
+
+<td><bean:message key="pm.program"/></td>
+<td><bean:message key="report.startdate"/></td>
+<td><bean:message key="report.enddate"/></td>
+</tr>
+
+
+~ New Updated Code:
+
+
+<tr>
+
+
+<td><label for="programld"><bean:message key="pm.program"/></label></td>
+
+
+<td><label for="startDate"><bean:message key="report.startdate"/></label></td>
+
+
+<td><label for="endDate"><bean:message key="report.enddate"/></label></td>
+
+
+</tr>
+
+
+2*本本来率本半米未来*来来来 Old Code:
+
+
+<td><select name="programld">
+
+
+~~~ _ New Updated Code:
+
+
+<td><select name="programld" id="programld">
+
+
+3*事平章卒车平车车率*平** Old Code:
+
+
+<td>x<input type="text" name="startDate" /><br/>(<bean:message key="admin.dateformat"/>)</td> I
+
+
+~ New Updated Code:
+<td><input type="text"' name="startDate" id="startDate" /><br />(<bean:message
+key="admin.dateformat"/>)</td>
+
+
+4***$辛旁*帝率率**** Old Code:
+
+
+<td><input type="text" name="endDate" /><br />(<bean:message key="admin.dateformat"/>)</td>
+
+
+^ New Updated Code:
+
+
+<td><input type="text"" name="endDate" id="endDate" /><br />(<bean:message
+key="admin.dateformat"/>)</td>
+
+
+5**车车*本*本***车事* Old code:
+
+
+<td><bean:message key="activityreport.startdate"/></td>
+
+
+<td><bean:message key="activityreport.enddate"/></td>
+
+
+~~ New Updated Code:
+
+
+<td><label for="expAllStartDate"><bean:message key="activityreport.startdate"/></label></td>
+
+
+<td><label for="expAllEndDate"><bean:message key="activityreport.enddate"/></label></td>
+G*****t*ss**ss* Old Code:
+
+
+I
+
+
+<td><input type="text" name="startDate"/><br/>(<bean:message key="admin.dateformat"/>)</td>
+
+
+MNN New Updated Code:
+
+
+<td><input type="text"" name="startDate" id="expAllStartDate" /><br/>(<bean:message
+key="admin.dateformat"/>)</td>

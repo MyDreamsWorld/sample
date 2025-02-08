@@ -1,1 +1,787 @@
- 
+
+1_page1
+
+
+1*** Old Code 
+
+
+<td><a bref-# ondlick="iavasciot;bistory.go(-1);return false,">
+
+
+<ingstc="-/images/leftarrow.gif" border=""" width="25" height-"20"
+
+
+align="absmiddle"> <bean.message,
+key="sxbtnBack"/></a>s/td>
+
+
+÷÷÷ New Updated Code: New Code:
+
+
+<td>< a bref-# ga@lick-"iavascript:biston.go(-1);return false;">
+<img sts-"-/images/leftarrow.gif" border="0" width="25" height-"20"
+align="absmiddle" alt="An image of a left arrow"> <keaa:message
+key-" arbtaBack" /> </a></td>
+
+
+Old Code:
+
+
+<td align-"right"> a bref-"" nSlick=-"self.slose|);"><bean:message
+key=" xyz.btnClose" /><img
+
+
+src="../images/rightarrow.gif" border="0" width="25" height="20"
+align="absmiddle"></a></td>
+
+
+÷÷÷New Updated Code: New Code
+align="absmiddle," alt="An image of a right arrow"></a></td>
+
+
+<td align="right"><a bret="" onClick="self.close();"> < bean:message
+key-" xyz.btoclose" /><img
+s-"./images/rightarrow.gir" border=""" width-="25" height-"20-
+align-"akswiddle," alt-"An image of a right arrowi></a></td>
+
+$$$$$$$$$$
+
+2_page2
+
+
+1-"**""*"***"*- Old Code:
+
+
+<head>
+
+
+<table>
+
+
+<td>
+
+
+<td style="font-size:12px "><bean-msssage key-"dos.beade,"/></td>
+
+
+$/tr>
+
+
+</table>
+
+
+<script type-"text/iavasgript" sts-"<%- requestr.get context?ath[) %>/is/global.js"></script>
+
+
+<title>-beanmessage key="sxz.dosumentBepottitle"/></title>
+
+
+New Updated Code: New Code:
+
+
+<head>
+
+
+<1- Accessibility Notes: table is not allowed within the head tag
+
+
+<table>-%>
+
+
+<td>--%>
+
+
+<td style-"fiont-size: 12px "><bean:mesage key-"dos.headsr"/>s/td>
+
+
+</tr>-%>
+
+
+</table>--%>
+
+
+<script type="text/iavascio." sts-"<%- [equest.getCantextPath[) %>/is/global.js">/script>
+<title><beanimessage key="az.documentRepstt.title"/~/title>
+
+
+2-"..-......... Old Code:
+
+
+</script>
+
+
+<script ss-"-/share/iavssaiot/prototype.js" type="text/iav@scriRt"></script>
+<body class-"bodystyle">
+New Updated Code: New Code
+
+
+</saipt>
+
+
+<script s[s-"./share/jayascript/prototype.js" type="text/iaxesccirt"></script>
+
+
+</head
+
+
+<body class-"bodystyls">
+3---- Old Code
+
+<bean:message key="xyg.documentReport.msgViewStatus"/> <select id-"viewstatus
+name="viewstatus"
+
+
+" New Updated Code: New Code:
+
+
+<label for="viewstatus"> bean:message key-"xyz.documentReport.msgviewStatus"/></label> <select
+id-"viewstatus" name="viewstatus"
+
+
+**teesssse*ese Old Code:
+
+
+<span class="tabs"> <bean:message key-"xyz.documentReport.msgView,"/>:
+
+
+<select id="viewdoctype" name="view"
+
+
+"~ New Updated Code: New Code:
+
+
+<span class="tabs"> <label for="viewdoctype<%=i%>""><bean:message
+key="xyz.documentReport.msgView."/>;</label>
+
+
+<select id=" ""ewdoctypes %6=j%> name="view"
+
+
+5********"***** Old Code:
+
+
+<table id="privateDocs" class="docIable"'>
+
+
+~" New Updated Code: New Code:
+
+
+table id="privateDocs<%=i%>" class="docTable">
+
+
+Old Code:
+
+
+<input class=""tightCheckbox." type="checkbox" id-"pdfCheck %-1%>"
+onclick="selectAll' pdfCheck<%=p%>",'privateDocsDiy, "tightCheckboxc%-i%>');" />
+
+
+New Updated Code: New Code:
+بسايي
+<input title="Check all" cdlass-"tiehtCheckbox" type-"checkbox" id="pdfcheck %-1%>"
+ondick-="selectAllpdfCheck-%-p6>", privateDocsDiy' 'UabtCheckbox-%-[%>"):"/>
+7+...........*. Old Code:
+
+
+value="<%=curdoc.getDoc!d()%>" style-="margin: Opx; padding: Opx;"/>
+New Updated Code: New Code:
+value="<%=curdoc.getDocid()%>" style="margin: Opx; padding: Opx;""
+title-"<%-curdos.g getDescription()%>"
+
+8*********s**"*_Old Code:
+
+
+<img height="15px" width="15px" src-"< ciout value="$(ctx)/images/notepad.gif/>"
+title="<bean:message key-"xyz.documentReport.btnEdit"/>"></a>
+
+
+New Updated Code: New Code:
+
+
+<img alt-"The image of a notepad" height="15px" width="15px" src "<ciout
+value-"$[ctx)/images/notepad.gif"/>"title="<bean:message key="xyz.documentReport.btnEdit"/>"
+x</a>
+
+
+9- Old Code:
+
+
+<div><input type="button" name="Button"
+
+
+"~ New Updated Code: New Code:
+
+
+<div><input type="submit" name="Button"
+10*******s**s*: Old Code:
+
+
+onclick=self.close();> <input type="button" name="print"
+^ New Updated Code:
+
+
+onclick=selfclose();> <input type="submit" name="print"
+Old Code:
+
+
+onGlick-"window.print[)"> <input type="button"
+
+
+New Updated Code:
+onClick-"window.print[)"> <input type="submit
+
+Note:
+
+
+<div><input type="button" name="Button
+value-"<bean:message key-"xyz.documentReport.btnDoneClose"/>"
+onclick=self.close();> <input type="button" name="print"
+
+
+value-'<bean:message key-"global.btnPrint"/>
+
+
+onClick-"window.print)"> <input type-"button"
+
+
+value="<bean:message key="xyz.documentReport.btnCombinePDF"/>"
+
+
+onclick="return submitForm(" <rewrite:reWrite
+
+
+ispPage-"combinePDFs.do"/>");" />
+
+
+20%
+
+
+if[_module.equals("xyzdg") )(
+
+
+if (MyOsamplePageUtils.isVisibleMyOsamplePageSendButton()
+
+
+String
+onclickString-"alert(""+ LocaleUtils.getMessage(request, "LoginIoMyOsamplePageFirst")+"")";
+
+
+
+PHRAuthentication
+auth=MyOsamplePageUtils.getPHRAuthentication(session);
+
+
+if (auth!=null) onclickString="return
+submitPhrForm('SendDocToPhr.do', 'sendDocIoPhr');";
+
+
+%>
+
+
+<input type="button
+<%= MyOsamplePageUtils.getDisabledStringForMyOsamplePageSendButton(auth,
+Integer.parselnt(xyzdgNo))%> value="<%=LocaleUtils.getMessage(request,
+"SendToMyOsamplePage")%>" onclick="<%-onclickString%>" />
+
+
+<%
+}
+}
+%>
+</div>
+
+New Updated Code:
+
+
+<div><input type="submit" name="Button"
+
+
+value="<bean:message key="xyz.documentReport.btnDoneClose"/>"
+
+
+onclick-self.close();> <input type-"submit" name="print"
+
+
+value='<bean:message key="global.btnPrint"/>"
+
+
+onClick-"window.print()"> <input type="submit
+
+
+value="<bean:message key="xyz.documentReport.btnCombinePDF"/>
+
+
+onclick-"return submitForm( <rewrite: reWrite
+ispPage="combinePDFs.do"/>");"/>
+<%
+
+
+if(module.eguals("xyzdg") ){
+
+
+if (MyOsamplePageUtils.isVisibleMyOsamplePageSendButton())
+{
+
+String
+onclickString-"alert(""+LocaleUtils.getMessage(request, "LoginToMyOsamplePageFirst")+"")";
+
+
+PHRAuthentication
+auth-MyOsamplePageUtils.getPHRAuthentication(session);
+if (auth!=null) onclickString="return
+submitPhrForm('SendDocToPhr.do', 'sendDocToPhr');";
+%>
+<input type="button"
+<%-MyOsamplePageUtils getDisabledStringForMyOsamplePageSendButton(auth,
+Integer.parselnt(xyzdgNo)%> value="<%=LocaleUtils.getMessage(request,
+"SendIoMyOsamplePage")%>" onclick-"<%-onclickString%>" />
+<%
+}
+}
+%>
+</div>
+
+3_ Page3
+
+
+1**本车车*车*$$**** Old Code:
+
+
+<html>
+
+
+~~~ New Updated Code:
+
+
+<html lang="en">
+
+
+2*********** Old Code:
+
+
+<title></title>
+
+
+~"~ New Updated Code:
+
+
+<l Accessibility Notes: Title can not be empty. Consider creating a variable to pass from the page
+including this file. For now, a value of HHHHHH is hard coded- >
+
+
+<title>HHHHHH</title>
+
+
+4_Page4
+
+
+1*米半半半半半*赤米**
+
+
+Old Code:
+
+
+<div style-"margin-top: 5px; margin-bottom: 5px;">
+
+
+<bean:message key-"osamplePageEnc.formSelectIeam"/>:
+<select name="sendTo" onchange="teamSelected(this)">
+<option value-"-1"><bean:message, key="osamplePageEnc.formViewAll"/></option>
+~" _ New Updated Code:
+<div style="margin-top: 5px; margin-bottom: 5px;">
+<label for-"selectSendTo"><bean:message key="osamplePageEnc.formSelectTeam"/>:</label>
+<select id="selectSendTo" name="sendIo" onchange-"teamSelected(this)">
+<option value-"-1"><bean:message key-"osamplePageEnc.formViewAll"/></option>
+2**半幸幸事**幸幸***⁃ Od Code:
+
+
+<bean:message, key-"osamplePageEnc.region"/>
+
+
+~~~ _ New Updated Code:
+
+
+<label for="region"> <bean:message key="osamplePageEnc.region"/> </label>
+3*南海中事新你家事**** Old Code:
+
+
+<bean:message key-"osamplePageEnc.institution"/>
+~ New Updated Code:
+<label for="institution"><bean:message key="osamplePageEnc.institution"/></label>
+
+
+4*米半半丰半车半车车来来米* Old Code:
+
+
+<bean:message key="osamplePageEnc.formService" />:
+
+
+~~ New Updated Code:
+
+
+<label for="consultService"><bean:message key="osamplePageEnc.formService" />: </label>
+
+
+5************** Old Code:
+
+
+<bean:message key-"osamplePageEnc.formUrgency" />:
+
+New Updated Code:
+
+
+<label for="urgency"><bean:message, key="osamplePageEnc.formUrgency" />: </label>
+
+
+6****车***$丰***⁃ Old Code:
+
+
+<bean:message key="osamplePageFnc.ConsFormRequest.msgStatus" />:
+
+
+~~ New Updated Code:
+
+
+<label for-"filterStatus"><bean:message key-"osamplePageEnc.msgStatus" />: </label>
+
+7********Old Code: 
+<div style="margin: 0; padding: 0;"> 
+<bean:message key="osamplePageEnc.msgStart"/>: <html:text property="startDate" size-""" styleld-"startDate"/><a id="$Ca!"> <img title-"Calendar" src-"././images/cal.gif" alt="Calendar" border="0" /></a> 
+<bean:message key-"osamplePageEnc.msgEnd"/>:<html:text property-"endDate" size="8" styleld-"endDate"/><a id-"ECal"><img title-"Calendar" src-"././images/cal.gif"alt="Calendar" border="0" ></a> 
+<bean:message key="osamplePageEnc.msglncludeCompleted"/>:<html:checkbox property="includeCompleted" value="include" /> 
+<bean:message key-"osamplePageEnc.msg$earchon"/><html:radio property="searchDate" value="0" titleKey-"Search on Referal Date"/> 
+<bean:message key-"osamplePageEnc.msgApptDate"/><html:radio property="searchDate" value="1" titleKey-"Search on Appt. Date"/> <html:hidden property-"currentTeam"/> <html:hidden property="orderby"/> <html:hidden property="desc"/> </div> 
+
+~~~_ New Updated Code: 
+<div style="margin: 0; padding: 0; "> 
+<label for-"startDate"> <bean:message key-"osamplePageEnc.msgStart"/>:</label>html:text property-"startDate" size="8" styleld-"startDate"/><a id-"SCal"> <img title-"Calendar" src="../../images/cal.gif"_alt="Calendar" border="0" /></a> 
+
+<label for-"endDate"><bean:message key="osamplePageEnc.msgEnd"/>:</label><html.text
+property="endDate" size-"8" styleld-"endDate"/><a id-"ECal!"><img title-"Calendar"
+src-"../../images/cal.gif" alt="Calendar" border="0" /></a>
+
+
+<label for="includeCompleted"><bean: message
+key-"osamplePageEnc.msgIncludeCompleted"/>:</label>khtml:checkbox property="includeCompleted"
+styleld-"includeCompleted" value="include" />
+
+
+<bean:message key="osamplePageEnc.msg$earchon"/><html.:radio property="searchDate" value="0"
+titleKey-"Search on Referal Date"/>
+
+
+<bean:message key="osamplePageEnc.msgApptDate"/><html:radio property="searchDate" value="1"
+titleKey-"Search on Appt. Date"/>
+
+
+<html:hidden property="currentTeam"/>
+
+
+<html:hidden property="orderby"/>
+
+
+<html:hidden property="desc"/>
+
+
+</div>
+
+
+8****车事车帝车事***⁃ Old Code:
+
+
+
+<input type-"button" value-"<bean:message key="osamplePageEnc.btnConsReg"/>
+
+
+onClick-"validateThenSubmit(this.form)"/>
+
+5_Page5
+
+
+1** * **#*$**** Old Code:
+
+
+<td >
+
+
+ New Updated Code:
+
+
+<td>
+
+
+2* Old Code:
+
+
+<input name="șearchString" type-"text" size="20" value="<jsp:getProperty,
+name="DisplayMessagesBeanld" property="filter"/>">
+
+
+~~ _ New Updated Code:
+
+
+<input name="searchString" type-"text" size-"20" value="<jsp:getProperty
+name="DisplayMessagesBeanld" property="filter"/>" title-="Enter search keywords">
+
+
+3****车事幸中事**** Old Code:
+
+
+<html:form action="<%=strutsAction%>" styleld="msgList"'>
+
+
+<% //java.util.Vector theMessages = new java.util.Vector();
+
+
+java.util.Vector theMessages2 = new java.util.Vector()
+
+
+switch(pageType)
+
+
+case 0:
+
+
+theMessages2 = DisplayMessagesBeanld.estlnbox(orderby,moreMessages,INITIAL_DISPLAY);
+
+
+break;
+
+
+case 1:
+
+
+theMessages2 = DisplayMessagesBeanld.est SentltemsInbox(orderby);
+
+
+break;
+
+
+case 2:
+'theMessages2 = DisplayMessagesBeanld.estDeletedlnbox(orderby);
+
+
+break;
+
+
+case 3:
+
+
+theMessages2 = DisplayMessagesBeanld.estXyzdglnbox(orderby.xyzdg_no);
+
+
+break;
+
+
+)//messageid
+
+
+*~ New Updated Code:
+
+
+<%--
+
+
+<html:form action="<%=strutsAction%>" styleld="msgList" >--%>
+
+
+<%-
+
+
+<% //java.util.Vector theMessages = new java.util.Vector() ;--%>
+
+
+<%-
+
+
+java.util.Vector theMessages2 = new įava.util.Vector() ;--%>
+
+
+%0--
+
+
+switch(pageType)--%>
+
+
+1%o--
+
+
+case O:--%>
+
+
+<%--
+theMessages2
+DisplayMessagesBeanld.estlnbox(orderby,moreMessages, INITIAL_DISPLAY);--%>
+
+
+<%--
+break;--%>
+<%-
+case 1:--%>
+
+<%--
+
+
+theMessages2 = DisplayMessagesBeanld.estSentltemsInbox(orderby);-%>
+
+
+<%--
+
+
+break;--%>
+
+
+<%Ó--
+
+
+case 2:--%>
+
+
+c9/--
+
+
+theMessages2 = DisplayMessagesBeanld.estDeletedlnbox(orderby);-%>
+
+
+c9--
+
+
+break;--%>
+
+
+<%--
+
+
+case 3:--%>
+
+
+theMessages2 = DisplayMessagesBeanld.estXyzdgInbox(orderby.xyzdg_n0);--%>
+
+
+<%--
+
+
+%--
+
+
+break;--%>
+
+
+<%--
+
+
+} //messageid--%>
+
+
+4#本*李李**米*米米**
+
+
+Old Code:
+
+
+if( theMessages2.size() >= INITIAL_DISPLAY ) (
+
+
+%>
+
+
+<tr>
+
+<td>
+
+
+10
+
+
+11
+
+
+12
+
+
+.14
+
+
+S
+F
+ك1٥
+
+
+<%if (pageType == 0) %>
+
+
+<input name="btnDelete" type="submit" value="<bean:message
+key="osamplePageMessenger.DisplayMessages.formArchive"/>">
+
+
+<%else if (pageType == 2)(%>
+
+
+<input type="submit" value="<bean:message
+key="osamplePageMessenger.DisplayMessages.formUnarchive"/>">
+
+
+<%%)%>
+
+
+&nbsp;
+
+
+</td>
+
+
+</tr>
+
+
+<%)%2
+
+
+~~ New Updated Code:
+
+
+if( theMessages2.size() >= INITIAL_DISPLAY ) (
+
+
+%>
+
+
+<tr>
+
+
+<td>
+<%if (pageType == 0)%>
+
+
+<input name="btnDelete" type="submit" value="<bean:message
+key= "osamplePageMessenger.DisplayMessages.formArchive"/>">
+
+
+<% ]else if (pageType == 2) 1%>
+
+
+<input type="submit"' value="<bean:message
+key="osamplePageMessenger.DisplayMessages.formUnarchive"/>">
+
+
+9%2
+
+
+&nbsp;
+
+
+</td>
+
+
+</tr>
+
+
+<%]%>
+
+
+5************** Old Code:
+
+
+<input type="checkbox" name="checkAll2" onclick="checkAll('msgList')" id="checkA" />
+
+
+~" New Updated Code:

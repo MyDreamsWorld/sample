@@ -4477,3 +4477,338 @@ onclick="return checkTicklerDate();"/></td>
 
 
 </table>
+<%
+
+
+//colour codes-html
+
+
+Stringl] ColourCodesArray=new String[3];
+
+
+ColourCodesArray[1]="red";//red -High
+
+
+ColourCodes Array[2]="black"; //normal or low
+
+
+//labels for colour codes
+
+
+String[] [blCodesArray=new String[3];
+
+
+IblCodesArray[1]=org.osamplePageehr.util.LocaleUtils.translate("tickler.high");//red -High
+IblCodesArray[2]=org.osamplePageehr.util.LocaleUtils.translate("tickler.normalorlow"); //normal
+
+
+or low
+
+
+//Title ie: Legend or Profile Legend
+
+
+String legend_title=org.osamplePageehr.util.LocaleUtils.translate("tickler.prioritylegend");
+//creat empty builder string
+
+
+String legend builder-""
+
+
+for (int iLegend= 1; iLegend < 3; iLegend+t)1
+
+
+legend_builder +="<td> <table class='colour_ codes
+bgcolor-""+ColourCodesArrayliLegend]+"'><td> </td></table></td> <td
+align='center'>"+lblCodesArray[iLegend]+"</td>""
+
+}
+String legend = "<table class='legend' cellspacing='0'
+
+
+align="right'><tr><td><b>"+legend_title+"</b></td>"+legend_builder+"</tr></table>":
+
+
+out.print(legend);
+
+%>
+
+
+<br />
+
+
+~~ New Updated Code:
+
+
+</table>
+
+<%
+
+
+//colour codes - html
+
+
+String[] ColourCodesArray=new String[3];
+
+
+ColourCodesArray[1]="#8b0000";//red -High
+
+
+ColourCodesArray[2]="black"; //normal or low
+
+
+/labels for colour codes
+
+
+String[] lblCodesArray=new String[3];
+IblCodesArray[1]=org.osamplePageehr.util.LocaleUtils.translate("tickler.high");//red-High
+IblCodesArray[2]=org.osamplePageehr.util.LocaleUtils.translate("tickler.normalorlow"); //norma)
+
+
+or low
+
+
+//Title ie: Legend or Profile Legend
+
+
+String legend_title=org.osamplePageehr.util.LocaleUtils.translate("tickler.prioritylegend");
+
+//creat empty builder string
+
+
+String legend _ builder=""
+
+
+for (int iLegend = 1; iLegend < 3; iLegend++)
+
+
+legend_builder +="<td> <table class='colour_ codes
+bgcolor=""+ColourCodes Array[iLegend]+""><td> </td></table> </td> <td
+align='center'>"+lblCodesArray[iLegend]+"</td>";
+
+
+Stringilegend ="<table class='legend' cellspacing="0'
+align='right"><tr><td><b>"+legend_title+"</b></td>"+legend_builder+" </tr></table>";
+
+
+out.print(legend);
+
+
+%>
+
+
+<br/>
+
+
+14************** Oid Code:
+
+
+<td ><input type="checkbox" name="checkbox"
+
+
+value="<c:out value="$[tickler.tickler_no)"/>"/></td>
+<td><a href="../Tickler.do?method=view&id=<c:out
+
+
+value="$(tickler.tickler_no)"/>"><img
+align="right" src="<c:out
+value="$(ctx)"/>/ticklerPlus/images/<%=view_image_%>" border="0" />
+
+
+</a></td>
+
+
+~~ New Updated Code:
+
+
+<td ><input type="checkbox" name="checkbox"
+
+
+value="<c:out value="$(tickler.tickler _no)"/>"
+title="<%=xyzdg_name%>"/></td>
+<td><a href="../ Tickler.do?method=view&id=<c:out
+value="$ftickler.tickler_no"/>" title="View <%=xyzdg_name%>"><img
+align="right" src="<c:out
+
+
+value="$(ctx)"/>/ticklerPlus/images/<%=view_image %>" border="0" alt="An image of a magnifyin
+glass" />
+
+
+</a></td>
+
+
+15*********率**** Old Code:
+
+<%
+String style ="";
+style ="color:black;";
+
+
+if ("High".equals(temp.getPriority())){
+
+
+style = "color:red;";
+
+}
+%>
+~~_New Updated Code:
+
+
+<%
+
+
+String style ="";
+
+
+style = "color:black;";
+
+
+if ("High" .equals(temp.getPriority())){
+
+
+style = "color:#8b0000;";
+
+}
+%>
+
+
+16***米**车******* Old Code:
+<%@ include file="/ticklerPlus/header.jsp" %>
+
+
+<tr>
+
+
+<td class="searchTitle" colspan="4"><bean:message key="global.viewTickler"/> #<c:out
+value="$ftickler.tickler_no)"/></td>
+
+
+</tr>
+
+
+</table>
+
+
+<%@ include file="messages.jsp" %>
+
+
+~~ New Updated Code:
+
+
+<%@ include file="/ticklerPlus/header.isp" %>
+
+
+<table border="0" cellspacing="0" cellpadding="1" width="100%"
+
+
+bgcolor="#CCCCFF">
+
+
+<tr class="subject">
+
+
+<th width="30%"></th>
+
+
+<th width="30%" align="center"><bean:message key="tickler.ticklerplus"/></th>
+
+
+<th width="30%"></th>
+
+
+<th width="10%"></th>
+
+
+</tr>
+<tr>
+
+
+<td class="searchTitle" colspan="4"><bean:message key="global.viewTickler"/> #<c:out
+
+
+value="$(tickler.tickler_no"/></td>
+
+
+</tr>
+
+
+</table>
+
+
+<%@ include file="messages.jsp" %>
+
+
+34_Page34
+
+
+* * *
+
+
+1*
+*
+*
+
+
+* * * * *
+
+
+Old Code:
+
+
+<%@ include file="/header.jsp" %>
+
+
+<tr>
+
+
+value="$(tickler.tickler_no"/></td>
+
+
+<td class="searchTitle" colspan="4"><bean:message key="global.viewTickler"/> #<c:out
+
+
+</tr>
+
+
+</table>
+
+
+"~ New Updated Code:
+<%@ include file="/header.jsp" %>
+
+
+<table border=" cellspacing=""" cellpadding="1" width="100%"
+
+
+bgcolor="#CCCCFF"">
+
+
+<tr class="subject">
+
+
+<th width="30%"></th>
+
+
+<th width="30%" align="center"><bean:message key="tickler.ticklerplus"/></th>
+
+
+<th width="30%"></th>
+
+
+<th width="10%"></th>
+
+
+</tr>
+
+
+<tr>
+
+
+<td class="searchTitle" colspan="4"><bean:message key="global.viewTickler"/> #<c:out
+value="$(tickler.tickler_no]"/></td>
+
+
+</tr>
+
+</table>

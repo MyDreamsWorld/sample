@@ -289,3 +289,25 @@ NVDA: A free screen reader for testing accessibility.
 
 By following these steps, you can enhance your site's accessibility in compliance with WCAG AA standards, making it more user-friendly for all visitors.
 ______________________________
+
+
+
+---
+
+Jaber has done an excellent job, and I can personally attest to that.
+
+At this point, we have three possible approaches:
+
+1. Move forward with Jaber's modifications, leveraging the work of a skilled professional.
+
+
+2. Disregard Jaber’s changes entirely and start from scratch. While this may yield good results, especially if we utilize accessibility tools like Google’s Lighthouse, we still need to address unresolved issues such as bilingual support and localization.
+
+
+3. Take a hybrid approach by listing all of Jaber’s modifications, incorporating solutions for the outstanding issues, and building from the ground up while distributing the workload over a longer timeframe.
+
+
+
+Personally, I support the third option for several reasons.
+
+

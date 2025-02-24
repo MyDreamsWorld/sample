@@ -1,923 +1,199 @@
-### **Comprehensive Test Suite: "Save" Button (Student#15) for Reassessment Sections**  
-**Objective**: Validate the "Save" button’s   
+### Comprehensive POTO Floating Button Test Suite: RRRR (RRRR) Workflow  
+Objective: Validate the POTO Floating Button for functionality, edge cases, and usability.  
 
 ---
 
-#### **Test Case 1: Save Valid Reassessment Section**  
-**Priority**: Critical  
-**Steps**:  
-1. Open an existing HHHH eCommerce.  
-2. Click **Add Assessment** (Student#116).  
-3. Fill in mandatory fields (Date, Time, MARAPA).  
-4. Click **Save** (Student#15).  
-**Expected Results**:  
-- Section is saved; eCommerce remains open.  
-- Fields become read-only.  
-- **Add Assessment** remains enabled.  
+### Test Case Design Principles  
+1. Visibility: Ensure the POTO text remains visible during form completion.  
+2. Sticky Display: Validate the button remains sticky at the top or floating on the right.  
+3. Content Accuracy: Verify POTO text matches specifications.  
+4. Edge Cases: Test extreme scenarios (e.g., long text, concurrent edits).  
+5. Localization: Validate bilingual support for POTO text.  
 
 ---
 
-#### **Test Case 2: Save with Incomplete Mandatory Fields**  
-**Priority**: High  
-**Steps**:  
-1. Click **Add Assessment**.  
-2. Leave **MARAPA** blank.  
-3. Click **Save**.  
-**Expected Results**:  
-- Error: **"Mandatory fields are missing: MARAPA"** (EN/FR).  
-- Section is not saved.  
+### Test Case Categories  
+1. POTO Visibility  
+2. Sticky/Floating Behavior  
+3. Content Validation  
+4. Edge Cases  
+5. Localization  
 
 ---
 
-#### **Test Case 3: Maximum Reassessments (555)**  
-**Priority**: High  
-**Steps**:  
-1. Add and save 555 reassessment sections.  
-**Expected Results**:  
-- All sections saved.  
-- eCommerce Library shows **"Assessment #555 of 555"**.  
+#### 1. POTO Visibility  
 
 ---
 
-#### **Test Case 4: Exceed Maximum Reassessments (100th Attempt)**  
-**Priority**: Medium  
-**Steps**:  
-1. After 555 saved sections, click **Add Assessment**.  
-**Expected Results**:  
-- Error: **"Maximum reassessments (555) reached"** (EN/FR).  
-- Button is disabled.  
+Test Case 1: TC-POTO-V01 – POTO Text Display  
+Objective: Validate POTO text is displayed correctly.  
+Priority: Critical  
+Steps:  
+1. Open an RRRR form.  
+2. Click the POTO Floating Button (Student#136).  
+Expected Results:  
+- POTO text is displayed in a popup box on the right side of the screen.  
+- Text matches the specifications (Student#139).  
 
 ---
 
-#### **Test Case 5: Field Locking Post-Save**  
-**Priority**: Critical  
-**Steps**:  
-1. Save a reassessment section.  
-2. Attempt to edit a locked field (e.g., Date).  
-**Expected Results**:  
-- Fields are read-only.  
-- Error: **"This section is locked"** (EN/FR).  
+Test Case 2: TC-POTO-V02 – POTO Text Persistence  
+Objective: Validate POTO text remains visible during scrolling.  
+Priority: High  
+Steps:  
+1. Open an RRRR form with multiple assessments.  
+2. Click the POTO Floating Button.  
+3. Scroll through the form.  
+Expected Results:  
+- POTO text remains visible and does not overlap with form content.  
 
 ---
 
-#### **Test Case 6: Concurrent Saves by Multiple Users**  
-**Priority**: Medium  
-**Steps**:  
-1. User A and User B open the same eCommerce.  
-2. User A saves a reassessment section.  
-3. User B attempts to save changes.  
-**Expected Results**:  
-- User B receives warning: **"Another user updated this form"** (EN/FR).  
+#### 2. Sticky/Floating Behavior  
 
 ---
 
-#### **Test Case 7: Data Persistence After Reopening**  
-**Priority**: High  
-**Steps**:  
-1. Save a reassessment section.  
-2. Close and reopen the eCommerce.  
-**Expected Results**:  
-- Saved data is retained; fields remain locked.  
+Test Case 3: TC-POTO-SF01 – Sticky at Top  
+Objective: Validate the button remains sticky at the top.  
+Priority: High  
+Steps:  
+1. Open an RRRR form.  
+2. Scroll down the form.  
+Expected Results:  
+- The POTO Floating Button remains fixed at the top of the screen.  
 
 ---
 
-#### **Test Case 8: Invalid Data Format**  
-**Priority**: Medium  
-**Steps**:  
-1. Enter invalid data (e.g., Date: `2023-13-32`).  
-2. Click **Save**.  
-**Expected Results**:  
-- Error: **"Invalid date format. Use YYYY-MM-DD"** (EN/FR).  
+Test Case 4: TC-POTO-SF02 – Floating on Right  
+Objective: Validate the button floats on the right side.  
+Priority: High  
+Steps:  
+1. Open an RRRR form.  
+2. Resize the browser window.  
+Expected Results:  
+- The POTO Floating Button floats on the right side of the screen.  
 
 ---
 
-#### **Test Case 9: Network Failure During Save**  
-**Priority**: Medium  
-**Steps**:  
-1. Disable network connection.  
-2. Attempt to save a reassessment section.  
-**Expected Results**:  
-- Error: **"Unable to save. Check your network"** (EN/FR).  
+#### 3. Content Validation  
 
 ---
 
-#### **Test Case 10: Bilingual Support (French)**  
-**Priority**: High  
-**Steps**:  
-1. Switch system language to French.  
-2. Repeat Test Case 1.  
-**Expected Results**:  
-- Labels and errors in French (e.g., **"Enregistrer"**, **"Champs obligatoires manquants"**).  
+Test Case 5: TC-POTO-C01 – POTO Text Accuracy  
+Objective: Validate POTO text matches specifications (Student#139).  
+Priority: Critical  
+Steps:  
+1. Open an RRRR form.  
+2. Click the POTO Floating Button.  
+3. Compare displayed POTO text with the provided specifications.  
+Expected Results:  
+- All POTO points (e.g., Mechanical Restraints, Clinical Seclusion) match the specifications.  
 
 ---
 
-#### **Test Case 11: User Feedback on Save**  
-**Priority**: Low  
-**Steps**:  
-1. Click **Save**.  
-**Expected Results**:  
-- Spinner appears during save.  
-- Success toast: **"Reassessment saved"** (EN/FR).  
+Test Case 6: TC-POTO-C02 – POTO Text Updates  
+Objective: Validate POTO text updates dynamically.  
+Priority: Medium  
+Steps:  
+1. Update the POTO text in the backend.  
+2. Refresh the RRRR form.  
+3. Click the POTO Floating Button.  
+Expected Results:  
+- Updated POTO text is displayed instantly.  
 
 ---
 
-### **Edge Cases**  
-
-#### **Test Case 12: Save Without Changes**  
-**Priority**: Low  
-**Steps**:  
-1. Open a reassessment section.  
-2. Click **Save** without entering data.  
-**Expected Results**:  
-- Error: **"No changes detected"** (EN/FR).  
+#### 4. Edge Cases  
 
 ---
 
-#### **Test Case 13: Performance with 50+ Saves**  
-**Priority**: Medium  
-**Steps**:  
-1. Add and save 50 reassessment sections.  
-**Expected Results**:  
-- No lag (>2s per save).  
+Test Case 7: TC-POTO-E01 – Long POTO Text Handling  
+Objective: Validate handling of extremely long POTO text.  
+Priority: Medium  
+Steps:  
+1. Enter 10,000 characters of POTO text.  
+2. Click the POTO Floating Button.  
+3. Scroll through the form.  
+Expected Results:  
+- POTO text is displayed without truncation or overlap.  
+- Text remains readable and scrollable.  
 
 ---
 
-### **Traceability Matrix**  
-
-| **Requirement**                     | **Test Case IDs**          |  
-|-------------------------------------|----------------------------|  
-| Save without closing eCommerce          | 1, 3, 7                   |  
-| Lock fields post-save               | 5, 7                      |  
-| Handle maximum reassessments        | 3, 4                      |  
-| Error handling for invalid data     | 2, 8, 12                  |  
-| Bilingual support                   | 10                        |  
-| Data persistence                    | 7                         |  
-| Concurrent user handling            | 6                         |  
-| Network resilience                  | 9                         |  
+Test Case 8: TC-POTO-E02 – Concurrent POTO Updates  
+Objective: Validate behavior when two users update POTO text simultaneously.  
+Priority: Medium  
+Steps:  
+1. User A opens an RRRR form and updates POTO text.  
+2. User B opens the same form and updates POTO text.  
+3. User A clicks the POTO Floating Button.  
+Expected Results:  
+- User A sees the updated POTO text.  
 
 ---
 
-### **Defect Reporting Template**  
-- **Title**: [E.g., "Save Button Fails to Lock Fields"]  
-- **Severity**: Critical/High/Medium/Low  
-- **Steps**:  
+#### 5. Localization  
+
+---
+
+Test Case 9: TC-POTO-L01 – Bilingual POTO Text  
+Objective: Validate POTO text in English and French.  
+Priority: High  
+Steps:  
+1. Switch the system language to French.  
+2. Open an RRRR form.  
+3. Click the POTO Floating Button.  
+Expected Results:  
+- POTO text is accurately translated into French.  
+
+---
+
+Test Case 10: TC-POTO-L02 – Bilingual Error Messages  
+Objective: Validate error messages in English and French.  
+Priority: Medium  
+Steps:  
+1. Simulate an error (e.g., missing POTO text).  
+2. Check the error message in both languages.  
+Expected Results:  
+- Error message displays in English and French:  
+  - English: "POTO text is missing."  
+  - French: "Le texte du POTOe est manquant."  
+
+---
+
+### Traceability Matrix  
+| Requirement ID | Test Case IDs                   | Coverage Status |  
+|----------------|---------------------------------|-----------------|  
+| US-P6          | TC-POTO-V01, TC-POTO-V02 | Full            |  
+| US-P12         | TC-POTO-C01, TC-POTO-C02 | Full            |  
+| US-P5          | TC-POTO-L01, TC-POTO-L02 | Full            |  
+| US-P7          | TC-POTO-E01, TC-POTO-E02 | Full            |  
+
+---
+
+### Defect Reporting Template  
+- Title: [Brief description]  
+- Severity: Critical/High/Medium/Low  
+- Steps to Reproduce:  
   1. [Action 1]  
   2. [Action 2]  
-- **Expected**: [Expected behavior]  
-- **Actual**: [Observed behavior]  
-- **Attachments**: Screenshots, logs.  
+- Expected Result: [Expected behavior]  
+- Actual Result: [Observed behavior]  
+- Attachments: Screenshots, logs, environment details.  
 
 ---
 
-### **Automation Recommendations**  
-1. **Tools**: **Cypress** for end-to-end testing (Test Cases 1, 2, 5, 10).  
-2. **CI/CD**: Schedule nightly runs via **Jenkins**.  
+### Automation Recommendations  
+1. Tool: Use Cypress or Selenium for cross-browser testing.  
+2. Scope: Automate repetitive cases (e.g., TC-POTO-V01, TC-POTO-C01).  
+3. CI/CD Integration: Run nightly regression suites.  
 
 ---
 
-This suite ensures rigorous validation of the "Save" button, covering functional, edge, and usability scenarios with precision.
-
-==============================================
-
-# **Test Case Document: R H C I Ass - INITIAL #1**
-
-## **Test Case ID:** TC_001
-### **Title:** Verify Section Title Display on New eCommerce Creation
-
-#### **Preconditions:**
-- User has access to the system and is logged in.
-- The application is functioning normally.
-- The "Create New eCommerce" functionality is enabled.
-
-#### **Test Steps & Expected Results:**
-
-| Step # | Action | Expected Result |
-|--------|--------|----------------|
-| 1 | Navigate to the "Create New eCommerce" section. | The system loads the "Create New eCommerce" page without errors. |
-| 2 | Click on "Create New eCommerce". | A new form instance is generated. |
-| 3 | Observe the default section title of the form. | The section title is displayed as "ASSESSMENT" (read-only). |
-
-#### **Edge Cases:**
-| Scenario | Expected Result |
-|----------|----------------|
-| Attempt to manually edit the section title. | The title remains non-editable (display-only). |
-| Refresh the page after form creation. | The section title remains "ASSESSMENT". |
-| Open the form in a different browser or device. | The section title remains "ASSESSMENT" consistently. |
-
----
-
-## **Test Case ID:** TC_002
-### **Title:** Verify Section Title Display When Adding a New Section
-
-#### **Preconditions:**
-- A new eCommerce has been created.
-- The "Add New Section" button is available.
-
-#### **Test Steps & Expected Results:**
-
-| Step # | Action | Expected Result |
-|--------|--------|----------------|
-| 1 | Open an existing eCommerce. | The system displays the form with "ASSESSMENT" as the first section. |
-| 2 | Click on "Add New Section". | A new section is added below the existing section. |
-| 3 | Observe the title of the newly added section. | The section title is displayed as "REASSESSMENT" (read-only). |
-
-#### **Edge Cases:**
-| Scenario | Expected Result |
-|----------|----------------|
-| Add multiple new sections. | Each new section title remains "REASSESSMENT". |
-| Attempt to rename the added section. | The title remains non-editable (display-only). |
-| Delete and re-add a section. | The re-added section retains the "REASSESSMENT" title. |
-
----
-
-## **Test Case ID:** TC_003
-### **Title:** Verify Section Title Display Persistence After Saving & Reloading
-
-#### **Preconditions:**
-- A form with multiple sections (initial + added) exists.
-- User has permissions to save and reload the form.
-
-#### **Test Steps & Expected Results:**
-
-| Step # | Action | Expected Result |
-|--------|--------|----------------|
-| 1 | Save the form with multiple sections. | The system saves the form successfully. |
-| 2 | Close and reopen the form. | The previously added sections are retained. |
-| 3 | Observe section titles. | The first section remains "ASSESSMENT", and all subsequent sections remain "REASSESSMENT". |
-
-#### **Edge Cases:**
-| Scenario | Expected Result |
-|----------|----------------|
-| Log out and log in again before reopening the form. | Section titles remain unchanged. |
-| Open the form in a different browser or session. | Section titles remain as expected. |
-
----
-
-## **Test Case ID:** TC_004
-### **Title:** Verify System Handling of Unexpected Errors
-
-#### **Preconditions:**
-- The system is functioning but may encounter network or database issues.
-
-#### **Test Steps & Expected Results:**
-
-| Step # | Action | Expected Result |
-|--------|--------|----------------|
-| 1 | Simulate a network disconnection before creating a new eCommerce. | The system prevents form creation and displays an error message. |
-| 2 | Restore network connection and retry. | The form is created successfully with "ASSESSMENT" as the title. |
-| 3 | Simulate a database failure when adding a new section. | The system handles the failure gracefully and prevents corruption of the form. |
-
-#### **Edge Cases:**
-| Scenario | Expected Result |
-|----------|----------------|
-| System crash during form creation. | No partially created forms exist upon restart. |
-| Browser crashes while adding sections. | On reloading, previously saved sections persist correctly. |
-
----
-
-## **Summary**
-This document outlines test cases ensuring that the "ASSESSMENT" and "REASSESSMENT" section titles display as expected under various conditions. It covers normal workflows, edge cases, and system error handling to ensure robust validation of the feature.
-
-==================================================
-
-Here's a professionally structured test case document covering all scenarios, including edge and corner cases, for **Student#17 - Restrictive Health Care Intervention (HHHH) Assessment #555 of 555**.  
-
----
-
-# **Test Cases for HHHH Reassessment Title (Student#17)**  
-### **User Story**  
-Ensure that the reassessment title is updated correctly in sequential order, displayed accurately in the eCommerce Library, and handles all edge cases effectively.
-
----
-
-## **Test Case 1: Add a New Reassessment (Standard Flow)**  
-### **Objective:**  
-Verify that adding a reassessment correctly increments the assessment number and updates the eCommerce Library.
-
-### **Steps:**  
-1. Navigate to the existing HHHH form in the **eCommerce Library**.  
-2. Click **"Add Reassessment"** (Student#116).  
-3. Enter required details:  
-   - **Date** (Valid format: MM/DD/YYYY)  
-   - **Time** (Valid format: HH:MM AM/PM)  
-   - **MARAPA Name**  
-   - **Intervention Type**  
-4. Click **"Save"**.  
-5. Observe the **new reassessment title** at the top of the section.  
-
-### **Expected Results:**  
-- The new section title should be **"Reassessment #2 - [Date/Time]"** (incremented from previous).  
-- The previous reassessment sections are locked and cannot be edited.  
-- The **eCommerce Library** updates to reflect the latest **reassessment title and date**.  
-
----
-
-## **Test Case 2: Validate Reassessment Number Sequence**  
-### **Objective:**  
-Ensure that reassessment numbers increment sequentially and do not skip or duplicate numbers.
-
-### **Steps:**  
-1. Open an existing HHHH form with **3 reassessments**.  
-2. Click **"Add Reassessment"** to add a fourth reassessment.  
-3. Save and observe the title of the new section.  
-
-### **Expected Results:**  
-- The title should be **"Reassessment #4 - [Date/Time]"**.  
-- Previous reassessments remain unchanged.  
-- The eCommerce Library displays **"Assessment #4 of [Total]"**.  
-- The system does not allow **duplicate or skipped numbers**.  
-
----
-
-## **Test Case 3: Maximum Allowed Reassessments (Boundary Test)**  
-### **Objective:**  
-Ensure the system correctly handles the maximum limit of **555** reassessments.
-
-### **Steps:**  
-1. Create a new HHHH form and sequentially add **98 reassessments**.  
-2. Attempt to add the **555th reassessment**.  
-3. Attempt to add the **100th reassessment**.  
-
-### **Expected Results:**  
-- The **555th reassessment** is successfully created and titled **"Reassessment #555 - [Date/Time]"**.  
-- The eCommerce Library updates to **"Assessment #555 of 555"**.  
-- The system **blocks the creation** of a **100th reassessment**.  
-- An error message appears: **"Maximum limit of 555 reassessments reached"**.  
-
----
-
-## **Test Case 4: Reassessment Title Updates in eCommerce Library**  
-### **Objective:**  
-Validate that the reassessment title updates correctly in the eCommerce Library after each addition.
-
-### **Steps:**  
-1. Open the eCommerce Library and locate an HHHH form with multiple reassessments.  
-2. Note the displayed title (e.g., **"Assessment #5 of 555"**).  
-3. Add a new reassessment.  
-4. Refresh the eCommerce Library and observe the updated title.  
-
-### **Expected Results:**  
-- The **new reassessment count** should be reflected in the eCommerce Library.  
-- The updated title should read **"Assessment #6 of 555"**.  
-- The eCommerce should remain accessible with the correct number sequence.  
-
----
-
-## **Test Case 5: System Behavior on Unexpected Interruption**  
-### **Objective:**  
-Ensure reassessment numbering is not corrupted if an interruption occurs (e.g., system crash, network failure).  
-
-### **Steps:**  
-1. Open an HHHH form and begin adding a reassessment.  
-2. Before clicking **Save**, simulate a **network disconnection**.  
-3. Reconnect and refresh the form.  
-4. Check the reassessment title and numbering sequence.  
-
-### **Expected Results:**  
-- The **reassessment number remains unchanged** if the save action failed.  
-- If saved before disconnection, the **title updates correctly** in both the form and eCommerce Library.  
-- No duplicate or skipped numbers should appear.  
-
----
-
-## **Test Case 6: Attempt to Manually Edit a Reassessment Title**  
-### **Objective:**  
-Ensure that reassessment titles are **read-only** and cannot be manually altered.
-
-### **Steps:**  
-1. Open an HHHH form with multiple reassessments.  
-2. Attempt to click on the **"Reassessment #3 - [Date/Time]"** title to edit.  
-3. Try editing the title through the browser developer tools.  
-4. Try to modify the title through **direct database entry** (if applicable).  
-
-### **Expected Results:**  
-- The **reassessment title remains read-only**.  
-- Any attempt to modify it via the UI fails.  
-- Direct database modification is **rejected** with a validation error.  
-
----
-
-## **Test Case 7: Edge Case - System Handles Skipped Reassessment Addition Properly**  
-### **Objective:**  
-Ensure the system does not allow reassessments to be skipped or inserted out of order.
-
-### **Steps:**  
-1. Open an HHHH form with 5 reassessments.  
-2. Attempt to create **Reassessment #7** without adding #6.  
-3. Save and observe the numbering.  
-
-### **Expected Results:**  
-- The system **prevents skipping reassessment numbers**.  
-- Error message appears: **"Reassessments must be added sequentially"**.  
-- The form does not allow direct reassessment number changes.  
-
----
-
-## **Test Case 8: Deleting a Reassessment (if applicable)**  
-### **Objective:**  
-Ensure that reassessment deletions are handled correctly.
-
-### **Steps:**  
-1. Open an HHHH form with **5 reassessments**.  
-2. Delete **Reassessment #3**.  
-3. Observe how numbering adjusts.  
-
-### **Expected Results:**  
-- If deletions are **not allowed**, an error message appears: **"Reassessments cannot be deleted once added"**.  
-- If deletions are **allowed**, numbers should **shift** accordingly (e.g., #4 becomes #3).  
-
-=====================================
-
-Here’s a comprehensive **Test Case Suite** for **Student#19 - Date (YYYY-MM-DD)** field, covering **all scenarios, including edge and corner cases** in a highly professional manner.  
-
----
-
-# **Test Cases for Date Field (Student#19) – Assessment/Reassessment Date**  
-### **User Story**  
-The system must allow users to select a **valid date** (YYYY-MM-DD) for an assessment/reassessment using a **date widget**. The date should be **easily cleared** to correct mistakes **before submission** but become **non-editable after submission** for any future revisions.  
-
----
-
-## **Test Case 1: Verify Standard Date Selection & Submission**  
-### **Objective:**  
-Ensure that users can select and submit a **valid date** using the date widget.  
-
-### **Steps:**  
-1. Open the **Assessment/Reassessment Form**.  
-2. Click the **Date (YYYY-MM-DD)** field.  
-3. Select a date using the **date picker widget**.  
-4. Verify that the date is correctly displayed in **YYYY-MM-DD** format.  
-5. Click **Submit**.  
-6. Reopen the form and check if the date field is **non-editable**.  
-
-### **Expected Results:**  
-✅ The **selected date appears correctly** in **YYYY-MM-DD** format.  
-✅ The date field remains **editable before submission**.  
-✅ The field **becomes non-editable after submission**.  
-
----
-
-## **Test Case 2: Validate Date Field Clears Correctly Before Submission**  
-### **Objective:**  
-Ensure users can **clear** an incorrect date **before submission** and enter a new one.  
-
-### **Steps:**  
-1. Open the form and select a **valid date** (e.g., **2025-02-23**).  
-2. Click the **Clear (X) Button** in the date widget.  
-3. Verify that the date field is **now empty**.  
-4. Select a **new date** (e.g., **2025-03-01**) and submit.  
-5. Check that the **newly selected date is saved**.  
-
-### **Expected Results:**  
-✅ Users can **clear and re-enter a date before submission**.  
-✅ Only the **final selected date** is stored upon submission.  
-
----
-
-## **Test Case 3: Ensure Date Field Becomes Read-Only After Submission**  
-### **Objective:**  
-Confirm that once an assessment is **submitted**, the date field is **locked** for future revisions.  
-
-### **Steps:**  
-1. Open the **Assessment Form** and select a date.  
-2. Submit the form.  
-3. Reopen the submitted form.  
-4. Try clicking on the **Date Field** to edit the date.  
-
-### **Expected Results:**  
-✅ The **date field is read-only** after submission.  
-✅ No further modifications are allowed post-submission.  
-
----
-
-## **Test Case 4: Edge Case - Attempt to Submit an Empty Date Field**  
-### **Objective:**  
-Ensure the system **does not allow submission** if the date field is **left blank**.  
-
-### **Steps:**  
-1. Open the form but **do not select a date**.  
-2. Attempt to **submit the form**.  
-
-### **Expected Results:**  
-✅ The system **displays an error message**: **"Date is required before submission"**.  
-✅ Submission is **blocked** until a valid date is entered.  
-
----
-
-## **Test Case 5: Verify Invalid Date Entry Prevention**  
-### **Objective:**  
-Ensure users **cannot manually enter an invalid date** (e.g., 2025-13-40, 2025-02-30).  
-
-### **Steps:**  
-1. Open the **Developer Console** (if applicable) and try manually entering **2025-02-30**.  
-2. Try to submit the form.  
-
-### **Expected Results:**  
-✅ The system **rejects** the invalid date and displays an error message: **"Invalid Date Format"**.  
-✅ The form **does not submit** until a valid date is chosen.  
-
----
-
-## **Test Case 6: Validate Past and Future Date Selection**  
-### **Objective:**  
-Ensure users can select a **past or future date** within an allowed range.  
-
-### **Steps:**  
-1. Open the form and try selecting:  
-   - **A date 10 years in the past** (e.g., **2015-01-01**).  
-   - **A date 10 years in the future** (e.g., **2035-12-31**).  
-2. Submit the form.  
-
-### **Expected Results:**  
-✅ The system **accepts reasonable past and future dates**.  
-✅ If date limits exist, an error message appears (e.g., **"Date must be within the last 5 years"**).  
-
----
-
-## **Test Case 7: System Behavior on Unexpected Interruption**  
-### **Objective:**  
-Ensure the date field retains its value after **unexpected interruptions** like a **system crash or refresh**.  
-
-### **Steps:**  
-1. Open the form and select a date.  
-2. **Refresh the browser** before submitting.  
-3. Check if the **selected date remains in the field**.  
-4. Submit the form and reopen it.  
-
-### **Expected Results:**  
-✅ The date field retains the **last selected value** after refresh.  
-✅ The system **does not reset the field unnecessarily**.  
-
----
-
-## **Test Case 8: Attempt to Modify a Date in a Submitted Form (Security Test)**  
-### **Objective:**  
-Ensure no user can **bypass restrictions** to change a date **after submission**.  
-
-### **Steps:**  
-1. Submit an assessment form with a date.  
-2. Try modifying the date via:  
-   - Browser **Developer Tools**  
-   - **Direct Database Injection** (if applicable)  
-3. Refresh and verify if the change was successful.  
-
-### **Expected Results:**  
-✅ The system **blocks unauthorized changes** to the date field.  
-✅ Attempted modifications result in an **error or automatic reset**.  
-
----
-
-## **Test Case 9: Verify Date Format Validation for Different Locales**  
-### **Objective:**  
-Ensure the date format always follows **YYYY-MM-DD**, regardless of system language.  
-
-### **Steps:**  
-1. Change the browser/system **language settings** (e.g., **French, Arabic, Chinese**).  
-2. Open the form and check the date field.  
-3. Select a date and submit.  
-
-### **Expected Results:**  
-✅ The date is **always displayed as YYYY-MM-DD**, regardless of locale.  
-✅ The date format does not change to **MM/DD/YYYY** or **DD/MM/YYYY** unexpectedly.  
-
----
-
-## **Test Case 10: Verify Mobile and Tablet Compatibility**  
-### **Objective:**  
-Ensure the date widget functions correctly on **mobile and tablet** devices.  
-
-### **Steps:**  
-1. Open the form on a **mobile device or tablet**.  
-2. Click the **date field** and check if the date picker widget appears.  
-3. Select a date and submit.  
-
-### **Expected Results:**  
-✅ The date picker is **responsive** and works on all screen sizes.  
-✅ Users can **easily clear and re-enter a date before submission**.  
-
-===========================================================
-
-### **Comprehensive Test Suite: Student#91 (Authorization) & Student#92 (Authorized By)**  
-**Objective**: Validate conditional logic, input validation, and edge cases for authorization fields in the HHHH workflow.  
-
----
-
-#### **Test Case 1: Field Activation Based on Authorization Type**  
-**Priority**: Critical  
-**Steps**:  
-1. Select **"Other personal items"** = **"Authorized with supervision"**.  
-2. Observe **Student#91** and **Student#92**.  
-3. Repeat Step 1 with **"Authorized without supervision"**.  
-**Expected Results**:  
-- **Student#91** is **enabled** and marked as **required**.  
-- **Student#92** is **enabled** and marked as **required**.  
-
----
-
-#### **Test Case 2: Field Deactivation for Non-Authorization Types**  
-**Priority**: High  
-**Steps**:  
-1. Select **"Other personal items"** = **"Not authorized"**.  
-**Expected Results**:  
-- **Student#91** and **Student#92** are **disabled** and **not required**.  
-
----
-
-#### **Test Case 3: Input Validation for Student#92 (Valid Data)**  
-**Priority**: Critical  
-**Steps**:  
-1. Select **"Authorized with supervision"**.  
-2. Enter **"John Doe"** in Student#92.  
-3. Click **Save**.  
-**Expected Results**:  
-- Data is saved without errors.  
-- Student#92 displays **"John Doe"** as read-only post-save.  
-
----
-
-#### **Test Case 4: Input Validation for Student#92 (Invalid Data)**  
-**Priority**: High  
-**Steps**:  
-1. Select **"Authorized without supervision"**.  
-2. Enter **61 characters** (e.g., "A".repeat(61)) in Student#92.  
-**Expected Results**:  
-- System truncates input to **60 characters** or blocks submission.  
-- Error: **"Maximum 60 characters allowed"** (EN/FR).  
-
----
-
-#### **Test Case 5: Required Field Enforcement**  
-**Priority**: Critical  
-**Steps**:  
-1. Select **"Authorized with supervision"**.  
-2. Leave **Student#92** blank.  
-3. Click **Save**.  
-**Expected Results**:  
-- Error: **"Authorized by is required"** (EN/FR).  
-
----
-
-#### **Test Case 6: Field Persistence After Save/Reopen**  
-**Priority**: High  
-**Steps**:  
-1. Save a valid entry for Student#91 and #92.  
-2. Reopen the form.  
-**Expected Results**:  
-- **Student#92** displays saved data as **read-only**.  
-
----
-
-#### **Test Case 7: Localization (French)**  
-**Priority**: Medium  
-**Steps**:  
-1. Switch system language to French.  
-2. Repeat Test Case 5.  
-**Expected Results**:  
-- Error: **"Le nom de l'autorisant est requis"**.  
-
----
-
-#### **Test Case 8: Concurrent Edits**  
-**Priority**: Medium  
-**Steps**:  
-1. User A selects **"Authorized with supervision"** and enters **"Dr. Smith"**.  
-2. User B opens the same form and deletes **"Dr. Smith"**.  
-3. User A clicks **Save**.  
-**Expected Results**:  
-- User A receives warning: **"This field was modified by another user"** (EN/FR).  
-
----
-
-#### **Test Case 9: Special Characters in Student#92**  
-**Priority**: Medium  
-**Steps**:  
-1. Enter **"María González (RN) @Clinic-1"** in Student#92.  
-**Expected Results**:  
-- Special characters are accepted.  
-- Data is saved and displayed correctly.  
-
----
-
-#### **Test Case 10: Network Failure During Save**  
-**Priority**: Medium  
-**Steps**:  
-1. Disable network connection.  
-2. Attempt to save Student#92.  
-**Expected Results**:  
-- Error: **"Unable to save. Check your connection"** (EN/FR).  
-
----
-
-### **Edge Cases**  
-
-#### **Test Case 11: Maximum Input Length Stress Test**  
-**Priority**: Medium  
-**Steps**:  
-1. Enter **60 characters** (e.g., "A".repeat(60)) in Student#92.  
-**Expected Results**:  
-- Input is accepted without truncation.  
-
----
-
-#### **Test Case 12: Rapid Toggle Between Authorization Types**  
-**Priority**: Low  
-**Steps**:  
-1. Rapidly switch between **"Authorized with supervision"** and **"Not authorized"**.  
-**Expected Results**:  
-- Student#91 and #92 toggle states **without lag or glitches**.  
-
----
-
-### **Traceability Matrix**  
-| **Requirement**                     | **Test Case IDs**          |  
-|-------------------------------------|----------------------------|  
-| Conditional field activation        | 1, 2                       |  
-| Input validation                    | 3, 4, 9, 11               |  
-| Required field enforcement          | 5                          |  
-| Data persistence                    | 6                          |  
-| Localization                        | 7                          |  
-| Concurrency handling                | 8                          |  
-| Error resilience                    | 10                         |  
-
----
-
-### **Defect Reporting Template**  
-- **Title**: [E.g., "Student#92 Allows 61 Characters"]  
-- **Severity**: Critical/High/Medium/Low  
-- **Steps**:  
-  1. Select **"Authorized with supervision"**.  
-  2. Enter 61 characters in Student#92.  
-- **Expected**: Input truncated to 60 characters.  
-- **Actual**: Input accepted at 61 characters.  
-- **Attachments**: Screenshot, log snippet.  
-
----
-
-### **Automation Recommendations**  
-1. **Tools**: **Selenium** for UI automation (Test Cases 1, 3, 5).  
-2. **Performance Testing**: **JMeter** for concurrency (Test Case 8).  
-
-=========================================================================================
-
-### **Comprehensive Test Suite: Student#48 (Type of Restrictive Health Care Intervention)**  
-**Objective**: Validate selection logic, exclusivity rules, and edge cases for intervention types.  
-
----
-
-#### **Test Case 1: Valid Single Intervention Selection**  
-**Priority**: Critical  
-**Steps**:  
-1. Select **Clinical Seclusion** (Student#49).  
-2. Click **Submit** (Student#113).  
-**Expected Results**:  
-- Form submits successfully.  
-- eCommerce Library updates with **"Clinical Seclusion"** in Additional Info.  
-
----
-
-#### **Test Case 2: Valid "Discontinue" Exclusive Selection**  
-**Priority**: High  
-**Steps**:  
-1. Select **Discontinue** (Student#56).  
-2. Click **Submit**.  
-**Expected Results**:  
-- Form submits successfully.  
-- eCommerce Library updates with **"Discontinue"** in Additional Info.  
-
----
-
-#### **Test Case 3: Invalid Combination ("Discontinue" + Other Intervention)**  
-**Priority**: Critical  
-**Steps**:  
-1. Select **Mechanical Restraints** (Student#50).  
-2. Attempt to select **Discontinue** (Student#56).  
-**Expected Results**:  
-- System deselects **Mechanical Restraints** automatically.  
-- Error: **"Discontinue cannot be combined with other interventions"** (EN/FR).  
-
----
-
-#### **Test Case 4: Invalid Multiple Interventions (Non-Discontinue)**  
-**Priority**: High  
-**Steps**:  
-1. Select **Clinical Seclusion** (Student#49).  
-2. Attempt to select **Involuntary Intramuscular Injection** (Student#54).  
-**Expected Results**:  
-- System allows multiple selections (if allowed by logic).  
-- **OR**: Error: **"Only one intervention can be selected"** (EN/FR).  
-
----
-
-#### **Test Case 5: No Intervention Selected**  
-**Priority**: Critical  
-**Steps**:  
-1. Leave all intervention types unselected.  
-2. Click **Submit**.  
-**Expected Results**:  
-- Error: **"At least one intervention type must be selected"** (EN/FR).  
-
----
-
-#### **Test Case 6: Switching from Intervention to "Discontinue"**  
-**Priority**: Medium  
-**Steps**:  
-1. Select **Mechanical Restraints** (Student#50).  
-2. Select **Discontinue** (Student#56).  
-**Expected Results**:  
-- **Mechanical Restraints** is deselected.  
-- **Discontinue** remains selected.  
-
----
-
-#### **Test Case 7: Rapid Toggle Between Interventions**  
-**Priority**: Low  
-**Steps**:  
-1. Rapidly toggle between **Clinical Seclusion** and **Mechanical Restraints** 10 times.  
-**Expected Results**:  
-- No UI lag or crashes.  
-- Final selection persists correctly.  
-
----
-
-#### **Test Case 8: Data Persistence After Save/Reopen**  
-**Priority**: High  
-**Steps**:  
-1. Select **Involuntary Intramuscular Injection** (Student#54).  
-2. Save and reopen the form.  
-**Expected Results**:  
-- Selected intervention is retained and **locked**.  
-
----
-
-#### **Test Case 9: Localization (French Error Messages)**  
-**Priority**: Medium  
-**Steps**:  
-1. Switch system language to French.  
-2. Leave all interventions unselected and click **Submit**.  
-**Expected Results**:  
-- Error: **"Au moins un type d'intervention doit être sélectionné"**.  
-
----
-
-#### **Test Case 10: Concurrency Handling**  
-**Priority**: Medium  
-**Steps**:  
-1. User A selects **Clinical Seclusion** and saves.  
-2. User B opens the same form and selects **Discontinue**.  
-3. User B attempts to save.  
-**Expected Results**:  
-- User B receives warning: **"Another user modified this form"** (EN/FR).  
-
----
-
-### **Edge Cases**  
-
-#### **Test Case 11: Network Failure During Selection**  
-**Priority**: Medium  
-**Steps**:  
-1. Disable network connection.  
-2. Select **Discontinue** and click **Submit**.  
-**Expected Results**:  
-- Error: **"Unable to save. Check your connection"** (EN/FR).  
-
----
-
-#### **Test Case 12: Maximum Interventions Stress Test**  
-**Priority**: Low  
-**Steps**:  
-1. Rapidly add 50 interventions (if multiple allowed).  
-**Expected Results**:  
-- System handles inputs without lag (>2s delay).  
-
----
-
-### **Traceability Matrix**  
-| **Requirement**                     | **Test Case IDs**          |  
-|-------------------------------------|----------------------------|  
-| Mandatory selection                 | 1, 2, 5                   |  
-| Exclusivity of "Discontinue"        | 3, 6                      |  
-| Data persistence                    | 8                         |  
-| Localization                        | 9                         |  
-| Concurrency handling                | 10                        |  
-| Error resilience                    | 11                        |  
-
----
-
-### **Defect Reporting Template**  
-- **Title**: [E.g., "Discontinue Allows Combination with Other Interventions"]  
-- **Severity**: Critical/High/Medium/Low  
-- **Steps**:  
-  1. Select **Discontinue**.  
-  2. Select **Clinical Seclusion**.  
-- **Expected**: **Discontinue** auto-deselects others.  
-- **Actual**: Both interventions are selected.  
-- **Attachments**: Screenshot, browser logs.  
-
----
-
-### **Automation Recommendations**  
-1. **Tools**: **Cypress** for end-to-end validation (Test Cases 1, 3, 5).  
-2. **Performance Testing**: **JMeter** for concurrency (Test Case 10).  
-
-====================================================
-                   
+### Notes for Execution  
+- Edge Case Coverage:  
+  - Test zero-length POTO text.  
+  - Validate timezone handling for printed timestamps.  
+- Performance Testing:  
+  - Load test with 100+ concurrent users.  
+  - Monitor API response times during POTO updates.  

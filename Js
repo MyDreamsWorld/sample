@@ -1,1 +1,4 @@
 
+ wanted to clarify that I wasn’t the one who created the test cases — Kamel wrote them. I will do my best to answer on his behalf, and I kindly ask you to consider this.
+
+From what I understand, Kamel built the test cases I reviewed based on the Steps to Reproduce provided in the ticket. However, after quickly reviewing those steps, I’m not sure they fully reflect the actions that led to the bug shown in the video you shared.

@@ -1,1 +1,579 @@
+High-Level Test Scenarios 
+This document outlines the high-level test scenarios for the new appointment status management functionality.
+1. Admin - New Status Code Creation and Management
+TS_Admin_Create_001: Verify successful creation of a new appointment status code with all required fields (English description, French description, color code, icon, active status) via the "New Status" button.
+TS_Admin_Create_002: Verify system automatically generates a unique system code for a new status.
+TS_Admin_Create_003: Verify validation when creating a new status code with missing mandatory fields (e.g., English description, French description, color, icon).
+TS_Admin_Create_004: Verify validation when creating a new status code with invalid data types (e.g., invalid color code format).
+TS_Admin_Create_005: Verify successful activation of a newly created status code.
+TS_Admin_Create_006: Verify successful inactivation of a newly created status code.
+TS_Admin_Create_007: Verify that an inactivated status code is no longer available for selection when booking new appointments but remains for existing appointments.
+TS_Admin_Create_008: Verify the confirmation message "Please be aware all changes will be applied retroactively" appears when editing the description of an existing status (as per Scenario 1).
+TS_Admin_Create_009: Verify that more than 13 status codes can be created.
+TS_Admin_Create_010: Verify that expiry dates for statuses cannot be set in the past and are effective from 12 am onwards.
+2. Admin - Existing Status Code Management
+TS_Admin_Edit_001: Verify successful editing of an existing (non-locked) status code's attributes (description, color, icon, active/inactive status).
+TS_Admin_Edit_002: Verify that "Booked", "Cancelled", and "No Show" statuses are locked and cannot be edited (description, color, icon, activation status, system code).
+TS_Admin_Edit_003: Verify successful inactivation of an existing active status code (non-locked).
+TS_Admin_Edit_004: Verify successful activation of an existing inactive status code.
+TS_Admin_Edit_005: Verify that all statuses (old and new) are assigned new status icons based on the provided repository.
+TS_Admin_Edit_006: Verify the "Recurring Cancel" button functionality remains unchanged and the "Cancelled" status is not modifiable on the config page.
+3. Scheduling - Appointment Management with New Statuses
+TS_Sched_NewAppt_001: Verify a newly created and active status code is available in the status dropdown when booking a new appointment.
+TS_Sched_NewAppt_002: Verify successful booking of a new appointment using a newly created active status code (as per Scenario 1).
+TS_Sched_NewAppt_003: Verify that an inactivated status code is NOT available in the status dropdown for new appointments (as per Scenario 2).
+TS_Sched_ExistAppt_001: Verify existing appointments retain their assigned status even if that status is later deactivated (as per Scenario 2).
+TS_Sched_ExistAppt_002: Verify appointments with inactive statuses are displayed correctly in the schedule, including the icon (as per Acceptance Criteria 3 & Scenario 4).
+TS_Sched_ExistAppt_003: Verify the background of appointments with inactive statuses does not appear "Black" (as per Scenario 4).
+TS_Sched_ExistAppt_004: Verify successful update of an existing appointment (with an inactive status) to a new, active status (as per Scenario 3).
+TS_Sched_ExistAppt_005: Verify that two status icons are displayed on appointments: one for the appointment status and one for the sign-off function (from e-chart).
+TS_Sched_ExistAppt_006: Verify the appointment status icon and hover information are NOT changed by "Verify & Sign" e-chart button (no yellow background, no status name appended) (as per Scenario 6 & Acceptance Criteria 6).
+TS_Sched_ExistAppt_007: Verify the appointment status icon and hover information are NOT changed by "Sign & Save" e-chart button (no white background, no status name appended) (as per Scenario 6 & Acceptance Criteria 6).
+TS_Sched_ExistAppt_008: Verify the "Cancel Appt" button is removed from the Edit Appointment page.
+TS_Sched_ExistAppt_009: Verify the "No Show" button is removed from the Edit Appointment page.
+TS_Sched_ExistAppt_010: Verify the "Recurring Cancel" button is still present and functional on the Edit Appointment page.
+4. Batch Rescheduling
+TS_BatchResched_001: Verify that during batch rescheduling, users can select an active status from a dropdown for the moved appointments (instead of auto-assigning "Not seen Operational").
+TS_BatchResched_002: Verify that moved appointments in a batch reschedule are assigned the user-selected status.
+TS_BatchResched_003: Verify that new appointments created as part of batch rescheduling (e.g., placeholders on the original day if not a move of all) have the status "Booked" (as per Scenario 5).
+TS_BatchResched_004: Verify batch rescheduling works correctly when rescheduling a whole day's appointments to a new day and assigning a new status (as per Scenario 5).
+5. Reporting
+TS_Report_Daysheet_001: Verify the Daysheet report accurately reflects appointments with new and existing statuses, including those with inactive statuses (before and after status change as per Scenario 3).
+TS_Report_NoShow_001: Verify the No Show appointments report functions correctly and includes appointments with the "No Show" status (even though it's locked for editing).
+6. Data Integrity and History
+TS_Data_History_001: Verify that inactivating a status does not overwrite historical data for appointments previously assigned that status.
+TS_Data_History_002: Verify that editing a status description (and receiving the retroactive change message) correctly updates the description for past appointments if applicable, or only for future display as per system design.
+TS_Data_History_003: Verify appointment status history is correctly logged and viewable in the "Comments section on Master File - Appt Hx page" when a status is inactivated (as per Scenario 2).
+7. UI/UX
+TS_UI_Admin_001: Verify the new "Add Status" section on the Admin page matches the new front-end design (1000183722.jpg).
+TS_UI_Admin_002: Verify the "New Status" button is present and functional on the Admin page.
+TS_UI_Admin_003: Verify color codes can be set and are displayed correctly for statuses.
+TS_UI_Admin_004: Verify icons can be selected/assigned and are displayed correctly for statuses.
+TS_UI_Scheduling_001: Verify the status dropdown in the Edit Appointment screen correctly lists active statuses, including newly added ones.
+TS_UI_Scheduling_002: Verify the removal of "No Show" and "Cancel Appt" buttons from the Edit Appointment page as per the image 1000183721.jpg (assuming it shows the 'before' state or that the requirement is to remove them from that state).
+TS_UI_Scheduling_003: Verify confirmation messages for status changes are displayed (as per Acceptance Criteria 1.1).
+8. French Language Support
+TS_Lang_FR_001: Verify that status descriptions can be created and edited in French simultaneously with English.
+TS_Lang_FR_002: Verify that French descriptions for statuses are displayed correctly where applicable in the UI (e.g., if the user's language setting is French).
+__________
 
+Detailed Test Cases 
+This document provides detailed test cases for the appointment status management user story. Each test case includes a unique ID, title, reference to the user story/requirement, preconditions, step-by-step actions, expected results, and a placeholder for actual results and status.
+1. Admin - New Status Code Creation and Management
+Test Case ID: TC_Admin_Create_001
+Test Case Title: Verify successful creation of a new appointment status code with all required fields.
+References: User Story (Ability to create new appointment status codes), Acceptance Criteria (1), Scenario 1, TS_Admin_Create_001
+Preconditions:
+User has admin privileges.
+User is on the Appointment Status Management page (Admin page).
+The new UI for status management is implemented as per 1000183722.jpg. Test Steps:
+Navigate to the Appointment Status Management page.
+Locate the "Add Status" section.
+Click the "New Status" button.
+Enter a unique English description (e.g., "Test Status EN 001").
+Enter a unique French description (e.g., "Test Status FR 001").
+Select a color from the color picker (e.g., #FF5733).
+Select an icon from the icon repository (e.g., "icon_new_001.png").
+Ensure the "Active" checkbox is checked.
+Click the "Submit" or "Save" button. Expected Results:
+A success message is displayed (e.g., "New status created successfully.").
+The new status ("Test Status EN 001") appears in the list of appointment statuses.
+The new status displays the correct English description, French description, color, icon, and active status.
+A system-generated code is assigned to the new status and is visible (though not editable by the user). Actual Results: Status: Notes/Remarks:
+Test Case ID: TC_Admin_Create_002
+Test Case Title: Verify system automatically generates a unique, non-editable system code for a new status.
+References: User Story (Generate the system code - user does not need to create), TS_Admin_Create_002
+Preconditions:
+User has admin privileges.
+User is on the Appointment Status Management page.
+At least one status has been successfully created (e.g., via TC_Admin_Create_001). Test Steps:
+Navigate to the Appointment Status Management page.
+Create a new status with all valid details (similar to TC_Admin_Create_001, e.g., "Test Status EN 002", "Test Status FR 002", color, icon, active).
+Observe the newly created status in the list.
+Attempt to find a field to manually input or edit the "System Code" for the new status.
+Create another new status with different details.
+Compare the system-generated codes for the two newly created statuses. Expected Results:
+A system code is automatically generated and displayed for the new status.
+There is no option for the user to input or edit the system code during creation or modification.
+The system-generated code is unique for each new status created. Actual Results: Status: Notes/Remarks:
+Test Case ID: TC_Admin_Create_003
+Test Case Title: Verify validation when creating a new status code with missing mandatory fields.
+References: User Story (Create a description in English and French at the same time), TS_Admin_Create_003
+Preconditions:
+User has admin privileges.
+User is on the Appointment Status Management page. Test Steps:
+Navigate to the Appointment Status Management page.
+Click the "New Status" button.
+Attempt to submit the form with the following conditions (one at a time or in combination if the system allows partial saves before final validation): a. English Description: Empty; French Description: Filled; Color: Selected; Icon: Selected; Active: Checked. b. English Description: Filled; French Description: Empty; Color: Selected; Icon: Selected; Active: Checked. c. English Description: Filled; French Description: Filled; Color: Not Selected; Icon: Selected; Active: Checked. d. English Description: Filled; French Description: Filled; Color: Selected; Icon: Not Selected; Active: Checked.
+Observe the system response after each attempt. Expected Results:
+For each attempt (a-d), an appropriate validation error message is displayed, indicating the missing mandatory field(s) (e.g., "English Description is required", "French Description is required", "Color is required", "Icon is required").
+The new status is not created. Actual Results: Status: Notes/Remarks: The exact error messages may vary.
+Test Case ID: TC_Admin_Create_008
+Test Case Title: Verify confirmation message when editing the description of an existing status.
+References: Scenario 1 (After saving the status, edit the description of the status again. "on Submit, the following message will appear "Please be aware all changes will be applied retroactively""), TS_Admin_Create_008
+Preconditions:
+User has admin privileges.
+User is on the Appointment Status Management page.
+At least one editable status exists (e.g., a newly created status). Test Steps:
+Navigate to the Appointment Status Management page.
+Identify an existing, editable status.
+Click the "Edit" button/icon for that status.
+Modify the English Description (e.g., from "Test Status EN 001" to "Test Status EN 001 Updated").
+Click the "Submit" or "Save" button.
+Observe the system response.
+If a confirmation is required, confirm the change. Expected Results:
+Upon submitting the change to the description, a confirmation message is displayed: "Please be aware all changes will be applied retroactively".
+After confirming (if applicable), the status description is updated in the list. Actual Results: Status: Notes/Remarks: Also verify if this applies to French description changes.
+2. Admin - Existing Status Code Management
+Test Case ID: TC_Admin_Edit_001
+Test Case Title: Verify successful editing of an existing (non-locked) status code's attributes.
+References: User Story (Edit function will be available on all statuses), TS_Admin_Edit_001
+Preconditions:
+User has admin privileges.
+User is on the Appointment Status Management page.
+At least one editable, non-locked status exists (e.g., a custom status created via TC_Admin_Create_001). Test Steps:
+Navigate to the Appointment Status Management page.
+Identify an existing, editable (non-locked) status (e.g., "Test Status EN 001").
+Click the "Edit" button/icon for that status.
+Modify the English Description (e.g., to "Test Status EN 001 Edited").
+Modify the French Description (e.g., to "Test Status FR 001 Edited").
+Change the selected color (e.g., to #33FF57).
+Change the selected icon (e.g., to "icon_edited_001.png").
+If the status is active, uncheck the "Active" checkbox to inactivate it. If inactive, check it to activate.
+Click the "Submit" or "Save" button.
+Observe the confirmation message if editing description (as per TC_Admin_Create_008). Expected Results:
+A success message is displayed (e.g., "Status updated successfully.").
+The status in the list reflects all the changes: updated English and French descriptions, new color, new icon, and new active/inactive state.
+The system-generated code for the status remains unchanged and non-editable. Actual Results: Status: Notes/Remarks:
+Test Case ID: TC_Admin_Edit_002
+Test Case Title: Verify "Booked", "Cancelled", and "No Show" statuses are locked and cannot be edited.
+References: Acceptance Criteria (1.2 Booked, Cancelled and No Show will be locked for edit), TS_Admin_Edit_002
+Preconditions:
+User has admin privileges.
+User is on the Appointment Status Management page.
+The system has the default statuses: "Booked", "Cancelled", and "No Show". Test Steps:
+Navigate to the Appointment Status Management page.
+Locate the "Booked" status in the list.
+Attempt to find and click an "Edit" button/icon for the "Booked" status.
+If an edit interface is accessible, attempt to modify its description, color, icon, or active/inactive status.
+Repeat steps 2-4 for the "Cancelled" status.
+Repeat steps 2-4 for the "No Show" status. Expected Results:
+The "Edit" button/icon is disabled or not present for "Booked", "Cancelled", and "No Show" statuses.
+If an edit interface is somehow accessible (which it shouldn't be), all fields (description, color, icon, active status) are read-only/disabled, and no changes can be saved.
+No modifications can be made to these locked statuses. Actual Results: Status: Notes/Remarks:
+Test Case ID: TC_Admin_Edit_003
+Test Case Title: Verify successful inactivation of an existing active status code (non-locked).
+References: User Story (Inactivate), Scenario 2, TS_Admin_Edit_003
+Preconditions:
+User has admin privileges.
+User is on the Appointment Status Management page.
+An active, editable (non-locked) status exists (e.g., "Test Status EN 001" is active). Test Steps:
+Navigate to the Appointment Status Management page.
+Identify an active, editable status.
+Click the "Edit" button/icon for that status.
+Uncheck the "Active" checkbox.
+Click the "Submit" or "Save" button.
+Observe the status in the list. Expected Results:
+A success message is displayed (e.g., "Status updated successfully.").
+The status is now marked as inactive in the list (e.g., visual indicator, status column shows "Inactive").
+The status is no longer available for selection in the appointment status dropdown for new appointments (to be verified in a separate scheduling test case like TC_Sched_NewAppt_003). Actual Results: Status: Notes/Remarks:
+3. Scheduling - Appointment Management with New Statuses
+Test Case ID: TC_Sched_NewAppt_001
+Test Case Title: Verify a newly created and active status code is available in the status dropdown when booking a new appointment.
+References: Scenario 1 (available for use from within an appointment), TS_Sched_NewAppt_001
+Preconditions:
+User has scheduling privileges.
+A new status has been created and set to active in the Admin page (e.g., "Test Active Status EN" via TC_Admin_Create_001).
+User is on the Scheduling screen or Edit Appointment page for a new appointment. Test Steps:
+Navigate to the screen for booking a new appointment or editing an existing one to change its status.
+Locate the "Status" dropdown field.
+Click to expand the dropdown list.
+Search for the newly created active status (e.g., "Test Active Status EN") in the list. Expected Results:
+The newly created and active status (e.g., "Test Active Status EN") is present in the status dropdown list and is selectable. Actual Results: Status: Notes/Remarks:
+Test Case ID: TC_Sched_NewAppt_003
+Test Case Title: Verify that an inactivated status code is NOT available in the status dropdown for new appointments.
+References: Scenario 2 (Appointment status dropdown no longer available for selection), TS_Sched_NewAppt_003
+Preconditions:
+User has scheduling privileges.
+A status has been created and then inactivated in the Admin page (e.g., "Test Inactive Status EN" via TC_Admin_Edit_003).
+User is on the Scheduling screen or Edit Appointment page for a new appointment. Test Steps:
+Navigate to the screen for booking a new appointment or editing an existing one to change its status.
+Locate the "Status" dropdown field.
+Click to expand the dropdown list.
+Search for the inactivated status (e.g., "Test Inactive Status EN") in the list. Expected Results:
+The inactivated status (e.g., "Test Inactive Status EN") is NOT present in the status dropdown list and therefore cannot be selected for a new appointment. Actual Results: Status: Notes/Remarks:
+Test Case ID: TC_Sched_ExistAppt_001
+Test Case Title: Verify existing appointments retain their assigned status even if that status is later deactivated.
+References: Acceptance Criteria (2. Appointments don't lose status when an assigned status is deactivated), Scenario 2 (Existing appointments still show the inactive status), TS_Sched_ExistAppt_001
+Preconditions:
+User has scheduling privileges.
+An appointment exists with an assigned status (e.g., "Status To Be Inactivated").
+The assigned status ("Status To Be Inactivated") is subsequently deactivated by an admin (via TC_Admin_Edit_003).
+User is viewing the schedule or the details of the specific appointment. Test Steps:
+Create an appointment and assign it an active status (e.g., "Status X").
+As an admin, navigate to the Appointment Status Management page and inactivate "Status X".
+As a scheduler, navigate to the Scheduling screen and locate the appointment created in step 1.
+View the appointment details (e.g., by hovering or opening the edit appointment screen). Expected Results:
+The appointment on the Scheduling screen still displays "Status X" (or its associated icon).
+The appointment details correctly show that its status is "Status X", even though "Status X" is now inactive for new selections.
+The appointment has not lost its status, nor has it been reassigned to a default status. Actual Results: Status: Notes/Remarks:
+Test Case ID: TC_Sched_ExistAppt_008
+Test Case Title: Verify the "Cancel Appt" button is removed from the Edit Appointment page.
+References: User Story (The Cancel and No show button will be removed from the Edit Appointment page), Requirement (Remove Cancel Appt button), TS_Sched_ExistAppt_008
+Preconditions:
+User has scheduling privileges.
+User is on the Edit Appointment page for an existing appointment.
+The current UI (before change) shows a "Cancel Appt" button (as potentially implied by 1000183721.jpg). Test Steps:
+Navigate to the Scheduling screen.
+Open an existing appointment to access the Edit Appointment page.
+Scan the page for a button labeled "Cancel Appt" or similar functionality for direct cancellation. Expected Results:
+The "Cancel Appt" button is NOT present on the Edit Appointment page.
+Cancellation functionality is now handled exclusively through selecting a "Cancelled" status (or similar workflow), not a dedicated button on this page. Actual Results: Status: Notes/Remarks:
+Test Case ID: TC_Sched_ExistAppt_009
+Test Case Title: Verify the "No Show" button is removed from the Edit Appointment page.
+References: User Story (The Cancel and No show button will be removed from the Edit Appointment page), Requirement (Remove No Show button), TS_Sched_ExistAppt_009
+Preconditions:
+User has scheduling privileges.
+User is on the Edit Appointment page for an existing appointment.
+The current UI (before change) shows a "No Show" button (as potentially implied by 1000183721.jpg). Test Steps:
+Navigate to the Scheduling screen.
+Open an existing appointment to access the Edit Appointment page.
+Scan the page for a button labeled "No Show" or similar functionality for directly marking as no-show. Expected Results:
+The "No Show" button is NOT present on the Edit Appointment page.
+Marking an appointment as "No Show" is now handled exclusively through selecting the "No Show" status from the dropdown, not a dedicated button on this page. Actual Results: Status: Notes/Remarks:
+4. Batch Rescheduling
+Test Case ID: TC_BatchResched_001
+Test Case Title: Verify user can select an active status from a dropdown during batch rescheduling.
+References: New function change (On batch rescheduling function, the function will no longer auto assign the status "Not seen Operational" to moved appointments but will allow users to select from the statuses active on that date), Scenario 5, TS_BatchResched_001
+Preconditions:
+User has scheduling and batch rescheduling privileges.
+There are multiple appointments scheduled for a specific day (e.g., "Day X").
+There are active statuses available for selection, including newly created ones.
+User initiates the batch rescheduling function for "Day X". Test Steps:
+Navigate to the batch rescheduling feature.
+Select a day with multiple appointments to reschedule (e.g., "Day X").
+Choose a new date/time for these appointments.
+Look for a dropdown menu or selection field to assign a status to the appointments being moved.
+Verify that the dropdown contains a list of active appointment statuses (including any newly created custom active statuses and excluding inactive ones).
+Select a specific active status from the dropdown (e.g., "Rescheduled - Confirmed").
+Proceed with the batch reschedule operation. Expected Results:
+A dropdown menu for status selection is available on the batch reschedule page/dialog.
+The dropdown lists all currently active appointment statuses.
+The user is able to select a status from this dropdown.
+The system does not automatically assign "Not seen Operational" or any other fixed status without user selection. Actual Results: Status: Notes/Remarks:
+Test Case ID: TC_BatchResched_002
+Test Case Title: Verify moved appointments in batch reschedule are assigned the user-selected status.
+References: New function change, Scenario 5, TS_BatchResched_002
+Preconditions:
+User has successfully initiated a batch reschedule and selected a status for the moved appointments (as per TC_BatchResched_001).
+The batch reschedule operation has completed. Test Steps:
+After completing the batch reschedule (from TC_BatchResched_001, where a status like "Rescheduled - Confirmed" was selected): a. Navigate to the new date/time where the appointments were moved. b. Verify the status of each moved appointment. c. Navigate to the original date/time (if appointments were moved, not copied) and verify the status of any remaining placeholders or original appointment entries (if applicable based on system behavior for "move"). Expected Results:
+All appointments that were moved to the new date/time now display the status selected by the user during the batch reschedule process (e.g., "Rescheduled - Confirmed").
+The original appointments on the old date (if moved, not copied) should reflect this change or be marked appropriately (e.g., with the selected status, or a system status like "Moved"). The requirement implies the moved appointments get the new status. Actual Results: Status: Notes/Remarks: Clarify behavior of original appointment slots after a "move".
+5. Reporting
+Test Case ID: TC_Report_Daysheet_001
+Test Case Title: Verify Daysheet report accurately reflects appointments with new, existing, and inactive statuses.
+References: Acceptance Criteria (5. Daysheet and no show appts reports should be working), Scenario 3, TS_Report_Daysheet_001
+Preconditions:
+User has reporting privileges.
+Appointments exist with various statuses: a. A newly created active status (e.g., "Test Status EN 001"). b. An existing system status (e.g., "Booked"). c. An inactive status (e.g., an appointment had "Old Status X" which is now inactive).
+One appointment with an inactive status has been updated to a new active status (as per Scenario 3). Test Steps:
+Run the Daysheet report for the relevant date(s) covering the appointments mentioned in preconditions.
+Examine the report for the appointment with the newly created active status. Verify its status is displayed correctly.
+Examine the report for the appointment with the existing system status. Verify its status is displayed correctly.
+Examine the report for an appointment that still has an assigned inactive status. Verify its status is displayed correctly (and an icon might be present as per AC3).
+Examine the report for the appointment that was changed from an inactive status to a new active status. Verify the new active status is displayed. Expected Results:
+The Daysheet report correctly lists all appointments.
+The status displayed for each appointment in the report accurately matches its current status in the scheduling system, including new, existing, and inactive statuses.
+The report is generated successfully without errors. Actual Results: Status: Notes/Remarks:
+6. Data Integrity and History
+Test Case ID: TS_Data_History_003
+Test Case Title: Verify appointment status shows up in Comments section on Master File - Appt Hx page when a status is inactivated.
+References: Scenario 2 (Check if appointment status shows up in Comments section on Master File - Appt Hx page), TS_Data_History_003
+Preconditions:
+User has access to Master File - Appt Hx page.
+An appointment exists with an assigned status (e.g., "Status Y").
+The assigned status ("Status Y") is subsequently deactivated by an admin. Test Steps:
+Create an appointment for a patient and assign it an active status (e.g., "Status Y").
+As an admin, navigate to Appointment Status Management and inactivate "Status Y".
+Navigate to the patient's Master File.
+Access the Appointment History (Appt Hx) page for that patient.
+Locate the appointment created in step 1.
+Check the Comments section or relevant history log for this appointment. Expected Results:
+The Appointment History page for the patient correctly lists the appointment.
+Information related to the appointment's status, particularly noting that its assigned status ("Status Y") is now inactive, or the history of the status itself, is visible in the Comments section or an equivalent audit trail on the Appt Hx page.
+The original status ("Status Y") is still associated with the appointment in the history, even if it's marked as inactive system-wide. Actual Results: Status: Notes/Remarks: The exact phrasing or location in "Comments section" needs to be verified against the actual UI.
+7. UI/UX
+Test Case ID: TC_UI_Admin_001
+Test Case Title: Verify the new "Add Status" section on the Admin page matches the new front-end design.
+References: User Story (Add functionality to create new status codes... A button "New Status"), Image 1000183722.jpg (The new front end), TS_UI_Admin_001
+Preconditions:
+User has admin privileges.
+User is on the Appointment Status Management page. Test Steps:
+Navigate to the Appointment Status Management page.
+Compare the "Add Status" section (including fields for Description English, Description French, Color, Icon, Active checkbox, and Submit button) with the provided image 1000183722.jpg.
+Verify the presence of the "New Status" button (which might trigger the display of the "Add Status" form fields). Expected Results:
+The layout, fields, labels, and button(s) in the "Add Status" section on the Admin page closely match the design shown in 1000183722.jpg.
+All specified input fields (Description English, Description French, Color picker, Icon selection, Active checkbox) are present.
+The "New Status" button is present and, when clicked, reveals the form for adding a new status if it's not always visible. Actual Results: Status: Notes/Remarks: 1000183722.jpg shows "Add Status" with fields and a "Submit" button, and separately lists existing statuses. The "New Status" button might be what makes the "Add Status" section appear or become active.
+8. French Language Support
+Test Case ID: TC_Lang_FR_001
+Test Case Title: Verify status descriptions can be created and edited in French simultaneously with English.
+References: User Story (Create a description in English and French at the same time), TS_Lang_FR_001
+Preconditions:
+User has admin privileges.
+User is on the Appointment Status Management page, in the "Add Status" or "Edit Status" interface. Test Steps:
+When creating a new status (e.g., via TC_Admin_Create_001): a. Enter text in the "Description English" field. b. Enter text in the "Description French" field. c. Complete other fields and submit.
+Verify the new status shows both English and French descriptions correctly in the status list (if both are displayed or based on language settings).
+When editing an existing status (e.g., via TC_Admin_Edit_001): a. Modify the text in the "Description English" field. b. Modify the text in the "Description French" field. c. Submit the changes.
+Verify the edited status shows both updated English and French descriptions correctly. Expected Results:
+The UI allows input into both English and French description fields during status creation and editing.
+Both English and French descriptions are saved correctly and associated with the status.
+Both descriptions can be updated independently or simultaneously. Actual Results: Status: Notes/Remarks:
+
+______________
+
+# Test Cases 
+
+## Test Suite 1: Status Creation and Management
+
+### TC-001: Create New Status Code
+**Description**: Verify ability to create new status codes with English and French descriptions  
+**Preconditions**: User has admin privileges  
+**Steps**:
+1. Navigate to Admin > Appointment Status Manager
+2. Click "New Status" button
+3. Enter English description (e.g., "Follow-up Required")
+4. Enter French description (e.g., "Suivi requis")
+5. Select a color code
+6. Click "Save"
+**Expected Results**:
+- New status is created with system-generated code
+- Status is automatically activated
+- Both English and French descriptions are saved correctly
+- Color code is applied
+
+### TC-002: Edit Existing Status Description
+**Description**: Verify ability to edit status descriptions  
+**Preconditions**: Status code exists (not Booked, Cancelled, or No Show)  
+**Steps**:
+1. Navigate to Admin > Appointment Status Manager
+2. Click "Edit" on an existing status
+3. Modify English and/or French descriptions
+4. Click "Save"
+**Expected Results**:
+- Confirmation message appears: "Please be aware all changes will be applied retroactively"
+- Changes are saved and reflected throughout system
+- Historical appointments maintain new status description
+
+### TC-003: Attempt to Edit Protected Statuses
+**Description**: Verify Booked, Cancelled, and No Show statuses cannot be edited  
+**Preconditions**: None  
+**Steps**:
+1. Navigate to Admin > Appointment Status Manager
+2. Attempt to click "Edit" on Booked status
+3. Attempt to click "Edit" on Cancelled status
+4. Attempt to click "Edit" on No Show status
+**Expected Results**:
+- Edit option is disabled or grayed out for these statuses
+- Appropriate message indicates these are system-protected statuses
+
+## Test Suite 2: Status Activation/Deactivation
+
+### TC-004: Deactivate Status Code
+**Description**: Verify ability to deactivate a status code  
+**Preconditions**: Active status code exists with no current appointments  
+**Steps**:
+1. Navigate to Admin > Appointment Status Manager
+2. Click "Edit" on an active status
+3. Change activation status to "Inactive"
+4. Click "Save"
+**Expected Results**:
+- Status is marked as inactive in system
+- Status no longer appears in dropdown for new appointments
+- Status remains visible in admin interface
+
+### TC-005: Reactivate Status Code
+**Description**: Verify ability to reactivate a deactivated status code  
+**Preconditions**: Inactive status code exists  
+**Steps**:
+1. Navigate to Admin > Appointment Status Manager
+2. Click "Edit" on an inactive status
+3. Change activation status to "Active"
+4. Click "Save"
+**Expected Results**:
+- Status is marked as active in system
+- Status reappears in dropdown for new appointments
+
+## Test Suite 3: Appointment Status Functionality
+
+### TC-006: Assign New Status to Appointment
+**Description**: Verify new status can be assigned to appointment  
+**Preconditions**: New status code exists and is active  
+**Steps**:
+1. Navigate to Scheduling screen
+2. Create or edit an appointment
+3. Select new status from dropdown
+4. Save appointment
+**Expected Results**:
+- New status is successfully assigned to appointment
+- Status displays with correct color and icon
+- Both English and French versions display correctly based on user language
+
+### TC-007: View Appointment with Inactive Status
+**Description**: Verify appointments retain inactive statuses  
+**Preconditions**: Appointment exists with status that is now inactive  
+**Steps**:
+1. Navigate to Scheduling screen
+2. Open appointment with inactive status
+**Expected Results**:
+- Appointment displays with original status
+- Status is visually marked as inactive (e.g., grayed out)
+- Status appears in Comments section on Master File - Appt Hx page
+
+### TC-008: Change Status of Appointment with Inactive Status
+**Description**: Verify ability to update status of appointment with inactive status  
+**Preconditions**: Appointment exists with inactive status  
+**Steps**:
+1. Navigate to Scheduling screen
+2. Open appointment with inactive status
+3. Change status to active status
+4. Save appointment
+**Expected Results**:
+- New status is successfully applied
+- Daysheet report reflects status change when rerun
+
+## Test Suite 4: Batch Rescheduling
+
+### TC-009: Batch Reschedule with Status Selection
+**Description**: Verify batch rescheduling with status assignment  
+**Preconditions**: Multiple appointments exist for a day  
+**Steps**:
+1. Navigate to Batch Rescheduling function
+2. Select multiple appointments
+3. Choose new date and time
+4. Select status from dropdown (not "Not Seen - Operational")
+5. Execute reschedule
+**Expected Results**:
+- Appointments are moved to new date/time
+- Selected status is applied to moved appointments
+- New appointments have "Booked" status
+
+## Test Suite 5: UI Verification
+
+### TC-010: Verify Removed Buttons
+**Description**: Verify No Show, Cancel Appt, and Recurring Cancel buttons are removed  
+**Preconditions**: None  
+**Steps**:
+1. Navigate to Edit Appointment page
+2. Verify button presence
+**Expected Results**:
+- No Show button is not present
+- Cancel Appt button is not present
+- Recurring Cancel button is not present
+
+### TC-011: Verify Status Icons
+**Description**: Verify correct status icons display  
+**Preconditions**: Appointment exists with assigned status  
+**Steps**:
+1. Navigate to Scheduling screen
+2. Locate appointment
+3. Verify status icon
+4. Hover over icon to verify tooltip
+**Expected Results**:
+- Correct status icon displays
+- Tooltip shows only status name (no additional information)
+- No yellow or white background added to icon
+
+## Test Suite 6: E-Chart Integration
+
+### TC-012: Verify & Sign Button Impact
+**Description**: Verify Verify & Sign button doesn't affect appointment status display  
+**Preconditions**: Appointment exists and can access echart  
+**Steps**:
+1. Open appointment
+2. Access echart
+3. Create note and click "Verify & Sign"
+4. Return to scheduling screen
+5. Verify appointment status display
+**Expected Results**:
+- Appointment status icon remains unchanged
+- Hover info shows only status name
+- No yellow background added to icon
+
+### TC-013: Sign & Save Button Impact
+**Description**: Verify Sign & Save button doesn't affect appointment status display  
+**Preconditions**: Appointment exists and can access echart  
+**Steps**:
+1. Open appointment
+2. Access echart
+3. Create note and click "Sign & Save"
+4. Return to scheduling screen
+5. Verify appointment status display
+**Expected Results**:
+- Appointment status icon remains unchanged
+- Hover info shows only status name
+- No white background added to icon
+
+## Test Suite 7: Reporting
+
+### TC-014: Daysheet Report Verification
+**Description**: Verify Daysheet report shows correct status information  
+**Preconditions**: Appointments exist with various statuses  
+**Steps**:
+1. Navigate to Reports tab
+2. Run Daysheet report
+3. Verify status information
+**Expected Results**:
+- Report includes all appointments
+- Statuses display correctly (including inactive ones)
+- No missing or incorrect status information
+
+### TC-015: No Show Appointments Report
+**Description**: Verify No Show appointments report functions correctly  
+**Preconditions**: Appointments exist with No Show status  
+**Steps**:
+1. Navigate to Reports tab
+2. Run No Show appointments report
+3. Verify results
+**Expected Results**:
+- Report includes all No Show appointments
+- No incorrect appointments included
+- Report generates without errors
+
+## Test Suite 8: Edge Cases
+
+### TC-016: Create Status with Past Expiry Date
+**Description**: Verify system prevents creating status with past expiry date  
+**Preconditions**: None  
+**Steps**:
+1. Navigate to Admin > Appointment Status Manager
+2. Click "New Status"
+3. Set expiry date to past date
+4. Attempt to save
+**Expected Results**:
+- System prevents saving
+- Error message indicates expiry date cannot be in past
+
+### TC-017: Maximum Status Codes Creation
+**Description**: Verify system handles maximum number of status codes  
+**Preconditions**: Many status codes already exist  
+**Steps**:
+1. Navigate to Admin > Appointment Status Manager
+2. Attempt to create new status codes until system limit reached
+**Expected Results**:
+- System either:
+  a) Allows unlimited status codes, or
+  b) Provides clear message when limit reached
+- System remains stable at limit
+
+### TC-018: Status Code Uniqueness
+**Description**: Verify system-generated status codes are unique  
+**Preconditions**: Many status codes exist  
+**Steps**:
+1. Navigate to Admin > Appointment Status Manager
+2. Create multiple new status codes
+3. Verify system-generated codes
+**Expected Results**:
+- All status codes are unique
+- No duplicates generated

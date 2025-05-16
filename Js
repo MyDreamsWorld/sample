@@ -1,7 +1,1 @@
-I recently completed testing for ticket \[insert ticket number] and would like to share a few UI observations I noticed. While they may be outside the ticket's current scope, I believe they’re worth considering for future improvements:
 
-1. On the English version of the form, the horizontal scrollbar remains visible even when the page is expanded—unlike the French version, where this does not occur.
-2. Some elements are misaligned compared to their neighboring items.
-3. Certain bullet points appear in bold font on the French form but are in regular font on the English one.
-4. The triangle bullets preceding some items vary in size across different points and also between the two language versions.
-5. Checkboxes are used instead of radio buttons, which may confuse users by suggesting multiple selections are allowed. Notably, the English version of Attachment 1 (from the user story) uses checkboxes, while the French version uses radio buttons.
